@@ -3,8 +3,7 @@ import Link from "next/link";
 
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 
-// accessible at .../findsupport/
-export default function findsupport() {
+export default function Emotional() {
   return (
     <>
       <IndexNavbar fixed />
@@ -14,20 +13,8 @@ export default function findsupport() {
           <div className="w-full md:w-8/12 lg:w-6/12 xl:w-6/12 px-4">
             <div className="pt-32 sm:pt-0">
               <h2 className="font-semibold text-4xl text-blueGray-600">
-                Find Support
+                Emotional
               </h2>
-              <p className="mt-4 text-lg leading-relaxed text-blueGray-500">
-                <ul className="list-disc list-inside">
-                  <li>Physical</li>
-                  <li>Social</li>
-                  <li>Emotional</li>
-                  <li>Financial</li>
-                  <li>Academic</li>
-                  <li>Career</li>
-                  <li>Spiritual</li>
-                  <li>Environmental</li>
-                </ul>
-              </p>
             </div>
           </div>
         </div>

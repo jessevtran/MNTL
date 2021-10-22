@@ -3,8 +3,7 @@ import Link from "next/link";
 
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 
-// accessible at .../topc/physical/
-export default function physical() {
+export default function Physical() {
   return (
     <>
       <IndexNavbar fixed />
@@ -16,7 +15,6 @@ export default function physical() {
               <h2 className="font-semibold text-4xl text-blueGray-600">
                 Physical
               </h2>
-
             </div>
           </div>
         </div>
