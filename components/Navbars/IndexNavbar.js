@@ -37,7 +37,10 @@ export default function Navbar(props) {
 
             <ul className="flex flex-col space-x-3 lg:flex-row list-none lg:ml-auto">
               <li className="flex items-center">
-                Find Support
+                <Link href="/find-support/">
+                  <a>Find Support</a>
+                </Link>
+                {/* button animation hovering mouse over */}
               </li>
               <li className="flex items-center">
                 Take the Quiz
