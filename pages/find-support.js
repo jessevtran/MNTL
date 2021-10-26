@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
+import Footer from "components/Footers/Footer.js";
 
 // accessible at .../find-support/
 export default function findsupport() {
@@ -85,6 +86,7 @@ export default function findsupport() {
           alt="..."
         />
       </section>
+      <Footer/>
     </>
   );
 }
