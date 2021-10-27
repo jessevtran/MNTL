@@ -34,7 +34,6 @@ export default function Navbar(props) {
             }
             id="example-navbar-warning"
           >
-
             <ul className="flex flex-col space-x-3 lg:flex-row list-none lg:ml-auto">
               <li className="flex items-center">
                 <Link href="/find-support/">
@@ -42,17 +41,13 @@ export default function Navbar(props) {
                 </Link>
                 {/* button animation hovering mouse over */}
               </li>
-              <li className="flex items-center">
-                Take the Quiz
-              </li>
-              <li className="flex items-center">
-                Your Wellness Plan
-              </li>
+              <li className="flex items-center">Take the Quiz</li>
+              <li className="flex items-center">Your Wellness Plan</li>
               <li className="flex items-center ">
-                CRISIS
+                <Link href="/crisis/crisis">
+                  <a>CRISIS</a>
+                </Link>
               </li>
-              
-              
             </ul>
           </div>
         </div>
