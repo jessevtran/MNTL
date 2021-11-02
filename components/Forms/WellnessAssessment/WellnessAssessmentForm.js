@@ -1,6 +1,7 @@
 import { Field, Form, Formik, getIn } from 'formik';
 import * as Yup from 'yup';
 import React from 'react';
+import questionsData from "utils/db.js"
 
 //TODO: DEVELOP AND TEST THE FOLLOWING COMPONENTS: Questions,... 
 /**
@@ -11,9 +12,19 @@ import React from 'react';
  */
 const WellnessAssessmentForm = ({}) => {
 
-    const initialValues = {
-        
-    }
+  
+
+  const questionsData = {
+    title: '',
+    questionType: '',
+    options: [{ value: '-2'}, { value: '-1'}, { value: '0'}, { value: '1'}, { value: '2'}],
+  };
+
+  const initialValues = {
+    title: '',
+    description: '',
+    questions: [questionsData],
+  };
 
     //Validation Schemas for questions
     const RADIO_GROUP_VALIDATION_SCHEMA = Yup.string().required('Select an option')
@@ -24,20 +35,20 @@ const WellnessAssessmentForm = ({}) => {
   });
 
 
+
 return (
 
     <Formik
-    //TODO: Determine schema for initial values
-    // initialValues={
-
-    // }
+      initialValues={initialValues}
+      onSubmit={submitHandler}
+      validationSchema={ValidationSchema}
     >
 
     </Formik>
 
 )
 };
-//FIXME: I don't know what this does yet, but it can help with event handling in code. @Nnamdi will watch tutorials.
+//FIXME: Lol. I knew what this does. Is it necessary for the handler?
 // ? const [values, setValues] = React.useState({}); Is this necessary for the handler?
 
 //TODO: SUBMIT HANDLER
@@ -47,6 +58,9 @@ function submitHandler(){
 
 
 //TODO: ONCHANGE HANDLER
+function onChangeHandler(){
+
+}
 
 // ? pulled from website
 //  const handleChange = event => {
