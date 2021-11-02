@@ -17,6 +17,7 @@ export default function WellnessQuiz() {
           
           {/* //FIXME: Formink */}
           <WellnessForm>
+            
 
           </WellnessForm>
           {/* //TODO:Pagination */}

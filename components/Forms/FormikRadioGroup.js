@@ -1,11 +1,9 @@
 import React from "react";
-import PropTypes from "prop-types";
 
 //TODO: Finish prop distribution for radio group
 export default function FormikRadioGroup({
-  typeOfAnswers,
   rangeOfAnswers,
-  radioGroupOptions,
+  value,
   question,
 }) {
   return (
@@ -14,12 +12,9 @@ export default function FormikRadioGroup({
       <div class="text-2xl font-semibold">
         <div class="text-black">{question}</div>
       </div>
-
-      <div className ="flex flex-row">
-
+      <div className ="flex flex-row px-4 space-x-4">
+          {radioGroupOptions(rangeOfAnswers, value)}
       </div>
-      
-
     </div>
   );
 }
@@ -30,13 +25,11 @@ export default function FormikRadioGroup({
  * @param {*} param0
  * @returns
  */
-function radioGroupOptions({ rangeOfAnswers, typeOfAnswers }) {
-  if (typeof typeOfAnswers === "number")
+function radioGroupOptions({rangeOfAnswers, value }) {
     {
-        
         return Array.from(Array(rangeOfAnswers).keys()).map((num) => {
       <label>
-        <Field type="radio" name={typeOfAnswers} value={num} />
+        <Field type="radio" name={value} value={num} />
       </label>;
     });
 }
