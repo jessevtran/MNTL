@@ -18,9 +18,24 @@ export default function Career() {
                 Career
               </h2>
               <div className="pt-6">
-                <p>
-                  Career
+                <p className="text-base font-light leading-relaxed mt-0 mb-4 text-blueGray-800">
+                  Career is an important aspect when it comes to an individual's prowess.
+                  Productivity and efficiency can benefit oneself by using these self-help resources
+                  listed below.
+
                 </p>
+              </div>
+              <h3 className="font-semibold text-2xl text-blueGray-600">
+                Tips
+              </h3>
+              <div className="pt-6">
+                <ul class="list-disc">
+                  <li> 1 </li>
+                  <li> 2 </li>
+                  <li> 3 </li>
+                  <li> 4 </li>
+                </ul>
+
               </div>
             </div>
           </div>
