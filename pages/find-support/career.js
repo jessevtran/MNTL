@@ -26,14 +26,12 @@ export default function Career() {
                 </p>
               </div>
               <h3 className="font-semibold text-2xl text-blueGray-600">
-                Tips
+                Tips 
               </h3>
               <div className="pt-6">
                 <ul class="list-disc">
-                  <li> 1 </li>
-                  <li> 2 </li>
-                  <li> 3 </li>
-                  <li> 4 </li>
+                  <li>  </li>
+                  <li>  </li>
                 </ul>
 
               </div>
