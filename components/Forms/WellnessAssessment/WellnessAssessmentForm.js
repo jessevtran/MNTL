@@ -1,7 +1,9 @@
 import { Field, Form, Formik, getIn } from 'formik';
 import * as Yup from 'yup';
 import React from 'react';
-import questionsData from "utils/db.js"
+import Radio from '../Radio';
+import { questionsDB } from "utils/db.js"
+import FormikRadioGroup from '../RadioGroup';
 
 //TODO: DEVELOP AND TEST THE FOLLOWING COMPONENTS: Questions,... 
 /**
@@ -10,20 +12,14 @@ import questionsData from "utils/db.js"
  * Utilizes Formik and Yup Validation.
  * @param {*} param0 
  */
-const WellnessAssessmentForm = ({}) => {
+const WellnessAssessmentForm = () => {
 
   
 
-  const questionsData = {
-    title: '',
-    questionType: '',
-    options: [{ value: '-2'}, { value: '-1'}, { value: '0'}, { value: '1'}, { value: '2'}],
-  };
+
 
   const initialValues = {
-    title: '',
-    description: '',
-    questions: [questionsData],
+    picked: '',
   };
 
     //Validation Schemas for questions
@@ -37,23 +33,41 @@ const WellnessAssessmentForm = ({}) => {
 
 
 return (
-
     <Formik
+    //Initial Values of questions
       initialValues={initialValues}
+    //submit Handler for form
       onSubmit={submitHandler}
+    //valudationSchema for the form
       validationSchema={ValidationSchema}
     >
+      
+      <Form>
+        <div class="flex flex-col space-y-4 divide-y divide-solid">
+      {questionsDB.sections.map(section => (
+        section.questions.map(question =>
+        <FormikRadioGroup
+        question={question}
+        rangeOfAnswers={5}
+        name={section.type}
+        />
+        ))
+      )}
+      </div>
 
+      <SubmissionButton/>
+      </Form>
     </Formik>
 
 )
 };
-//FIXME: Lol. I knew what this does. Is it necessary for the handler?
-// ? const [values, setValues] = React.useState({}); Is this necessary for the handler?
 
 //TODO: SUBMIT HANDLER
 function submitHandler(){
-  
+  async (values) => {
+    await new Promise((r) => setTimeout(r, 500));
+    alert(JSON.stringify(values, null, 2));
+  }
 }
 
 
@@ -62,13 +76,15 @@ function onChangeHandler(){
 
 }
 
-// ? pulled from website
-//  const handleChange = event => {
-//    setValues(prevValues => ({
-//      ...prevValues,
-//      // we use the name to tell Formik which key of `values` to update
-//      [event.target.name]: event.target.value
-//    });
-//  }
+
+const SubmissionButton = () => {
+  return (
+    <button type="submit" className="bg-blueGray-500 text-white active:bg-blueGray-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
+    Submit
+  </button>
+  )
+}
+
 
 export default WellnessAssessmentForm
+

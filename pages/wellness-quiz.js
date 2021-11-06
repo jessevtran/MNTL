@@ -10,16 +10,23 @@ export default function WellnessQuiz() {
   return (
     <>
       <IndexNavbar />
-      <section className="header relative pt-16 items-center flex h-screen max-h-860-px">
-        <div className="container mx-auto items-center flex flex-wrap">
-            
-          {/* //TODO: ProgressBar  */}
-          
-          {/* //FIXME: Formink */}
-          <WellnessForm>
-            
+      <section className="relative px-8 pt-16 md:px-4 justify-center flex h-screen max-h-860-px">
 
-          </WellnessForm>
+        {/* //FIXME: ProgressBar  */}
+        <div className="absolute flex w-full h-10 items-center justify-center bg-blueGray-300">
+            <div className="overflow-hidden w-1/2 h-2 text-xs flex rounded bg-emerald-200">
+              <div
+                style={{width:50}}
+                className="shadow-none flex flex-col text-center whitespace-nowrap text-white bg-emerald-500"
+              ></div>
+            </div>
+          </div>
+
+        <div className=" mt-8 mx-20 w-full md:w-auto sm:w-auto justify-center flex flex-wrap">
+          
+
+          {/* //FIXME: Formink */}
+          <WellnessForm />
           {/* //TODO:Pagination */}
         </div>
       </section>
