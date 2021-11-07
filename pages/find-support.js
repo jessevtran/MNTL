@@ -41,13 +41,6 @@ export default function findsupport() {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/find-support/financial">
-                      <a>
-                        Financial
-                      </a>
-                    </Link>
-                  </li>
-                  <li>
                     <Link href="/find-support/academic">
                       <a>
                         Academic
@@ -58,20 +51,6 @@ export default function findsupport() {
                     <Link href="/find-support/career">
                       <a>
                         Career
-                      </a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/find-support/spiritual">
-                      <a>
-                        Spiritual
-                      </a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/find-support/environmental">
-                      <a>
-                        Environmental
                       </a>
                     </Link>
                   </li>
