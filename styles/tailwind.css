@@ -2383,6 +2383,9 @@ select {
   margin-top: 12rem;
 }
 
+.mb-48 {
+  margin-bottom: 12rem
+}
 .mr-auto {
   margin-right: auto;
 }
@@ -2794,6 +2797,10 @@ select {
 
 .pl-4 {
   padding-left: 1rem;
+}
+
+.pl-5 {
+  padding-left: 1.25rem;
 }
 
 .pt-6 {
