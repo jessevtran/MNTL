@@ -26,7 +26,7 @@ export default function Emotional() {
               <p>
                 Emotional Wellness is the <a className="font-medium">awareness, understanding, and acceptance</a> of your emotions as well
                 as the ability to manage and persevere through challenges and change <a href="https://www.nationalcenterforemotionalwellness.org/" className="text-lightBlue-300 underline">
-                [1]</a>. For students, many of these challenges include stress and anxiety, and often lead to feeling overwhelmed.
+                  [1]</a>. For students, many of these challenges include stress and anxiety, and often lead to feeling overwhelmed.
                 Beginning to better understand how we react and respond to these challenges is a part of emotional wellness and can help us
                 attain emotional balance.
               </p>
@@ -75,7 +75,7 @@ export default function Emotional() {
           alt="..."
         />
       </section>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }

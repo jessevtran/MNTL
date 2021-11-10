@@ -9,7 +9,6 @@ export default function Career() {
     <>
       <IndexNavbar fixed />
 
-      {/* <section className="header relative pt-16 items-center flex h-screen max-h-860-px"> */}
       <section className="relative pt-48 items-center flex h-screen max-h-860-px mb-48">
         <div className="container mx-auto items-center flex flex-wrap">
           <div className="w-full md:w-8/12 lg:w-6/12 xl:w-6/12 px-12">
@@ -50,11 +49,11 @@ export default function Career() {
               </h3>
             </div>
             <div className="mb-6 pl-5 font-light text-blueGray-800">
-            <ul className="list-disc list-outside">
-              <li>Check out <a href="https://gmu.joinhandshake.com/login" className="text-lightBlue-300 underline">Handshake</a>, Mason's source for jobs, internships, and career fairs.</li>
-              <li><a href="https://masononline.gmu.edu/university-career-services/" className="text-lightBlue-300 underline">University Career Services</a></li>
-              <li><a href="https://introwellness.com/health/what-is-occupational-wellness/" className="text-lightBlue-300 underline">https://introwellness.com/health/what-is-occupational-wellness/</a></li>
-            </ul>
+              <ul className="list-disc list-outside">
+                <li>Check out <a href="https://gmu.joinhandshake.com/login" className="text-lightBlue-300 underline">Handshake</a>, Mason's source for jobs, internships, and career fairs.</li>
+                <li><a href="https://masononline.gmu.edu/university-career-services/" className="text-lightBlue-300 underline">University Career Services</a></li>
+                <li><a href="https://introwellness.com/health/what-is-occupational-wellness/" className="text-lightBlue-300 underline">https://introwellness.com/health/what-is-occupational-wellness/</a></li>
+              </ul>
             </div>
 
           </div>

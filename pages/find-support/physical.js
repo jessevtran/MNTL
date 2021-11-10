@@ -52,11 +52,11 @@ export default function Physical() {
             </div>
 
             <div className="mb-6 pl-5 font-light text-blueGray-800">
-            <ul className="list-disc list-outside">
-              <li> <a href="https://www.nih.gov/health-information/physical-wellness-toolkit" className="text-lightBlue-300 underline">National Institute of Health: Physical Wellness Toolkit</a></li>
-              <li> <a href="https://shs.gmu.edu/healthed/exercise/" className="text-lightBlue underline">Mason Student Health Services: Exercise</a></li>
-              <li> <a href="https://www.heart.org/en/healthy-living/fitness/fitness-basics/why-is-physical-activity-so-important-for-health-and-wellbeing" className="text-lightblue-300 underline">Heart.org: Why is Physical Activity So Important For Health and Well-Being?</a></li>
-            </ul>
+              <ul className="list-disc list-outside">
+                <li> <a href="https://www.nih.gov/health-information/physical-wellness-toolkit" className="text-lightBlue-300 underline">National Institute of Health: Physical Wellness Toolkit</a></li>
+                <li> <a href="https://shs.gmu.edu/healthed/exercise/" className="text-lightBlue underline">Mason Student Health Services: Exercise</a></li>
+                <li> <a href="https://www.heart.org/en/healthy-living/fitness/fitness-basics/why-is-physical-activity-so-important-for-health-and-wellbeing" className="text-lightblue-300 underline">Heart.org: Why is Physical Activity So Important For Health and Well-Being?</a></li>
+              </ul>
             </div>
 
           </div>
@@ -67,8 +67,6 @@ export default function Physical() {
           src="/img/pattern_nextjs.png"
           alt="..."
         />
-
-
 
       </section>
       <Footer />
