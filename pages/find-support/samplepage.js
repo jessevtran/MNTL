@@ -1,6 +1,6 @@
 import React from "react";
 
-import IndexNavbar from "components/Navbars/IndexNavBar.js";
+import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import Footer from "components/Footers/Footer.js";
 
 export default function SamplePage() {
