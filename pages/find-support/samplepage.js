@@ -6,7 +6,7 @@ import Footer from "components/Footers/Footer.js";
 export default function SamplePage() {
   return (
     <>
-      <IndexNavbar fixed/>
+      <IndexNavbar fixed />
 
       {/* BACKGROUND. DRAWS THE BLOCK ON TOP OF BACKGROUND*/}
       <section className="relative block h-500-px">
@@ -73,7 +73,7 @@ export default function SamplePage() {
                   </div>
                 </div>
               </div>
-
+              {/* END CONTENT */}
 
             </div>
           </div>

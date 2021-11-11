@@ -2384,8 +2384,9 @@ select {
 }
 
 .mb-48 {
-  margin-bottom: 12rem
+  margin-bottom: 12rem;
 }
+
 .mr-auto {
   margin-right: auto;
 }
@@ -3178,6 +3179,11 @@ select {
 .text-indigo-600 {
   --tw-text-opacity: 1;
   color: rgba(79, 70, 229, var(--tw-text-opacity));
+}
+
+.text-lightBlue-300 {
+  --tw-text-opacity: 1;
+  color: rgba(125, 211, 252, var(--tw-text-opacity));
 }
 
 .text-lightBlue-400 {
