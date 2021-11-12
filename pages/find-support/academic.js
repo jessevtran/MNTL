@@ -92,7 +92,7 @@ export default function Academic() {
                     <div className="text-base text-left font-light text-blueGray-800 pl-5">
                       <ul className="list-disc list-outside">
                         <li>The environment where you study matters. Where do you like to study? The library? At home? Coffee Shops? <a href="https://library.gmu.edu/locations/fenwick" className="text-lightBlue-300 underline">Fenwick</a> is
-                          open from 8:00AM - 11:00PM and most GMU campus buildings are open 24/7.</li>
+                          open from 8:00AM - 11:00PM and most GMU campus buildings are open from 7:30 a.m. to 11:00 p.m.</li>
                         <li>Find yourself behind on assignments? Try making a to-do list! or maintain a planner to keep track of all your assignments!</li>
                         <li>Meeting with your department advisors can be great for your four-year planning and academic concerns</li>
                         <li>Check out the <a href="https://stearnscenter.gmu.edu/knowledge-center/knowing-mason-students/student-support-resources-on-campus/" className="text-lightBlue-300 underline">university resources</a> for help on math, writing, and career services!</li>
