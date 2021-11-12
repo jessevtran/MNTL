@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
+import Footer from "components/Footers/Footer.js";
 
 export default function Career() {
   return (
@@ -12,9 +13,15 @@ export default function Career() {
         <div className="container mx-auto items-center flex flex-wrap">
           <div className="w-full md:w-8/12 lg:w-6/12 xl:w-6/12 px-4">
             <div className="pt-32 sm:pt-0">
+
               <h2 className="font-semibold text-4xl text-blueGray-600">
                 Career
               </h2>
+              <div className="pt-6">
+                <p>
+                  Career
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -24,6 +31,7 @@ export default function Career() {
           alt="..."
         />
       </section>
+      <Footer />
     </>
   );
 }
