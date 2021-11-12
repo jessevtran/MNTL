@@ -44,7 +44,7 @@ export default function Navbar(props) {
               <li className="flex items-center">Take the Quiz</li>
               <li className="flex items-center">Your Wellness Plan</li>
               <li className="flex items-center ">
-                <Link href="/crisis/crisis">
+                <Link href="/crisis">
                   <a>CRISIS</a>
                 </Link>
               </li>
