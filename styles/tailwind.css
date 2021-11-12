@@ -2071,6 +2071,10 @@ select {
   height: 6rem;
 }
 
+.h-64 {
+  height: 16rem;
+}
+
 .h-auto {
   height: auto;
 }
@@ -2157,6 +2161,10 @@ select {
   line-height: 1;
 }
 
+.leading-tight {
+  line-height: 1.25;
+}
+
 .leading-snug {
   line-height: 1.375;
 }
@@ -2224,6 +2232,11 @@ select {
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+}
+
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .my-4 {
@@ -2523,6 +2536,10 @@ select {
   object-fit: scale-down;
 }
 
+.object-center {
+  object-position: center;
+}
+
 .opacity-50 {
   opacity: 0.5;
 }
@@ -2754,6 +2771,11 @@ select {
   padding-bottom: 6rem;
 }
 
+.px-36 {
+  padding-left: 9rem;
+  padding-right: 9rem;
+}
+
 .py-40 {
   padding-top: 10rem;
   padding-bottom: 10rem;
@@ -2914,6 +2936,13 @@ select {
 .sticky {
   position: -webkit-sticky;
   position: sticky;
+}
+
+.inset-0 {
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
 }
 
 .top-0 {
@@ -3236,6 +3265,11 @@ select {
   color: rgba(63, 63, 70, var(--tw-text-opacity));
 }
 
+.text-gray-800 {
+  --tw-text-opacity: 1;
+  color: rgba(39, 39, 42, var(--tw-text-opacity));
+}
+
 .text-gray-900 {
   --tw-text-opacity: 1;
   color: rgba(24, 24, 27, var(--tw-text-opacity));
@@ -3541,6 +3575,10 @@ select {
 
 .w-10\/12 {
   width: 83.333333%;
+}
+
+.w-4\/12 {
+  width: 33.333333%;
 }
 
 .w-full {
@@ -3917,6 +3955,10 @@ select {
 
   .md\:w-64 {
     width: 16rem;
+  }
+
+  .md\:w-1\/2 {
+    width: 50%;
   }
 
   .md\:w-4\/12 {
