@@ -8,14 +8,15 @@ import Radio from "./Radio";
  * @param {*} question Question being asked.
  * @returns
  */
-export default function FormikRadioGroup({rangeOfAnswers, question, name}) {
+export default function FormikRadioGroup({props,rangeOfAnswers, question, name}) {
+  const {values} = props
   return (
-    <div class="md:flex-col md:justify-center md:justify-between md:p-2 drop-shadow-sm rounded-md">
-        <h6 class="text-xl font-bold text-center leading-normal mt-0 mb-2">{question}</h6>
+    <div class="relative py-4 px-4 flex items-center flex-col lg:flex-row  md:justify-between drop-shadow-sm rounded-md">
+        <h6 class="text-xl font-bold text-center lg:text-left leading-normal">{question}</h6>
       {/* START of LIST of RADIO OPTIONS*/}
-      <div className="flex flex-row px-4 space-x-4 justify-center">
+      <div className="relative flex flex-row px-4 space-x-4 justify-center">
         {[...Array(rangeOfAnswers).keys()].map((num) => (
-          <Radio name={name} value={(num++).toString} />
+          <Radio props={values} name={name} value={`${num++}`} />
         ))}
       </div>
       {/* END of LIST of RADIO OPTIONS*/}

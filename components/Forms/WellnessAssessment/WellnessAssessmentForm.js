@@ -5,6 +5,18 @@ import Radio from '../Radio';
 import { questionsDB } from "utils/db.js"
 import FormikRadioGroup from '../RadioGroup';
 
+const UpdateResults = () => {
+  // Grab values and submitForm from context
+  const { values } = useFormikContext();
+  React.useEffect(() => {
+    // Submit the form imperatively as an effect as soon as form values.token are 6 digits long
+    if (values.token.length === 6) {
+      submitForm();
+    }
+  }, [values]);
+  return null;
+};
+
 //TODO: DEVELOP AND TEST THE FOLLOWING COMPONENTS: Questions,... 
 /**
  * Wellness Assessment Form Wrapper Componenent
@@ -19,8 +31,16 @@ const WellnessAssessmentForm = () => {
 
 
   const initialValues = {
-    picked: '',
+    Emotional: 0,
+    Physical: 0,
+    Intellectual: 0,
+    Environmental: 0,
+    Occupational: 0,
+    Social: 0,
+    Spiritual: 0,
   };
+
+  
 
     //Validation Schemas for questions
     const RADIO_GROUP_VALIDATION_SCHEMA = Yup.string().required('Select an option')
@@ -41,12 +61,13 @@ return (
     //valudationSchema for the form
       validationSchema={ValidationSchema}
     >
-      
+      {({values}) => (
       <Form>
-        <div class="flex flex-col space-y-4 divide-y divide-solid">
+        <div class="relative flex flex-col divide-y divide-solid">
       {questionsDB.sections.map(section => (
         section.questions.map(question =>
         <FormikRadioGroup
+        props = {values}
         question={question}
         rangeOfAnswers={5}
         name={section.type}
@@ -54,9 +75,12 @@ return (
         ))
       )}
       </div>
-
-      <SubmissionButton/>
+      <div className="flex justify-center align-center">
+        <SubmissionButton/>
+      </div>
+      
       </Form>
+      )}
     </Formik>
 
 )
@@ -72,9 +96,10 @@ function submitHandler(){
 
 
 //TODO: ONCHANGE HANDLER
-function onChangeHandler(){
+const handleChange = event => {
 
-}
+  
+ }
 
 
 const SubmissionButton = () => {
