@@ -41,10 +41,14 @@ export default function Navbar(props) {
                 </Link>
                 {/* button animation hovering mouse over */}
               </li>
-              <li className="flex items-center">Take the Quiz</li>
+              <li className="flex items-center">
+              <Link href="/wellness-quiz/">
+                  <a>Take the Quiz</a>
+                </Link>
+              </li>
               <li className="flex items-center">Your Wellness Plan</li>
               <li className="flex items-center ">
-                <Link href="/crisis/crisis">
+                <Link href="/crisis">
                   <a>CRISIS</a>
                 </Link>
               </li>
