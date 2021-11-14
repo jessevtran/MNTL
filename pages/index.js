@@ -4,8 +4,7 @@ import Link from "next/link";
 
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import Footer from "components/Footers/Footer.js";
-import { urlObjectKeys } from "next/dist/next-server/lib/utils";
-import { Tooltip } from "chart.js";
+
 
 export default function Index() {
   return (

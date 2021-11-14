@@ -1,0 +1,1074 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders homepage unchanged 1`] = `
+Array [
+  <nav
+    className="top-0 fixed z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg bg-white shadow"
+  >
+    <div
+      className="container px-4 mx-auto flex flex-wrap items-center justify-between"
+    >
+      <div
+        className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start"
+      >
+        <a
+          className="text-blueGray-700 text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
+          href="#pablo"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        >
+          MNTL
+        </a>
+        <button
+          className="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+          onClick={[Function]}
+          type="button"
+        >
+          <i
+            className="fas fa-bars"
+          />
+        </button>
+      </div>
+      <div
+        className="lg:flex flex-grow items-center bg-white lg:bg-opacity-0 lg:shadow-none hidden"
+        id="example-navbar-warning"
+      >
+        <ul
+          className="flex flex-col space-x-3 lg:flex-row list-none lg:ml-auto"
+        >
+          <li
+            className="flex items-center"
+          >
+            <a
+              href="/find-support"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              Find Support
+            </a>
+          </li>
+          <li
+            className="flex items-center"
+          >
+            <a
+              href="/wellness-quiz"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              Take the Quiz
+            </a>
+          </li>
+          <li
+            className="flex items-center"
+          >
+            Your Wellness Plan
+          </li>
+          <li
+            className="flex items-center "
+          >
+            <a
+              href="/crisis"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              CRISIS
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>,
+  <main>
+    <div
+      className="relative pt-16 pb-32 flex content-center items-center justify-center min-h-screen-75"
+    >
+      <div
+        className="absolute top-0 w-full h-full bg-center bg-cover"
+        style={
+          Object {
+            "backgroundImage": "url('img/IMG_7694.jpg')",
+            "backgroundPosition": "center -300px",
+          }
+        }
+      >
+        <span
+          className="w-full h-full absolute opacity-50 bg-black"
+          id="blackOverlay"
+        />
+      </div>
+      <div
+        className="container relative mx-auto"
+      >
+        <div
+          className="items-center flex flex-wrap"
+        >
+          <div
+            className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center"
+          >
+            <div
+              className="pr-12"
+            >
+              <h1
+                className="text-amber-400 font-semibold text-5xl"
+              >
+                Welcome to MNTL.
+              </h1>
+              <p
+                className="mt-4 text-medium text-blueGray-200"
+              >
+                Our MNTL app will help build better habits and routines in your life. Our goal is to support users who are seeking resources and help by presenting advice and suggestions based on how they are feeling and their experiences. Start by checking in and take our quick assessment to help us recommend personalized resources and activities. Whether you want to increase energy, become more focused, find a community, or sleep better, we hope to be a toolkit that you can use to begin a journey to better mental health.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden h-16"
+        style={
+          Object {
+            "transform": "translateZ(0)",
+          }
+        }
+      >
+        <svg
+          className="absolute bottom-0 overflow-hidden"
+          preserveAspectRatio="none"
+          version="1.1"
+          viewBox="0 0 2560 100"
+          x="0"
+          xmlns="http://www.w3.org/2000/svg"
+          y="0"
+        >
+          <polygon
+            className="text-blueGray-200 fill-current"
+            points="2560 0 2560 100 0 100"
+          />
+        </svg>
+      </div>
+    </div>
+    <section
+      className="pb-20 bg-blueGray-200 -mt-24"
+    >
+      <div
+        className="container mx-auto px-4"
+      >
+        <div
+          className="flex flex-wrap"
+        >
+          <div
+            className="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center"
+          >
+            <div
+              className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
+            >
+              <div
+                className="px-4 py-5 flex-auto"
+              >
+                <div
+                  className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400"
+                >
+                  <i
+                    className="fas fa-rocket"
+                  />
+                </div>
+                <h6
+                  className="text-xl font-semibold"
+                >
+                  Explore
+                </h6>
+                <p
+                  className="mt-2 mb-4 text-blueGray-500"
+                >
+                  Navigate through our website using our navigation bar above.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            className="w-full md:w-4/12 px-4 text-center"
+          >
+            <div
+              className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
+            >
+              <div
+                className="px-4 py-5 flex-auto"
+              >
+                <div
+                  className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-lightBlue-400"
+                >
+                  <i
+                    className="fas fa-comment-dots"
+                  />
+                </div>
+                <h6
+                  className="text-xl font-semibold"
+                >
+                   About 
+                </h6>
+                <p
+                  className="mt-2 mb-4 text-blueGray-500"
+                >
+                  Find out who created this application by scrolling below.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            className="pt-6 w-full md:w-4/12 px-4 text-center"
+          >
+            <div
+              className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
+            >
+              <div
+                className="px-4 py-5 flex-auto"
+              >
+                <div
+                  className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-emerald-400"
+                >
+                  <i
+                    className="fas fa-fingerprint"
+                  />
+                </div>
+                <h6
+                  className="text-xl font-semibold"
+                >
+                  Confidentality
+                </h6>
+                <p
+                  className="mt-2 mb-4 text-blueGray-500"
+                >
+                  MNTL does not keep any information stored for our quiz.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div
+            className="w-full md:w-4/12 px-4 mr-auto ml-auto inline-block"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            <div
+              className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-700"
+            >
+              <img
+                alt="..."
+                className="w-full align-middle rounded-t-lg"
+                src="/img/empty_index_page.png"
+              />
+              <blockquote
+                className="relative p-8 mb-4"
+              >
+                <svg
+                  className="absolute left-0 w-full block h-95-px -top-94-px"
+                  preserveAspectRatio="none"
+                  viewBox="0 0 583 95"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <polygon
+                    className="text-blueGray-700 fill-current"
+                    points="-30,95 583,95 583,65"
+                  />
+                </svg>
+                <h4
+                  className="text-xl font-bold text-white"
+                >
+                  Find Support.
+                </h4>
+                <p
+                  className="text-md font-light mt-2 text-white"
+                >
+                  Our Find Support Page
+                </p>
+              </blockquote>
+            </div>
+          </div>
+          <div
+            className="w-full md:w-4/12 px-4 mr-auto ml-auto inline-block"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            <div
+              className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-blueGray-700"
+            >
+              <img
+                alt="..."
+                className="w-full align-middle rounded-t-lg"
+                src="/img/empty_index_page.png"
+              />
+              <blockquote
+                className="relative p-8 mb-4"
+              >
+                <svg
+                  className="absolute left-0 w-full block h-95-px -top-94-px"
+                  preserveAspectRatio="none"
+                  viewBox="0 0 583 95"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <polygon
+                    className="text-blueGray-700 fill-current"
+                    points="-30,95 583,95 583,65"
+                  />
+                </svg>
+                <h4
+                  className="text-xl font-bold text-white"
+                >
+                  Take Our Quiz.
+                </h4>
+                <p
+                  className="text-md font-light mt-2 text-white"
+                >
+                  Our Quiz
+                </p>
+              </blockquote>
+            </div>
+          </div>
+          <div
+            className="w-full md:w-4/12 px-4 mr-auto ml-auto inline-block"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            <div
+              className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-700"
+            >
+              <img
+                alt="..."
+                className="w-full align-middle rounded-t-lg"
+                src="/img/crisis_index_page.png"
+              />
+              <blockquote
+                className="relative p-8 mb-4"
+              >
+                <svg
+                  className="absolute left-0 w-full block h-95-px -top-94-px"
+                  preserveAspectRatio="none"
+                  viewBox="0 0 583 95"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <polygon
+                    className="text-blueGray-700 fill-current"
+                    points="-30,95 583,95 583,65"
+                  />
+                </svg>
+                <h4
+                  className="text-xl font-bold text-white"
+                >
+                  In case you are in a Crisis.
+                </h4>
+                <p
+                  className="text-md font-light mt-2 text-white"
+                >
+                  Your safety is important to us.
+                </p>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      className="relative py-20"
+    >
+      <div
+        className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20"
+        style={
+          Object {
+            "transform": "translateZ(0)",
+          }
+        }
+      >
+        <svg
+          className="absolute bottom-0 overflow-hidden"
+          preserveAspectRatio="none"
+          version="1.1"
+          viewBox="0 0 2560 100"
+          x="0"
+          xmlns="http://www.w3.org/2000/svg"
+          y="0"
+        >
+          <polygon
+            className="text-white fill-current"
+            points="2560 0 2560 100 0 100"
+          />
+        </svg>
+      </div>
+      <div
+        className="container mx-auto px-4"
+      >
+        <div
+          className="items-center flex flex-wrap"
+        >
+          <div
+            className="w-full md:w-4/12 ml-auto mr-auto px-4"
+          >
+            <img
+              alt="..."
+              className="max-w-full rounded-lg shadow-lg"
+              src="/img/IMG_7694.jpg"
+            />
+          </div>
+          <div
+            className="w-full md:w-5/12 ml-auto mr-auto px-4"
+          >
+            <div
+              className="md:pr-12"
+            >
+              <div
+                className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-blueGray-200"
+              >
+                <i
+                  className="fas fa-rocket text-xl"
+                />
+              </div>
+              <h3
+                className="text-3xl font-semibold"
+              >
+                About us
+              </h3>
+              <p
+                className="mt-4 text-lg leading-relaxed text-blueGray-500"
+              >
+                The 4 individuals who created this application:
+              </p>
+              <ul
+                className="list-none mt-6"
+              >
+                <li
+                  className="py-2"
+                >
+                  <div
+                    className="flex items-center"
+                  >
+                    <div>
+                      <span
+                        className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blueGray-500 bg-blueGray-100 mr-3"
+                      >
+                        <i />
+                      </span>
+                    </div>
+                    <div>
+                      <h4
+                        className="text-blueGray-500"
+                      >
+                        Jesse Tran
+                      </h4>
+                    </div>
+                  </div>
+                </li>
+                <li
+                  className="py-2"
+                >
+                  <div
+                    className="flex items-center"
+                  >
+                    <div>
+                      <span
+                        className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blueGray-500 bg-blueGray-100 mr-3"
+                      >
+                        <i />
+                      </span>
+                    </div>
+                    <div>
+                      <h4
+                        className="text-blueGray-500"
+                      >
+                        Nnamdi Ojibe
+                      </h4>
+                    </div>
+                  </div>
+                </li>
+                <li
+                  className="py-2"
+                >
+                  <div
+                    className="flex items-center"
+                  >
+                    <div>
+                      <span
+                        className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blueGray-500 bg-blueGray-100 mr-3"
+                      >
+                        <i />
+                      </span>
+                    </div>
+                    <div>
+                      <h4
+                        className="text-blueGray-500"
+                      >
+                        Sayed Fekrat
+                      </h4>
+                    </div>
+                  </div>
+                </li>
+                <li
+                  className="py-2"
+                >
+                  <div
+                    className="flex items-center"
+                  >
+                    <div>
+                      <span
+                        className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blueGray-500 bg-blueGray-100 mr-3"
+                      >
+                        <i />
+                      </span>
+                    </div>
+                    <div>
+                      <h4
+                        className="text-blueGray-500"
+                      >
+                        David Hoang
+                      </h4>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      className="pt-20 pb-48"
+    >
+      <div
+        className="container mx-auto px-4"
+      >
+        <div
+          className="flex flex-wrap justify-center text-center mb-24"
+        >
+          <div
+            className="w-full lg:w-6/12 px-4"
+          >
+            <h2
+              className="text-4xl font-semibold"
+            >
+              The Team
+            </h2>
+            <p
+              className="text-lg leading-relaxed m-4 text-blueGray-500"
+            >
+              MNTL team composition:
+            </p>
+          </div>
+        </div>
+        <div
+          className="flex flex-wrap"
+        >
+          <div
+            className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4"
+          >
+            <div
+              className="px-6"
+            >
+              <img
+                alt="..."
+                className="shadow-lg rounded-full mx-auto max-w-120-px"
+                src="/img/jesse_profile.jpg"
+              />
+              <div
+                className="pt-6 text-center"
+              >
+                <h5
+                  className="text-xl font-bold"
+                >
+                  Jesse Tran
+                </h5>
+                <p
+                  className="mt-1 text-sm text-blueGray-400 uppercase font-semibold"
+                >
+                  Technical Lead
+                </p>
+                <div
+                  className="mt-6"
+                >
+                  <button
+                    className="bg-lightBlue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    type="button"
+                  >
+                    <i
+                      className="fab fa-twitter"
+                    />
+                  </button>
+                  <button
+                    className="bg-lightBlue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    type="button"
+                  >
+                    <i
+                      className="fab fa-facebook-f"
+                    />
+                  </button>
+                  <button
+                    className="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    type="button"
+                  >
+                    <i
+                      className="fab fa-dribbble"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4"
+          >
+            <div
+              className="px-6"
+            >
+              <img
+                alt="..."
+                className="shadow-lg rounded-full mx-auto max-w-120-px"
+                src="/img/nnamdi_profile.jpg"
+              />
+              <div
+                className="pt-6 text-center"
+              >
+                <h5
+                  className="text-xl font-bold"
+                >
+                  Nnamd Ojibe
+                </h5>
+                <p
+                  className="mt-1 text-sm text-blueGray-400 uppercase font-semibold"
+                >
+                  Team Leader
+                </p>
+                <div
+                  className="mt-6"
+                >
+                  <button
+                    className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    type="button"
+                  >
+                    <i
+                      className="fab fa-google"
+                    />
+                  </button>
+                  <button
+                    className="bg-lightBlue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    type="button"
+                  >
+                    <i
+                      className="fab fa-facebook-f"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4"
+          >
+            <div
+              className="px-6"
+            >
+              <img
+                alt="..."
+                className="shadow-lg rounded-full mx-auto max-w-120-px"
+                src="/img/sayed_profile.jpg"
+              />
+              <div
+                className="pt-6 text-center"
+              >
+                <h5
+                  className="text-xl font-bold"
+                >
+                  Sayed Fekrat
+                </h5>
+                <p
+                  className="mt-1 text-sm text-blueGray-400 uppercase font-semibold"
+                >
+                  Project Manager
+                </p>
+                <div
+                  className="mt-6"
+                >
+                  <button
+                    className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    type="button"
+                  >
+                    <i
+                      className="fab fa-google"
+                    />
+                  </button>
+                  <button
+                    className="bg-lightBlue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    type="button"
+                  >
+                    <i
+                      className="fab fa-twitter"
+                    />
+                  </button>
+                  <button
+                    className="bg-blueGray-700 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    type="button"
+                  >
+                    <i
+                      className="fab fa-instagram"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4"
+          >
+            <div
+              className="px-6"
+            >
+              <img
+                alt="..."
+                className="shadow-lg rounded-full mx-auto max-w-120-px"
+                src="/img/david_profile.jpg"
+              />
+              <div
+                className="pt-6 text-center"
+              >
+                <h5
+                  className="text-xl font-bold"
+                >
+                  David Hoang
+                </h5>
+                <p
+                  className="mt-1 text-sm text-blueGray-400 uppercase font-semibold"
+                >
+                  QA
+                </p>
+                <div
+                  className="mt-6"
+                >
+                  <button
+                    className="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    type="button"
+                  >
+                    <i
+                      className="fab fa-dribbble"
+                    />
+                  </button>
+                  <button
+                    className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    type="button"
+                  >
+                    <i
+                      className="fab fa-google"
+                    />
+                  </button>
+                  <button
+                    className="bg-lightBlue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    type="button"
+                  >
+                    <i
+                      className="fab fa-twitter"
+                    />
+                  </button>
+                  <button
+                    className="bg-blueGray-700 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    type="button"
+                  >
+                    <i
+                      className="fab fa-instagram"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      className="pb-20 relative block bg-blueGray-800"
+    >
+      <div
+        className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20"
+        style={
+          Object {
+            "transform": "translateZ(0)",
+          }
+        }
+      >
+        <svg
+          className="absolute bottom-0 overflow-hidden"
+          preserveAspectRatio="none"
+          version="1.1"
+          viewBox="0 0 2560 100"
+          x="0"
+          xmlns="http://www.w3.org/2000/svg"
+          y="0"
+        >
+          <polygon
+            className="text-blueGray-800 fill-current"
+            points="2560 0 2560 100 0 100"
+          />
+        </svg>
+      </div>
+      <div
+        className="container mx-auto px-4 lg:pt-24 lg:pb-64"
+      >
+        <div
+          className="flex flex-wrap text-center justify-center"
+        >
+          <div
+            className="w-full lg:w-6/12 px-4"
+          >
+            <h2
+              className="text-4xl font-semibold text-white"
+            >
+              Recommended Articles from the Find Support Page
+            </h2>
+            <p
+              className="text-lg leading-relaxed mt-4 mb-4 text-blueGray-400"
+            >
+              Explore helpful articles that could benefit you.
+            </p>
+          </div>
+        </div>
+        <div
+          className="card"
+          style={
+            Object {
+              "margin": "170px 0 100px 150px",
+            }
+          }
+        >
+          <div
+            className="relative flex flex-row min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-700"
+          >
+            <img
+              alt="..."
+              className="w-full align-middle rounded-t-lg"
+              src=""
+              style={
+                Object {
+                  "height": "200px",
+                  "width": "300px",
+                }
+              }
+            />
+            <blockquote
+              className="relative p-4 mb-3"
+            >
+              <h4
+                className="text-l font-bold text-white"
+              >
+                Article 1
+              </h4>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>,
+  <footer
+    className="relative bg-blueGray-200 pt-8 pb-6"
+  >
+    <div
+      className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20"
+      style={
+        Object {
+          "transform": "translateZ(0)",
+        }
+      }
+    >
+      <svg
+        className="absolute bottom-0 overflow-hidden"
+        preserveAspectRatio="none"
+        version="1.1"
+        viewBox="0 0 2560 100"
+        x="0"
+        xmlns="http://www.w3.org/2000/svg"
+        y="0"
+      >
+        <polygon
+          className="text-blueGray-200 fill-current"
+          points="2560 0 2560 100 0 100"
+        />
+      </svg>
+    </div>
+    <div
+      className="container mx-auto px-4"
+    >
+      <div
+        className="flex flex-wrap text-center lg:text-left"
+      >
+        <div
+          className="w-full lg:w-6/12 px-4"
+        >
+          <h4
+            className="text-3xl font-semibold"
+          >
+            Let's keep in touch!
+          </h4>
+          <h5
+            className="text-lg mt-0 mb-2 text-blueGray-600"
+          >
+            Find us on any of these platforms, we respond 1-2 business days.
+          </h5>
+          <div
+            className="mt-6 lg:mb-0 mb-6"
+          >
+            <button
+              className="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+              type="button"
+            >
+              <i
+                className="fab fa-twitter"
+              />
+            </button>
+            <button
+              className="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+              type="button"
+            >
+              <i
+                className="fab fa-facebook-square"
+              />
+            </button>
+            <button
+              className="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+              type="button"
+            >
+              <i
+                className="fab fa-dribbble"
+              />
+            </button>
+            <button
+              className="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+              type="button"
+            >
+              <i
+                className="fab fa-github"
+              />
+            </button>
+          </div>
+        </div>
+        <div
+          className="w-full lg:w-6/12 px-4"
+        >
+          <div
+            className="flex flex-wrap items-top mb-6"
+          >
+            <div
+              className="w-full lg:w-4/12 px-4 ml-auto"
+            >
+              <span
+                className="block uppercase text-blueGray-500 text-sm font-semibold mb-2"
+              >
+                Useful Links
+              </span>
+              <ul
+                className="list-unstyled"
+              >
+                <li>
+                  <a
+                    className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                    href="https://www.creative-tim.com/presentation?ref=nnjs-footer"
+                  >
+                    About Us
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                    href="https://blog.creative-tim.com?ref=nnjs-footer"
+                  >
+                    Blog
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                    href="https://www.github.com/creativetimofficial?ref=nnjs-footer"
+                  >
+                    Github
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                    href="https://www.creative-tim.com/bootstrap-themes/free?ref=nnjs-footer"
+                  >
+                    Free Products
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div
+              className="w-full lg:w-4/12 px-4"
+            >
+              <span
+                className="block uppercase text-blueGray-500 text-sm font-semibold mb-2"
+              >
+                Other Resources
+              </span>
+              <ul
+                className="list-unstyled"
+              >
+                <li>
+                  <a
+                    className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                    href="https://github.com/creativetimofficial/notus-nextjs/blob/main/LICENSE.md?ref=nnjs-footer"
+                  >
+                    MIT License
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                    href="https://creative-tim.com/terms?ref=nnjs-footer"
+                  >
+                    Terms & Conditions
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                    href="https://creative-tim.com/privacy?ref=nnjs-footer"
+                  >
+                    Privacy Policy
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                    href="https://creative-tim.com/contact-us?ref=nnjs-footer"
+                  >
+                    Contact Us
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr
+        className="my-6 border-blueGray-300"
+      />
+      <div
+        className="flex flex-wrap items-center md:justify-between justify-center"
+      >
+        <div
+          className="w-full md:w-4/12 px-4 mx-auto text-center"
+        >
+          <div
+            className="text-sm text-blueGray-500 font-semibold py-1"
+          >
+            Copyright © 
+            2021
+             Notus NextJS by
+             
+            <a
+              className="text-blueGray-500 hover:text-blueGray-800"
+              href="https://www.creative-tim.com?ref=nnjs-footer"
+            >
+              Creative Tim
+            </a>
+            .
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>,
+]
+`;
