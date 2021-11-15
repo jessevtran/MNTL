@@ -29,7 +29,7 @@ export default function findsupport() {
           <div className="container p-8 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-5">
             {/* CARD 1 */}
             <a href="/find-support/physical">
-              <div className="rounded overflow-hidden shadow-2xl">
+              <div className="rounded overflow-hidden bg-blueGray-50 shadow-lg hover:shadow-2xl ease-linear transition-all duration-150">
                 {/* IMAGE */}
                 <img className="inset-0 h-full w-full object-cover object-center"
                   src="https://images.pexels.com/photos/2775196/pexels-photo-2775196.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
@@ -49,7 +49,7 @@ export default function findsupport() {
 
             {/* CARD 2 */}
             <a href="/find-support/social">
-              <div className="rounded overflow-hidden shadow-2xl">
+              <div className="rounded overflow-hidden bg-blueGray-50 shadow-lg hover:shadow-2xl ease-linear transition-all duration-150">
                 {/* IMAGE */}
                 <img className="inset-0 h-full w-full object-cover object-center"
                   src="https://images.pexels.com/photos/2559941/pexels-photo-2559941.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
@@ -69,7 +69,7 @@ export default function findsupport() {
 
             {/* CARD 3 */}
             <a href="/find-support/emotional">
-              <div className="rounded overflow-hidden shadow-2xl">
+              <div className="rounded overflow-hidden bg-blueGray-50 shadow-lg hover:shadow-2xl ease-linear transition-all duration-150">
                 {/* IMAGE */}
                 <img className="inset-0 h-full w-full object-cover object-center"
                   src="https://images.pexels.com/photos/167699/pexels-photo-167699.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
@@ -89,7 +89,7 @@ export default function findsupport() {
 
             {/* CARD 4 */}
             <a href="/find-support/academic">
-              <div className="rounded overflow-hidden shadow-2xl">
+              <div className="rounded overflow-hidden bg-blueGray-50 shadow-lg hover:shadow-2xl ease-linear transition-all duration-150">
                 {/* IMAGE */}
                 <img className="inset-0 h-full w-full object-cover object-center"
                   src="https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
@@ -109,7 +109,7 @@ export default function findsupport() {
 
             {/* CARD 5 */}
             <a href="/find-support/career">
-              <div className="rounded overflow-hidden shadow-2xl">
+              <div className="rounded overflow-hidden bg-blueGray-50 shadow-lg hover:shadow-2xl ease-linear transition-all duration-150">
                 {/* IMAGE */}
                 <img className="inset-0 h-full w-full object-cover object-center"
                   src="https://images.pexels.com/photos/572897/pexels-photo-572897.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
