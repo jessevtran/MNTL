@@ -10,9 +10,11 @@ export default function findsupport() {
     <>
       <IndexNavbar fixed />
 
-      <section className="header relative m-24 pt-48 items-center flex h-screen max-h-860-px">
+      <section className="header relative m-24 py-12 items-center flex">
         <div className="container mx-auto items-center flex flex-wrap">
           <div className="w-full md:w-8/12 lg:w-6/12 xl:w-6/12 px-4">
+
+            {/* HEADER */}
             <div className="pt-10 sm:pt-0">
               <h2 className="font-semibold text-6xl text-blueGray-600 pt-20 pl-5">
                 Find Support
@@ -21,17 +23,16 @@ export default function findsupport() {
                 Click on the cards below to explore each topic.
               </p>
             </div>
-
           </div>
-          {/* CONTAINER FOR EACH CARD */}
-          <div className="container p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
 
+          {/* CONTAINER FOR EACH CARD */}
+          <div className="container p-8 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-5">
             {/* CARD 1 */}
             <a href="/find-support/physical">
               <div className="rounded overflow-hidden shadow-2xl">
                 {/* IMAGE */}
                 <img className="inset-0 h-full w-full object-cover object-center"
-                  src="https://images.unsplash.com/photo-1499336315816-097655dcfbda?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2710&q=80"
+                  src="https://images.pexels.com/photos/2775196/pexels-photo-2775196.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
                   style={{ height: "200px", width: "500px" }}
                 />
                 {/* CONTENT */}
@@ -40,18 +41,18 @@ export default function findsupport() {
                     Physical Wellness
                   </h5>
                   <p className="text-gray-700 text-base">
-                    Learn more here.
+                    Recognizing the need for physical activity, healthy foods, and sleep.
                   </p>
                 </div>
               </div>
             </a> {/* END CARD 1 */}
 
-            {/* CARD 1 */}
+            {/* CARD 2 */}
             <a href="/find-support/social">
               <div className="rounded overflow-hidden shadow-2xl">
                 {/* IMAGE */}
                 <img className="inset-0 h-full w-full object-cover object-center"
-                  src="https://images.unsplash.com/photo-1499336315816-097655dcfbda?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2710&q=80"
+                  src="https://images.pexels.com/photos/2559941/pexels-photo-2559941.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
                   style={{ height: "200px", width: "500px" }}
                 />
                 {/* CONTENT */}
@@ -60,18 +61,18 @@ export default function findsupport() {
                     Social Wellness
                   </h5>
                   <p className="text-gray-700 text-base">
-                    Learn more here.
+                    Developing a sense of connection, belonging, and a well-developed support system.
                   </p>
                 </div>
               </div>
-            </a> {/* END CARD 1 */}
+            </a> {/* END CARD 2 */}
 
-            {/* CARD 1 */}
+            {/* CARD 3 */}
             <a href="/find-support/emotional">
               <div className="rounded overflow-hidden shadow-2xl">
                 {/* IMAGE */}
                 <img className="inset-0 h-full w-full object-cover object-center"
-                  src="https://images.unsplash.com/photo-1499336315816-097655dcfbda?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2710&q=80"
+                  src="https://images.pexels.com/photos/167699/pexels-photo-167699.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
                   style={{ height: "200px", width: "500px" }}
                 />
                 {/* CONTENT */}
@@ -80,18 +81,18 @@ export default function findsupport() {
                     Emotional Wellness
                   </h5>
                   <p className="text-gray-700 text-base">
-                    Learn more here.
+                    Coping effectively, having a sense of positive self-regard, and creating satisfying relationships.
                   </p>
                 </div>
               </div>
-            </a> {/* END CARD 1 */}
+            </a> {/* END CARD 3 */}
 
-            {/* CARD 1 */}
+            {/* CARD 4 */}
             <a href="/find-support/academic">
               <div className="rounded overflow-hidden shadow-2xl">
                 {/* IMAGE */}
                 <img className="inset-0 h-full w-full object-cover object-center"
-                  src="https://images.unsplash.com/photo-1499336315816-097655dcfbda?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2710&q=80"
+                  src="https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
                   style={{ height: "200px", width: "500px" }}
                 />
                 {/* CONTENT */}
@@ -100,18 +101,18 @@ export default function findsupport() {
                     Academic Wellness
                   </h5>
                   <p className="text-gray-700 text-base">
-                    Learn more here.
+                    Recognizing ways to expand knowledge and skills through intellectually stimulating activities.
                   </p>
                 </div>
               </div>
-            </a> {/* END CARD 1 */}
+            </a> {/* END CARD 4 */}
 
-            {/* CARD 1 */}
+            {/* CARD 5 */}
             <a href="/find-support/career">
               <div className="rounded overflow-hidden shadow-2xl">
                 {/* IMAGE */}
                 <img className="inset-0 h-full w-full object-cover object-center"
-                  src="https://images.unsplash.com/photo-1499336315816-097655dcfbda?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2710&q=80"
+                  src="https://images.pexels.com/photos/572897/pexels-photo-572897.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
                   style={{ height: "200px", width: "500px" }}
                 />
                 {/* CONTENT */}
@@ -120,12 +121,11 @@ export default function findsupport() {
                     Career Wellness
                   </h5>
                   <p className="text-gray-700 text-base">
-                    Learn more here.
+                    Personal satisfaction and enrichment from one’s work.
                   </p>
                 </div>
               </div>
-            </a> {/* END CARD 1 */}
-
+            </a> {/* END CARD 5 */}
           </div> {/* END CONTAINER FOR CARDS */}
         </div>
       </section>
