@@ -16,7 +16,7 @@ export default function Index() {
             className="absolute top-0 w-full h-full bg-center bg-cover"
             style={{
               backgroundImage:
-                "url('img/IMG_7694.jpg')",
+                "url('img/bg_index_page.png')",
               backgroundPosition:
                 "center -300px",
             }}
@@ -175,7 +175,7 @@ export default function Index() {
               </div>
               </Link>
 
-              <Link href="/crisis/crisis">
+              <Link href="/crisis">
               <div className="w-full md:w-4/12 px-4 mr-auto ml-auto inline-block">
                 <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-700">
                   <img
@@ -196,10 +196,10 @@ export default function Index() {
                       ></polygon>
                     </svg>
                     <h4 className="text-xl font-bold text-white">
-                      In case you are in a Crisis.
+                      In a CRISIS?
                     </h4>
                     <p className="text-md font-light mt-2 text-white">
-                      Your safety is important to us.
+                      Your safety is important to us. Find information on this page if you're in a emergency situation.
                     </p>
                   </blockquote>
                 </div>
@@ -336,26 +336,7 @@ export default function Index() {
                     <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
                       Technical Lead
                     </p>
-                    <div className="mt-6">
-                      <button
-                        className="bg-lightBlue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-twitter"></i>
-                      </button>
-                      <button
-                        className="bg-lightBlue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-facebook-f"></i>
-                      </button>
-                      <button
-                        className="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-dribbble"></i>
-                      </button>
-                    </div>
+                    
                   </div>
                 </div>
               </div>
@@ -371,20 +352,7 @@ export default function Index() {
                     <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
                       Team Leader
                     </p>
-                    <div className="mt-6">
-                      <button
-                        className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-google"></i>
-                      </button>
-                      <button
-                        className="bg-lightBlue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-facebook-f"></i>
-                      </button>
-                    </div>
+                    
                   </div>
                 </div>
               </div>
@@ -400,26 +368,7 @@ export default function Index() {
                     <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
                       Project Manager
                     </p>
-                    <div className="mt-6">
-                      <button
-                        className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-google"></i>
-                      </button>
-                      <button
-                        className="bg-lightBlue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-twitter"></i>
-                      </button>
-                      <button
-                        className="bg-blueGray-700 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-instagram"></i>
-                      </button>
-                    </div>
+                    
                   </div>
                 </div>
               </div>
@@ -435,32 +384,7 @@ export default function Index() {
                     <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
                       QA
                     </p>
-                    <div className="mt-6">
-                      <button
-                        className="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-dribbble"></i>
-                      </button>
-                      <button
-                        className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-google"></i>
-                      </button>
-                      <button
-                        className="bg-lightBlue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-twitter"></i>
-                      </button>
-                      <button
-                        className="bg-blueGray-700 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-instagram"></i>
-                      </button>
-                    </div>
+                    
                   </div>
                 </div>
               </div>
