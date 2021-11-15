@@ -34,11 +34,11 @@ export default function Index() {
                     Welcome to MNTL.
                   </h1>
                   <p className="mt-4 text-medium text-blueGray-200">
-                  Our MNTL app will help build better habits and routines in your life. Our goal is to support users who are seeking resources 
-                  and help by presenting advice and suggestions based on how they are feeling and their experiences. Start by checking in and 
-                  take our quick assessment to help us recommend personalized resources and activities. Whether you want to increase energy, 
-                  become more focused, find a community, or sleep better, we hope to be a toolkit that you can use to begin a journey to better 
-                  mental health.
+                    Our MNTL app will help build better habits and routines in your life. Our goal is to support users who are seeking resources
+                    and help by presenting advice and suggestions based on how they are feeling and their experiences. Start by checking in and
+                    take our quick assessment to help us recommend personalized resources and activities. Whether you want to increase energy,
+                    become more focused, find a community, or sleep better, we hope to be a toolkit that you can use to begin a journey to better
+                    mental health.
                   </p>
                 </div>
               </div>
@@ -112,96 +112,96 @@ export default function Index() {
             </div>
             <div>
               <Link href="/find-support/">
-              <div className="w-full md:w-4/12 px-4 mr-auto ml-auto inline-block">
-                <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-700">
-                  <img
-                    alt="..."
-                    src="/img/empty_index_page.png"
-                    className="w-full align-middle rounded-t-lg"
-                  />
-                  <blockquote className="relative p-8 mb-4">
-                    <svg
-                      preserveAspectRatio="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 583 95"
-                      className="absolute left-0 w-full block h-95-px -top-94-px"
-                    >
-                      <polygon
-                        points="-30,95 583,95 583,65"
-                        className="text-blueGray-700 fill-current"
-                      ></polygon>
-                    </svg>
-                    <h4 className="text-xl font-bold text-white">
-                      Find Support.
-                    </h4>
-                    <p className="text-md font-light mt-2 text-white">
-                      Our Find Support Page
-                    </p>
-                  </blockquote>
+                <div className="w-full md:w-4/12 px-4 mr-auto ml-auto inline-block">
+                  <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-700">
+                    <img
+                      alt="..."
+                      src="/img/empty_index_page.png"
+                      className="w-full align-middle rounded-t-lg"
+                    />
+                    <blockquote className="relative p-8 mb-4">
+                      <svg
+                        preserveAspectRatio="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 583 95"
+                        className="absolute left-0 w-full block h-95-px -top-94-px"
+                      >
+                        <polygon
+                          points="-30,95 583,95 583,65"
+                          className="text-blueGray-700 fill-current"
+                        ></polygon>
+                      </svg>
+                      <h4 className="text-xl font-bold text-white">
+                        Find Support.
+                      </h4>
+                      <p className="text-md font-light mt-2 text-white">
+                        Our Find Support Page
+                      </p>
+                    </blockquote>
+                  </div>
                 </div>
-              </div>
-              </Link>
-              
-              <Link href="/wellness-quiz/">
-              <div className="w-full md:w-4/12 px-4 mr-auto ml-auto inline-block">
-                <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-blueGray-700">
-                  <img
-                    alt="..."
-                    src="/img/empty_index_page.png"
-                    className="w-full align-middle rounded-t-lg"
-                  />
-                  <blockquote className="relative p-8 mb-4">
-                    <svg
-                      preserveAspectRatio="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 583 95"
-                      className="absolute left-0 w-full block h-95-px -top-94-px"
-                    >
-                      <polygon
-                        points="-30,95 583,95 583,65"
-                        className="text-blueGray-700 fill-current"
-                      ></polygon>
-                    </svg>
-                    <h4 className="text-xl font-bold text-white">
-                      Take Our Quiz.
-                    </h4>
-                    <p className="text-md font-light mt-2 text-white">
-                      Our Quiz 
-                    </p>
-                  </blockquote>
-                </div>
-              </div>
               </Link>
 
-              <Link href="/crisis/crisis">
-              <div className="w-full md:w-4/12 px-4 mr-auto ml-auto inline-block">
-                <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-700">
-                  <img
-                    alt="..."
-                    src="/img/crisis_index_page.png"
-                    className="w-full align-middle rounded-t-lg"
-                  />
-                  <blockquote className="relative p-8 mb-4">
-                    <svg
-                      preserveAspectRatio="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 583 95"
-                      className="absolute left-0 w-full block h-95-px -top-94-px"
-                    >
-                      <polygon
-                        points="-30,95 583,95 583,65"
-                        className="text-blueGray-700 fill-current"
-                      ></polygon>
-                    </svg>
-                    <h4 className="text-xl font-bold text-white">
-                      In case you are in a Crisis.
-                    </h4>
-                    <p className="text-md font-light mt-2 text-white">
-                      Your safety is important to us.
-                    </p>
-                  </blockquote>
+              <Link href="/wellness-quiz/">
+                <div className="w-full md:w-4/12 px-4 mr-auto ml-auto inline-block">
+                  <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-blueGray-700">
+                    <img
+                      alt="..."
+                      src="/img/empty_index_page.png"
+                      className="w-full align-middle rounded-t-lg"
+                    />
+                    <blockquote className="relative p-8 mb-4">
+                      <svg
+                        preserveAspectRatio="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 583 95"
+                        className="absolute left-0 w-full block h-95-px -top-94-px"
+                      >
+                        <polygon
+                          points="-30,95 583,95 583,65"
+                          className="text-blueGray-700 fill-current"
+                        ></polygon>
+                      </svg>
+                      <h4 className="text-xl font-bold text-white">
+                        Take Our Quiz.
+                      </h4>
+                      <p className="text-md font-light mt-2 text-white">
+                        Our Quiz
+                      </p>
+                    </blockquote>
+                  </div>
                 </div>
-              </div>
+              </Link>
+
+              <Link href="/crisis/">
+                <div className="w-full md:w-4/12 px-4 mr-auto ml-auto inline-block">
+                  <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-700">
+                    <img
+                      alt="..."
+                      src="/img/crisis_index_page.png"
+                      className="w-full align-middle rounded-t-lg"
+                    />
+                    <blockquote className="relative p-8 mb-4">
+                      <svg
+                        preserveAspectRatio="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 583 95"
+                        className="absolute left-0 w-full block h-95-px -top-94-px"
+                      >
+                        <polygon
+                          points="-30,95 583,95 583,65"
+                          className="text-blueGray-700 fill-current"
+                        ></polygon>
+                      </svg>
+                      <h4 className="text-xl font-bold text-white">
+                        In case you are in a Crisis.
+                      </h4>
+                      <p className="text-md font-light mt-2 text-white">
+                        Your safety is important to us.
+                      </p>
+                    </blockquote>
+                  </div>
+                </div>
               </Link>
 
             </div>
@@ -499,26 +499,26 @@ export default function Index() {
               </div>
             </div>
 
-              <div className="card" style={{ margin: "170px 0 100px 150px" }}>
-                <div className="relative flex flex-row min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-700">
-                  <img
-                    alt="..."
-                    src=""
-                    className="w-full align-middle rounded-t-lg"
-                    style={{ height: "200px", width: "300px" }}
-                  />
-                  <blockquote className="relative p-4 mb-3">
-                    <h4 className="text-l font-bold text-white">
-                      Article 1
-                    </h4>
-                  </blockquote>
-                </div>
+            <div className="card" style={{ margin: "170px 0 100px 150px" }}>
+              <div className="relative flex flex-row min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-700">
+                <img
+                  alt="..."
+                  src=""
+                  className="w-full align-middle rounded-t-lg"
+                  style={{ height: "200px", width: "300px" }}
+                />
+                <blockquote className="relative p-4 mb-3">
+                  <h4 className="text-l font-bold text-white">
+                    Article 1
+                  </h4>
+                </blockquote>
               </div>
-              
+            </div>
+
           </div>
         </section>
-        
-      
+
+
       </main>
       <Footer />
     </>
