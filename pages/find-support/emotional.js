@@ -15,7 +15,7 @@ export default function Emotional() {
           className="absolute top-0 w-full h-full bg-center bg-cover"
           style={{
             backgroundImage:
-              "url('https://images.unsplash.com/photo-1499336315816-097655dcfbda?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2710&q=80')",
+              "url('https://images.pexels.com/photos/167699/pexels-photo-167699.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')",
           }}
         >
           {/* Draws the overlay on top of background image. Note opacity tag */}
@@ -47,7 +47,7 @@ export default function Emotional() {
 
       {/* MAIN CONTENT CONTAINER */}
       <section className="relative py-12 bg-blueGray-200">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 mb-24">
           <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg -mt-64">
             <div className="px-6">
 
@@ -108,7 +108,7 @@ export default function Emotional() {
               {/* END CONTENT */}
 
               {/* <!-- container for all cards --> */}
-              <div className="container w-100 mx-auto flex flex-col px-36 mb-12">
+              <div className="container w-100 mx-auto flex flex-col px-auto mb-12 lg:w-9/12">
 
                 {/* START CARD 1 */}
                 <a href="https://www.nih.gov/health-information/emotional-wellness-toolkit">

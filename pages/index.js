@@ -4,8 +4,7 @@ import Link from "next/link";
 
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import Footer from "components/Footers/Footer.js";
-import { urlObjectKeys } from "next/dist/next-server/lib/utils";
-import { Tooltip } from "chart.js";
+
 
 export default function Index() {
   return (
@@ -17,30 +16,30 @@ export default function Index() {
             className="absolute top-0 w-full h-full bg-center bg-cover"
             style={{
               backgroundImage:
-                "url('img/IMG_7694.jpg')",
+                "url('img/bg_index_page.png')",
               backgroundPosition:
                 "center -300px",
             }}
           >
             <span
               id="blackOverlay"
-              className="w-full h-full absolute opacity-50 bg-black"
+              className="w-full h-full absolute opacity-75 bg-black"
             ></span>
           </div>
           <div className="container relative mx-auto">
             <div className="items-center flex flex-wrap">
-              <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+              <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center mt-0 mb-4">
                 <div className="pr-12">
-                  <h1 className="text-amber-400 font-semibold text-5xl">
-                    Welcome to MNTL.
+                  <h1 className="text-blueGray-100 font-semibold text-5xl">
+                    Welcome to MNTL
                   </h1>
-                  <p className="mt-4 text-medium text-blueGray-200">
-                  Our MNTL app will help build better habits and routines in your life. Our goal is to support users who are seeking resources 
-                  and help by presenting advice and suggestions based on how they are feeling and their experiences. Start by checking in and 
-                  take our quick assessment to help us recommend personalized resources and activities. Whether you want to increase energy, 
-                  become more focused, find a community, or sleep better, we hope to be a toolkit that you can use to begin a journey to better 
-                  mental health.
-                  </p>
+
+                  <h1 className="text-blueGray-100 font-semibold text-1xl mt-4 mb-10">
+                    Build better habits and routines with the MNTL App!
+                  </h1>
+                  <h4 className="text-3xl font-normal leading-normal mt-10 mb-0 text-blueGray-200 m-10">
+                    Take the quiz to find the best resources, routines, and communities for you to improve your mental and physical health!
+                  </h4>
                 </div>
               </div>
             </div>
@@ -111,99 +110,100 @@ export default function Index() {
                 </div>
               </div>
             </div>
-            <div>
-              <Link href="/find-support/">
-              <div className="w-full md:w-4/12 px-4 mr-auto ml-auto inline-block">
-                <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-700">
-                  <img
-                    alt="..."
-                    src="/img/empty_index_page.png"
-                    className="w-full align-middle rounded-t-lg"
-                  />
-                  <blockquote className="relative p-8 mb-4">
-                    <svg
-                      preserveAspectRatio="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 583 95"
-                      className="absolute left-0 w-full block h-95-px -top-94-px"
-                    >
-                      <polygon
-                        points="-30,95 583,95 583,65"
-                        className="text-blueGray-700 fill-current"
-                      ></polygon>
-                    </svg>
-                    <h4 className="text-xl font-bold text-white">
-                      Find Support.
-                    </h4>
-                    <p className="text-md font-light mt-2 text-white">
-                      Our Find Support Page
-                    </p>
-                  </blockquote>
-                </div>
-              </div>
-              </Link>
-              
-              <Link href="/wellness-quiz/">
-              <div className="w-full md:w-4/12 px-4 mr-auto ml-auto inline-block">
-                <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-blueGray-700">
-                  <img
-                    alt="..."
-                    src="/img/empty_index_page.png"
-                    className="w-full align-middle rounded-t-lg"
-                  />
-                  <blockquote className="relative p-8 mb-4">
-                    <svg
-                      preserveAspectRatio="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 583 95"
-                      className="absolute left-0 w-full block h-95-px -top-94-px"
-                    >
-                      <polygon
-                        points="-30,95 583,95 583,65"
-                        className="text-blueGray-700 fill-current"
-                      ></polygon>
-                    </svg>
-                    <h4 className="text-xl font-bold text-white">
-                      Take Our Quiz.
-                    </h4>
-                    <p className="text-md font-light mt-2 text-white">
-                      Our Quiz 
-                    </p>
-                  </blockquote>
-                </div>
-              </div>
-              </Link>
 
-              <Link href="/crisis/crisis">
-              <div className="w-full md:w-4/12 px-4 mr-auto ml-auto inline-block">
-                <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-700">
-                  <img
-                    alt="..."
-                    src="/img/crisis_index_page.png"
-                    className="w-full align-middle rounded-t-lg"
-                  />
-                  <blockquote className="relative p-8 mb-4">
-                    <svg
-                      preserveAspectRatio="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 583 95"
-                      className="absolute left-0 w-full block h-95-px -top-94-px"
-                    >
-                      <polygon
-                        points="-30,95 583,95 583,65"
-                        className="text-blueGray-700 fill-current"
-                      ></polygon>
-                    </svg>
-                    <h4 className="text-xl font-bold text-white">
-                      In case you are in a Crisis.
-                    </h4>
-                    <p className="text-md font-light mt-2 text-white">
-                      Your safety is important to us.
-                    </p>
-                  </blockquote>
+            <div>
+              <a href="/find-support/">
+                <div className="w-full md:w-4/12 px-4 mr-auto ml-auto inline-block">
+                  <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg hover:shadow-2xl rounded-lg bg-blueGray-700">
+                    <img
+                      alt="..."
+                      src="/img/support_index_page.png"
+                      className="w-full align-middle rounded-t-lg"
+                    />
+                    <blockquote className="relative p-8 mb-4">
+                      <svg
+                        preserveAspectRatio="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 583 95"
+                        className="absolute left-0 w-full block h-95-px -top-94-px"
+                      >
+                        <polygon
+                          points="-30,95 583,95 583,65"
+                          className="text-blueGray-700 fill-current"
+                        ></polygon>
+                      </svg>
+                      <h4 className="text-xl font-bold text-white">
+                        Find Support.
+                      </h4>
+                      <p className="text-md font-light mt-2 text-white">
+                        Our Find Support Page provides resources that could benefit you.
+                      </p>
+                    </blockquote>
+                  </div>
                 </div>
-              </div>
-              </Link>
+              </a>
+
+              <a href="/wellness-quiz/">
+                <div className="w-full md:w-4/12 px-4 mr-auto ml-auto inline-block">
+                  <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg hover:shadow-2xl rounded-lg bg-blueGray-700">
+                    <img
+                      alt="..."
+                      src="/img/quiz_index_page.png"
+                      className="w-full align-middle rounded-t-lg"
+                    />
+                    <blockquote className="relative p-8 mb-4">
+                      <svg
+                        preserveAspectRatio="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 583 95"
+                        className="absolute left-0 w-full block h-95-px -top-94-px"
+                      >
+                        <polygon
+                          points="-30,95 583,95 583,65"
+                          className="text-blueGray-700 fill-current"
+                        ></polygon>
+                      </svg>
+                      <h4 className="text-xl font-bold text-white">
+                        Take Our Quiz.
+                      </h4>
+                      <p className="text-md font-light mt-2 text-white">
+                        Our Quiz will help you find the best resources, routines, and communities.
+                      </p>
+                    </blockquote>
+                  </div>
+                </div>
+              </a>
+
+              <a href="/crisis">
+                <div className="w-full md:w-4/12 px-4 mr-auto ml-auto inline-block">
+                  <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg hover:shadow-2xl rounded-lg bg-blueGray-700">
+                    <img
+                      alt="..."
+                      src="/img/crisis_index_page.png"
+                      className="w-full align-middle rounded-t-lg"
+                    />
+                    <blockquote className="relative p-8 mb-4">
+                      <svg
+                        preserveAspectRatio="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 583 95"
+                        className="absolute left-0 w-full block h-95-px -top-94-px"
+                      >
+                        <polygon
+                          points="-30,95 583,95 583,65"
+                          className="text-blueGray-700 fill-current"
+                        ></polygon>
+                      </svg>
+                      <h4 className="text-xl font-bold text-white">
+                        In a CRISIS?
+                      </h4>
+                      <p className="text-md font-light mt-2 text-white">
+                        Your safety is important to us. Find information on this page if you're in a emergency situation.
+                      </p>
+                    </blockquote>
+                  </div>
+                </div>
+              </a>
 
             </div>
           </div>
@@ -335,26 +335,7 @@ export default function Index() {
                     <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
                       Technical Lead
                     </p>
-                    <div className="mt-6">
-                      <button
-                        className="bg-lightBlue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-twitter"></i>
-                      </button>
-                      <button
-                        className="bg-lightBlue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-facebook-f"></i>
-                      </button>
-                      <button
-                        className="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-dribbble"></i>
-                      </button>
-                    </div>
+
                   </div>
                 </div>
               </div>
@@ -370,20 +351,7 @@ export default function Index() {
                     <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
                       Team Leader
                     </p>
-                    <div className="mt-6">
-                      <button
-                        className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-google"></i>
-                      </button>
-                      <button
-                        className="bg-lightBlue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-facebook-f"></i>
-                      </button>
-                    </div>
+
                   </div>
                 </div>
               </div>
@@ -399,26 +367,7 @@ export default function Index() {
                     <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
                       Project Manager
                     </p>
-                    <div className="mt-6">
-                      <button
-                        className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-google"></i>
-                      </button>
-                      <button
-                        className="bg-lightBlue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-twitter"></i>
-                      </button>
-                      <button
-                        className="bg-blueGray-700 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-instagram"></i>
-                      </button>
-                    </div>
+
                   </div>
                 </div>
               </div>
@@ -434,32 +383,6 @@ export default function Index() {
                     <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
                       QA
                     </p>
-                    <div className="mt-6">
-                      <button
-                        className="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-dribbble"></i>
-                      </button>
-                      <button
-                        className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-google"></i>
-                      </button>
-                      <button
-                        className="bg-lightBlue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-twitter"></i>
-                      </button>
-                      <button
-                        className="bg-blueGray-700 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-instagram"></i>
-                      </button>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -467,7 +390,8 @@ export default function Index() {
           </div>
         </section>
 
-        <section className="pb-20 relative block bg-blueGray-800">
+        {/* IMPLEMENTATION FOR SUGGESTED ARTICLES */}
+        {/* <section className="pb-20 relative block bg-blueGray-800">
           <div
             className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20"
             style={{ transform: "translateZ(0)" }}
@@ -500,26 +424,25 @@ export default function Index() {
               </div>
             </div>
 
-              <div className="card" style={{ margin: "170px 0 100px 150px" }}>
-                <div className="relative flex flex-row min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-700">
-                  <img
-                    alt="..."
-                    src=""
-                    className="w-full align-middle rounded-t-lg"
-                    style={{ height: "200px", width: "300px" }}
-                  />
-                  <blockquote className="relative p-4 mb-3">
-                    <h4 className="text-l font-bold text-white">
-                      Article 1
-                    </h4>
-                  </blockquote>
-                </div>
+            <div className="card" style={{ margin: "170px 0 100px 150px" }}>
+              <div className="relative flex flex-row min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-700">
+                <img
+                  alt="..."
+                  src=""
+                  className="w-full align-middle rounded-t-lg"
+                  style={{ height: "200px", width: "300px" }}
+                />
+                <blockquote className="relative p-4 mb-3">
+                  <h4 className="text-l font-bold text-white">
+                    Article 1
+                  </h4>
+                </blockquote>
               </div>
-              
+            </div>
           </div>
-        </section>
-        
-      
+        </section> */}
+
+
       </main>
       <Footer />
     </>
