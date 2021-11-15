@@ -15,7 +15,7 @@ export default function Academic() {
           className="absolute top-0 w-full h-full bg-center bg-cover"
           style={{
             backgroundImage:
-              "url('https://images.unsplash.com/photo-1499336315816-097655dcfbda?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2710&q=80')",
+              "url('https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')",
           }}
         >
           {/* Draws the overlay on top of background image. Note opacity tag */}
@@ -47,7 +47,7 @@ export default function Academic() {
 
       {/* MAIN CONTENT CONTAINER */}
       <section className="relative py-12 bg-blueGray-200">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 mb-24">
           <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg -mt-64">
             <div className="px-6">
 
@@ -109,7 +109,7 @@ export default function Academic() {
               {/* END CONTENT */}
 
               {/* <!-- container for all cards --> */}
-              <div className="container w-100 mx-auto flex flex-col px-36 mb-12">
+              <div className="container w-100 mx-auto flex flex-col px-auto mb-12 lg:w-9/12">
 
                 {/* START CARD 1 */}
                 <a href="https://extension.harvard.edu/blog/5-strategies-for-academic-success-using-your-strengths/">
@@ -125,7 +125,7 @@ export default function Academic() {
                     </div>
                     {/* <!-- content --> */}
                     <div className="w-full py-4 px-6 text-gray-800 flex flex-col justify-between">
-                    <h4 className="text-2xl font-semibold leading-tight overflow-hidden">
+                      <h4 className="text-2xl font-semibold leading-tight overflow-hidden">
                         5 Strategies For Academic Success Using Your Strengths
                       </h4>
                       <p className="font-light">
@@ -153,7 +153,7 @@ export default function Academic() {
                     </div>
                     {/* <!-- content --> */}
                     <div className="w-full py-4 px-6 text-gray-800 flex flex-col justify-between">
-                    <h4 className="text-2xl font-semibold leading-tight overflow-hidden">
+                      <h4 className="text-2xl font-semibold leading-tight overflow-hidden">
                         How To Study Effectively
                       </h4>
                       <p className="font-light">
@@ -210,7 +210,7 @@ export default function Academic() {
                     </div>
                     {/* <!-- content --> */}
                     <div className="w-full py-4 px-6 text-gray-800 flex flex-col justify-between">
-                    <h4 className="text-2xl font-semibold leading-tight overflow-hidden">
+                      <h4 className="text-2xl font-semibold leading-tight overflow-hidden">
                         GMU: Academic Advising
                       </h4>
                       <p className="font-light">
@@ -236,9 +236,10 @@ export default function Academic() {
                         src="https://advising.gmu.edu/wp-content/uploads/NewStudents-1024x684.jpg"
                       />
                     </div>
+
                     {/* <!-- content --> */}
                     <div className="w-full py-4 px-6 text-gray-800 flex flex-col justify-between">
-                    <h4 className="text-2xl font-semibold leading-tight overflow-hidden">
+                      <h4 className="text-2xl font-semibold leading-tight overflow-hidden">
                         Student Support Resources on Campus
                       </h4>
                       <p className="font-light">
@@ -251,8 +252,6 @@ export default function Academic() {
                     </div> {/* END CONTENT */}
                   </div> {/* END TEXT */}
                 </a> {/* END CARD 5 */}
-
-
               </div> {/* END CARD CONTAINER */}
             </div>
           </div>

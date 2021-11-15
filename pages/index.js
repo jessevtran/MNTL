@@ -33,13 +33,13 @@ export default function Index() {
                   <h1 className="text-blueGray-100 font-semibold text-5xl">
                     Welcome to MNTL
                   </h1>
+
                   <h1 className="text-blueGray-100 font-semibold text-1xl mt-4 mb-10">
                     Build better habits and routines with the MNTL App!
                   </h1>
                   <h4 className="text-3xl font-normal leading-normal mt-10 mb-0 text-blueGray-200 m-10">
                     Take the quiz to find the best resources, routines, and communities for you to improve your mental and physical health!
                   </h4>
-
                 </div>
               </div>
             </div>
@@ -112,96 +112,96 @@ export default function Index() {
             </div>
             <div>
               <Link href="/find-support/">
-              <div className="w-full md:w-4/12 px-4 mr-auto ml-auto inline-block">
-                <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-700">
-                  <img
-                    alt="..."
-                    src="/img/support_index_page.png"
-                    className="w-full align-middle rounded-t-lg"
-                  />
-                  <blockquote className="relative p-8 mb-4">
-                    <svg
-                      preserveAspectRatio="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 583 95"
-                      className="absolute left-0 w-full block h-95-px -top-94-px"
-                    >
-                      <polygon
-                        points="-30,95 583,95 583,65"
-                        className="text-blueGray-700 fill-current"
-                      ></polygon>
-                    </svg>
-                    <h4 className="text-xl font-bold text-white">
-                      Find Support.
-                    </h4>
-                    <p className="text-md font-light mt-2 text-white">
-                      Our Find Support Page provides resources that could benefit you.
-                    </p>
-                  </blockquote>
+                <div className="w-full md:w-4/12 px-4 mr-auto ml-auto inline-block">
+                  <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-700">
+                    <img
+                      alt="..."
+                      src="/img/support_index_page.png"
+                      className="w-full align-middle rounded-t-lg"
+                    />
+                    <blockquote className="relative p-8 mb-4">
+                      <svg
+                        preserveAspectRatio="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 583 95"
+                        className="absolute left-0 w-full block h-95-px -top-94-px"
+                      >
+                        <polygon
+                          points="-30,95 583,95 583,65"
+                          className="text-blueGray-700 fill-current"
+                        ></polygon>
+                      </svg>
+                      <h4 className="text-xl font-bold text-white">
+                        Find Support.
+                      </h4>
+                      <p className="text-md font-light mt-2 text-white">
+                        Our Find Support Page provides resources that could benefit you.
+                      </p>
+                    </blockquote>
+                  </div>
                 </div>
-              </div>
               </Link>
-              
+
               <Link href="/wellness-quiz/">
-              <div className="w-full md:w-4/12 px-4 mr-auto ml-auto inline-block">
-                <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-blueGray-700">
-                  <img
-                    alt="..."
-                    src="/img/quiz_index_page.png"
-                    className="w-full align-middle rounded-t-lg"
-                  />
-                  <blockquote className="relative p-8 mb-4">
-                    <svg
-                      preserveAspectRatio="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 583 95"
-                      className="absolute left-0 w-full block h-95-px -top-94-px"
-                    >
-                      <polygon
-                        points="-30,95 583,95 583,65"
-                        className="text-blueGray-700 fill-current"
-                      ></polygon>
-                    </svg>
-                    <h4 className="text-xl font-bold text-white">
-                      Take Our Quiz.
-                    </h4>
-                    <p className="text-md font-light mt-2 text-white">
-                      Our Quiz will help you find the best resources, routines, and communities.
-                    </p>
-                  </blockquote>
+                <div className="w-full md:w-4/12 px-4 mr-auto ml-auto inline-block">
+                  <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-blueGray-700">
+                    <img
+                      alt="..."
+                      src="/img/quiz_index_page.png"
+                      className="w-full align-middle rounded-t-lg"
+                    />
+                    <blockquote className="relative p-8 mb-4">
+                      <svg
+                        preserveAspectRatio="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 583 95"
+                        className="absolute left-0 w-full block h-95-px -top-94-px"
+                      >
+                        <polygon
+                          points="-30,95 583,95 583,65"
+                          className="text-blueGray-700 fill-current"
+                        ></polygon>
+                      </svg>
+                      <h4 className="text-xl font-bold text-white">
+                        Take Our Quiz.
+                      </h4>
+                      <p className="text-md font-light mt-2 text-white">
+                        Our Quiz will help you find the best resources, routines, and communities.
+                      </p>
+                    </blockquote>
+                  </div>
                 </div>
-              </div>
               </Link>
 
               <Link href="/crisis">
-              <div className="w-full md:w-4/12 px-4 mr-auto ml-auto inline-block">
-                <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-700">
-                  <img
-                    alt="..."
-                    src="/img/crisis_index_page.png"
-                    className="w-full align-middle rounded-t-lg"
-                  />
-                  <blockquote className="relative p-8 mb-4">
-                    <svg
-                      preserveAspectRatio="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 583 95"
-                      className="absolute left-0 w-full block h-95-px -top-94-px"
-                    >
-                      <polygon
-                        points="-30,95 583,95 583,65"
-                        className="text-blueGray-700 fill-current"
-                      ></polygon>
-                    </svg>
-                    <h4 className="text-xl font-bold text-white">
-                      In a CRISIS?
-                    </h4>
-                    <p className="text-md font-light mt-2 text-white">
-                      Your safety is important to us. Find information on this page if you're in a emergency situation.
-                    </p>
-                  </blockquote>
+                <div className="w-full md:w-4/12 px-4 mr-auto ml-auto inline-block">
+                  <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-700">
+                    <img
+                      alt="..."
+                      src="/img/crisis_index_page.png"
+                      className="w-full align-middle rounded-t-lg"
+                    />
+                    <blockquote className="relative p-8 mb-4">
+                      <svg
+                        preserveAspectRatio="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 583 95"
+                        className="absolute left-0 w-full block h-95-px -top-94-px"
+                      >
+                        <polygon
+                          points="-30,95 583,95 583,65"
+                          className="text-blueGray-700 fill-current"
+                        ></polygon>
+                      </svg>
+                      <h4 className="text-xl font-bold text-white">
+                        In a CRISIS?
+                      </h4>
+                      <p className="text-md font-light mt-2 text-white">
+                        Your safety is important to us.Find information on this page if you're in a emergency situation.
+                      </p>
+                    </blockquote>
+                  </div>
                 </div>
-              </div>
               </Link>
 
             </div>
@@ -334,7 +334,7 @@ export default function Index() {
                     <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
                       Technical Lead
                     </p>
-                    
+
                   </div>
                 </div>
               </div>
@@ -350,7 +350,7 @@ export default function Index() {
                     <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
                       Team Leader
                     </p>
-                    
+
                   </div>
                 </div>
               </div>
@@ -366,7 +366,7 @@ export default function Index() {
                     <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
                       Project Manager
                     </p>
-                    
+
                   </div>
                 </div>
               </div>
@@ -382,7 +382,7 @@ export default function Index() {
                     <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
                       QA
                     </p>
-                    
+
                   </div>
                 </div>
               </div>
@@ -423,26 +423,26 @@ export default function Index() {
               </div>
             </div>
 
-              <div className="card" style={{ margin: "170px 0 100px 150px" }}>
-                <div className="relative flex flex-row min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-700">
-                  <img
-                    alt="..."
-                    src=""
-                    className="w-full align-middle rounded-t-lg"
-                    style={{ height: "200px", width: "300px" }}
-                  />
-                  <blockquote className="relative p-4 mb-3">
-                    <h4 className="text-l font-bold text-white">
-                      Article 1
-                    </h4>
-                  </blockquote>
-                </div>
+            <div className="card" style={{ margin: "170px 0 100px 150px" }}>
+              <div className="relative flex flex-row min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-700">
+                <img
+                  alt="..."
+                  src=""
+                  className="w-full align-middle rounded-t-lg"
+                  style={{ height: "200px", width: "300px" }}
+                />
+                <blockquote className="relative p-4 mb-3">
+                  <h4 className="text-l font-bold text-white">
+                    Article 1
+                  </h4>
+                </blockquote>
               </div>
-              
+            </div>
+
           </div>
         </section>
-        
-      
+
+
       </main>
       <Footer />
     </>
