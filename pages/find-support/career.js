@@ -4,7 +4,7 @@ import Link from "next/link";
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import Footer from "components/Footers/Footer.js";
 
-export default function Physical() {
+export default function Career() {
   return (
     <>
       <IndexNavbar fixed />
@@ -54,7 +54,7 @@ export default function Physical() {
               {/* TITLE */}
               <div className="text-center mt-12">
                 <h2 className="text-5xl font-semibold leading-normal mb-2 text-blueGray-700">
-                  Physical Wellness
+                  Career Wellness
                 </h2>
               </div>
 
@@ -65,30 +65,29 @@ export default function Physical() {
                   <div className="w-full lg:w-9/12 px-4">
 
                     <h5 className="font-semibold text-2xl text-blueGray-600 mb-0">
-                      What is Physical Wellness?
+                      What is Career Wellness?
                     </h5>
                     <div className="text-base text-left font-light text-blueGray-800">
                       <p>
-                        Physical Wellness plays an important role in your overall well-being and success.
-                        Not only does regular activity prevent diseases such as diabetes, heart disease,
-                        and high blood pressure, it is essential for reducing stress and the affects of
-                        depression and anxiety <a
-                          href="https://www.tandfonline.com/doi/full/10.1080/08039480802315640" className="text-lightBlue-300 underline">[1]
-                        </a>.
+                        Career wellness is an important aspect when it comes to an individual's sense purpose and productivity.
+                        It involves being able to balance school work, jobs, and activities outside of work, also known as work-life balance.
+                        It is important to consider that the career that you want to work in fits your skills and interests, and makes you feel
+                        good about what you've accomplished. However, you should also make sure to put yourself first; your mental, emotional, and physical
+                        wellbeing is most important.
                       </p>
                     </div>
 
                     <h5 className="font-semibold text-2xl text-blueGray-600 pt-8">
-                      Tips for Improving Physical Wellness
+                      Tips for Improving Career Wellness
                     </h5>
 
                     <div className="text-base text-left font-light text-blueGray-800 pl-5">
                       <ul className="list-disc list-outside">
-                        <li>Aim for at least 150 minutes of physical activity each week!</li>
-                        <li>Try to get at least eight hours of sleep per night.</li>
-                        <li>Stay hydrated! Drink plenty of water throughout the day and avoid soda or beverages high in sugar.</li>
-                        <li>You don't have to be an olympic athlete to be physically well! Do activities that you enjoy, and make them part of your daily routine.</li>
-                        <li>Track your progress. Start small and build up i.e. If you're walking, slowly increase walking time/distance.</li>
+                        <li>Ask yourself: are you thinking about a major that you find interesting and meaningful?</li>
+                        <li>Create goals for yourself. What do you want to achieve in life? </li>
+                        <li>Don't settle. Keep motivated and keep working towards your goals.</li>
+                        <li>As a student, take advantage of the resources around you! Ask professors for insight and professional advice! Sign up for career fairs and workshops!</li>
+                        <li>If your current job is stressful. Not enough personal time? Large tasks? reflect on your work-life balance and create new goals.</li>
                       </ul>
                     </div>
 
@@ -105,7 +104,7 @@ export default function Physical() {
               <div className="container w-100 mx-auto flex flex-col px-36 mb-12">
 
                 {/* START CARD 1 */}
-                <a href="https://www.nih.gov/health-information/physical-wellness-toolkit">
+                <a href="https://gmu.joinhandshake.com/login">
                   {/* <!-- card --> */}
                   <div v-for="card in cards" className="flex flex-col md:flex-row overflow-hidden bg-blueGray-50 rounded-lg shadow-xl mt-4 w-100 mx-2">
                     {/* <!-- media --> */}
@@ -113,47 +112,45 @@ export default function Physical() {
                       {/* <div className="h-64 w-64"> */}
                       <img
                         className="inset-0 h-full w-full object-cover object-center"
-                        src="https://www.nih.gov/sites/default/files/styles/sidebar_media_breakpoint-medium/public/health-info/wellness-toolkits/illustration-healthy-foods.jpg?itok=IID7Hs8-&timestamp=1630000423"
+                        src="https://jobicy.com/data/server-nyc0409/galaxy/mercury/2021/03/Jobicy-210324110957-838763.jpg"
                       />
                     </div>
                     {/* <!-- content --> */}
                     <div className="w-full py-4 px-6 text-gray-800 flex flex-col justify-between">
                       <h4 className="text-2xl font-semibold leading-tight overflow-hidden">
-                        Physical Wellness Toolkit
+                        George Mason University: Handshake
                       </h4>
                       <p className="font-light">
-                        Watching what you put into your body, how much activity you get, and your
-                        weight are important for keeping your body working properly. Positive physical health
-                        habits can help decrease your stress, lower your risk of disease, and increase your energy.
+                        Check out Handshake, Mason's source of jobs, internships, and career fairs.
                       </p>
                       <p className="text-sm text-gray-700 uppercase tracking-wide font-semibold mt-2">
-                        National Institutes of Health
+                        HandShake
                       </p>
                     </div> {/* END CONTENT */}
                   </div> {/* END TEXT */}
                 </a> {/* END CARD 1 */}
 
                 {/* START CARD 2 */}
-                <a href="https://shs.gmu.edu/healthed/exercise/">
+                <a href="https://masononline.gmu.edu/university-career-services/">
                   {/* <!-- card --> */}
                   <div v-for="card in cards" className="flex flex-col md:flex-row overflow-hidden bg-blueGray-50 rounded-lg shadow-xl  mt-4 w-100 mx-2">
                     {/* <!-- media --> */}
                     <div className="h-32 w-auto md:w-1/2">
                       <img
                         className="inset-0 h-full w-full object-cover object-center"
-                        src="https://d.newsweek.com/en/full/1555830/running-exercise-fitness-stock-getty.jpg?w=1600&h=1600&q=88&f=dbcf98ae7841924284885044416c5eb3"
+                        src="https://careers.gmu.edu/sites/g/files/yyqcgq181/files/styles/feature_image_medium/public/2020-12/AppointmentPage.jpg?itok=pFX3gNN_"
                       />
                     </div>
                     {/* <!-- content --> */}
                     <div className="w-full py-4 px-6 text-gray-800 flex flex-col justify-between">
                       <h4 className="text-2xl font-semibold leading-tight overflow-hidden">
-                        Student Health Services: Exercise
+                        University Career Services
                       </h4>
                       <p className="font-light">
-                        Is “sitting” the “new smoking”? As far as the harmful effects that an inactive
-                        lifestyle carries; this question is definitely worth thinking about. The healthcare providers
-                        at Student Health Services would write many prescriptions for regular exercise if that would
-                        motivate people to discover the benefits!
+                        University Career Services serves all students – whether on campus or online. Our appointments,
+                        career preparation courses, and workshops can help you choose a major and set tangible career goals.
+                        We can assist you in creating a resume, networking with Mason alumni, and preparing for the
+                        workplace or further study.
                       </p>
                       <p className="text-sm text-gray-700 uppercase tracking-wide font-semibold mt-2">
                         George Mason University
@@ -163,28 +160,27 @@ export default function Physical() {
                 </a> {/* END CARD 2 */}
 
                 {/* START CARD 3 */}
-                <a href="https://www.heart.org/en/healthy-living/fitness/fitness-basics/why-is-physical-activity-so-important-for-health-and-wellbeing">
+                <a href="https://introwellness.com/health/what-is-occupational-wellness/">
                   {/* <!-- card --> */}
                   <div v-for="card in cards" className="flex flex-col md:flex-row overflow-hidden bg-blueGray-50 rounded-lg shadow-xl  mt-4 w-100 mx-2">
                     {/* <!-- media --> */}
                     <div className="h-32 w-auto md:w-1/2">
                       <img
                         className="inset-0 h-full w-full object-cover object-center"
-                        src="https://www.heart.org/-/media/AHA/H4GM/Article-Images/PA-Improves-Quality-of-Life-520047182.jpg"
+                        src="https://introwellness.com/wp-content/uploads/2018/09/What-Is-Occupational-Wellness-and-Why-Is-It-Important-696x464.jpg"
                       />
                     </div>
                     {/* <!-- content --> */}
                     <div className="w-full py-4 px-6 text-gray-800 flex flex-col justify-between">
                       <h4 className="text-2xl font-semibold leading-tight overflow-hidden">
-                        Why is Physical Activity So Important For Health And Well-Being?
+                        What Is Occupational Wellness and Why Is It Important?
                       </h4>
                       <p className="font-light">
-                        We know that staying active is one of the best ways to keep our bodies healthy.
-                        But did you know it can also improve your overall well-being and quality of life?
-                        Here are just a few of the ways physical activity can help you feel better, look better and live better. Because, why not?
+                        According to the World Health Association (WHO), most people spend 1/3 of their adult life at work... this is really a lot of time!
+                        Therefore, understanding what occupational wellness is, why it's important, and how you can improve it, is vital to your workplace happiness.
                       </p>
                       <p className="text-sm text-gray-700 uppercase tracking-wide font-semibold mt-2">
-                        American Heart Association &bull; 01-14-2017
+                        IntroWellness &bull; Ryan Corte &bull; 01-05-2020
                       </p>
                     </div> {/* END CONTENT */}
                   </div> {/* END TEXT */}

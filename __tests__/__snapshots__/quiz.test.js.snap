@@ -1,0 +1,490 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Support Page unchanged 1`] = `
+Array [
+  <nav
+    className="top-0 fixed z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg bg-white shadow"
+  >
+    <div
+      className="container px-4 mx-auto flex flex-wrap items-center justify-between"
+    >
+      <div
+        className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start"
+      >
+        <a
+          className="text-blueGray-700 text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
+          href="#pablo"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        >
+          MNTL
+        </a>
+        <button
+          className="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+          onClick={[Function]}
+          type="button"
+        >
+          <i
+            className="fas fa-bars"
+          />
+        </button>
+      </div>
+      <div
+        className="lg:flex flex-grow items-center bg-white lg:bg-opacity-0 lg:shadow-none hidden"
+        id="example-navbar-warning"
+      >
+        <ul
+          className="flex flex-col space-x-3 lg:flex-row list-none lg:ml-auto"
+        >
+          <li
+            className="flex items-center"
+          >
+            <a
+              href="/find-support"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              Find Support
+            </a>
+          </li>
+          <li
+            className="flex items-center"
+          >
+            <a
+              href="/wellness-quiz"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              Take the Quiz
+            </a>
+          </li>
+          <li
+            className="flex items-center"
+          >
+            Your Wellness Plan
+          </li>
+          <li
+            className="flex items-center "
+          >
+            <a
+              href="/crisis"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              CRISIS
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>,
+  <section
+    className="header relative m-24 pt-48 items-center flex h-screen max-h-860-px"
+  >
+    <div
+      className="container mx-auto items-center flex flex-wrap"
+    >
+      <div
+        className="w-full md:w-8/12 lg:w-6/12 xl:w-6/12 px-4"
+      >
+        <div
+          className="pt-10 sm:pt-0"
+        >
+          <h2
+            className="font-semibold text-6xl text-blueGray-600 pt-20 pl-5"
+          >
+            Find Support
+          </h2>
+          <p
+            className="pl-5 pt-6 "
+          >
+            Click on the cards below to explore each topic.
+          </p>
+        </div>
+      </div>
+      <div
+        className="container p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5"
+      >
+        <a
+          href="/find-support/physical"
+        >
+          <div
+            className="rounded overflow-hidden shadow-2xl"
+          >
+            <img
+              className="inset-0 h-full w-full object-cover object-center"
+              src="https://images.unsplash.com/photo-1499336315816-097655dcfbda?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2710&q=80"
+              style={
+                Object {
+                  "height": "200px",
+                  "width": "500px",
+                }
+              }
+            />
+            <div
+              className="px-6 py-4"
+            >
+              <h5
+                className="text-2xl font-bold leading-normal mt-0 mb-2 text-blueGray-800"
+              >
+                Physical Wellness
+              </h5>
+              <p
+                className="text-gray-700 text-base"
+              >
+                Learn more here.
+              </p>
+            </div>
+          </div>
+        </a>
+         
+        <a
+          href="/find-support/social"
+        >
+          <div
+            className="rounded overflow-hidden shadow-2xl"
+          >
+            <img
+              className="inset-0 h-full w-full object-cover object-center"
+              src="https://images.unsplash.com/photo-1499336315816-097655dcfbda?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2710&q=80"
+              style={
+                Object {
+                  "height": "200px",
+                  "width": "500px",
+                }
+              }
+            />
+            <div
+              className="px-6 py-4"
+            >
+              <h5
+                className="text-2xl font-bold leading-normal mt-0 mb-2 text-blueGray-800"
+              >
+                Social Wellness
+              </h5>
+              <p
+                className="text-gray-700 text-base"
+              >
+                Learn more here.
+              </p>
+            </div>
+          </div>
+        </a>
+         
+        <a
+          href="/find-support/emotional"
+        >
+          <div
+            className="rounded overflow-hidden shadow-2xl"
+          >
+            <img
+              className="inset-0 h-full w-full object-cover object-center"
+              src="https://images.unsplash.com/photo-1499336315816-097655dcfbda?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2710&q=80"
+              style={
+                Object {
+                  "height": "200px",
+                  "width": "500px",
+                }
+              }
+            />
+            <div
+              className="px-6 py-4"
+            >
+              <h5
+                className="text-2xl font-bold leading-normal mt-0 mb-2 text-blueGray-800"
+              >
+                Emotional Wellness
+              </h5>
+              <p
+                className="text-gray-700 text-base"
+              >
+                Learn more here.
+              </p>
+            </div>
+          </div>
+        </a>
+         
+        <a
+          href="/find-support/academic"
+        >
+          <div
+            className="rounded overflow-hidden shadow-2xl"
+          >
+            <img
+              className="inset-0 h-full w-full object-cover object-center"
+              src="https://images.unsplash.com/photo-1499336315816-097655dcfbda?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2710&q=80"
+              style={
+                Object {
+                  "height": "200px",
+                  "width": "500px",
+                }
+              }
+            />
+            <div
+              className="px-6 py-4"
+            >
+              <h5
+                className="text-2xl font-bold leading-normal mt-0 mb-2 text-blueGray-800"
+              >
+                Academic Wellness
+              </h5>
+              <p
+                className="text-gray-700 text-base"
+              >
+                Learn more here.
+              </p>
+            </div>
+          </div>
+        </a>
+         
+        <a
+          href="/find-support/career"
+        >
+          <div
+            className="rounded overflow-hidden shadow-2xl"
+          >
+            <img
+              className="inset-0 h-full w-full object-cover object-center"
+              src="https://images.unsplash.com/photo-1499336315816-097655dcfbda?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2710&q=80"
+              style={
+                Object {
+                  "height": "200px",
+                  "width": "500px",
+                }
+              }
+            />
+            <div
+              className="px-6 py-4"
+            >
+              <h5
+                className="text-2xl font-bold leading-normal mt-0 mb-2 text-blueGray-800"
+              >
+                Career Wellness
+              </h5>
+              <p
+                className="text-gray-700 text-base"
+              >
+                Learn more here.
+              </p>
+            </div>
+          </div>
+        </a>
+         
+      </div>
+       
+    </div>
+  </section>,
+  <div
+    className="pb-64"
+  />,
+  <footer
+    className="relative bg-blueGray-200 pt-8 pb-6"
+  >
+    <div
+      className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20"
+      style={
+        Object {
+          "transform": "translateZ(0)",
+        }
+      }
+    >
+      <svg
+        className="absolute bottom-0 overflow-hidden"
+        preserveAspectRatio="none"
+        version="1.1"
+        viewBox="0 0 2560 100"
+        x="0"
+        xmlns="http://www.w3.org/2000/svg"
+        y="0"
+      >
+        <polygon
+          className="text-blueGray-200 fill-current"
+          points="2560 0 2560 100 0 100"
+        />
+      </svg>
+    </div>
+    <div
+      className="container mx-auto px-4"
+    >
+      <div
+        className="flex flex-wrap text-center lg:text-left"
+      >
+        <div
+          className="w-full lg:w-6/12 px-4"
+        >
+          <h4
+            className="text-3xl font-semibold"
+          >
+            Let's keep in touch!
+          </h4>
+          <h5
+            className="text-lg mt-0 mb-2 text-blueGray-600"
+          >
+            Find us on any of these platforms, we respond 1-2 business days.
+          </h5>
+          <div
+            className="mt-6 lg:mb-0 mb-6"
+          >
+            <button
+              className="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+              type="button"
+            >
+              <i
+                className="fab fa-twitter"
+              />
+            </button>
+            <button
+              className="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+              type="button"
+            >
+              <i
+                className="fab fa-facebook-square"
+              />
+            </button>
+            <button
+              className="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+              type="button"
+            >
+              <i
+                className="fab fa-dribbble"
+              />
+            </button>
+            <button
+              className="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+              type="button"
+            >
+              <i
+                className="fab fa-github"
+              />
+            </button>
+          </div>
+        </div>
+        <div
+          className="w-full lg:w-6/12 px-4"
+        >
+          <div
+            className="flex flex-wrap items-top mb-6"
+          >
+            <div
+              className="w-full lg:w-4/12 px-4 ml-auto"
+            >
+              <span
+                className="block uppercase text-blueGray-500 text-sm font-semibold mb-2"
+              >
+                Useful Links
+              </span>
+              <ul
+                className="list-unstyled"
+              >
+                <li>
+                  <a
+                    className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                    href="https://www.creative-tim.com/presentation?ref=nnjs-footer"
+                  >
+                    About Us
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                    href="https://blog.creative-tim.com?ref=nnjs-footer"
+                  >
+                    Blog
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                    href="https://www.github.com/creativetimofficial?ref=nnjs-footer"
+                  >
+                    Github
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                    href="https://www.creative-tim.com/bootstrap-themes/free?ref=nnjs-footer"
+                  >
+                    Free Products
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div
+              className="w-full lg:w-4/12 px-4"
+            >
+              <span
+                className="block uppercase text-blueGray-500 text-sm font-semibold mb-2"
+              >
+                Other Resources
+              </span>
+              <ul
+                className="list-unstyled"
+              >
+                <li>
+                  <a
+                    className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                    href="https://github.com/creativetimofficial/notus-nextjs/blob/main/LICENSE.md?ref=nnjs-footer"
+                  >
+                    MIT License
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                    href="https://creative-tim.com/terms?ref=nnjs-footer"
+                  >
+                    Terms & Conditions
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                    href="https://creative-tim.com/privacy?ref=nnjs-footer"
+                  >
+                    Privacy Policy
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                    href="https://creative-tim.com/contact-us?ref=nnjs-footer"
+                  >
+                    Contact Us
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr
+        className="my-6 border-blueGray-300"
+      />
+      <div
+        className="flex flex-wrap items-center md:justify-between justify-center"
+      >
+        <div
+          className="w-full md:w-4/12 px-4 mx-auto text-center"
+        >
+          <div
+            className="text-sm text-blueGray-500 font-semibold py-1"
+          >
+            Copyright © 
+            2021
+             Notus NextJS by
+             
+            <a
+              className="text-blueGray-500 hover:text-blueGray-800"
+              href="https://www.creative-tim.com?ref=nnjs-footer"
+            >
+              Creative Tim
+            </a>
+            .
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>,
+]
+`;
