@@ -28,17 +28,15 @@ export default function Index() {
           </div>
           <div className="container relative mx-auto">
             <div className="items-center flex flex-wrap">
-              <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+              <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center mt-0 mb-4">
                 <div className="pr-12">
                   <h1 className="text-blueGray-100 font-semibold text-5xl">
-                    Welcome to MNTL.
+                    Welcome to MNTL
                   </h1>
-
-                  <h1 className="text-blueGray-100 font-semibold text-1xl">
+                  <h1 className="text-blueGray-100 font-semibold text-1xl mt-4 mb-10">
                     Build better habits and routines with the MNTL App!
                   </h1>
-
-                  <h4 className="text-3xl font-normal leading-normal mt-0 mb-2 text-blueGray-200">
+                  <h4 className="text-3xl font-normal leading-normal mt-10 mb-0 text-blueGray-200 m-10">
                     Take the quiz to find the best resources, routines, and communities for you to improve your mental and physical health!
                   </h4>
 
