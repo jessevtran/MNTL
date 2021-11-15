@@ -1345,11 +1345,6 @@ select {
   background-color: rgba(228, 228, 231, var(--tw-bg-opacity));
 }
 
-.bg-gray-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgba(212, 212, 216, var(--tw-bg-opacity));
-}
-
 .bg-blueGray-50 {
   --tw-bg-opacity: 1;
   background-color: rgba(248, 250, 252, var(--tw-bg-opacity));
@@ -2218,6 +2213,10 @@ select {
   margin: 2rem;
 }
 
+.m-10 {
+  margin: 2.5rem;
+}
+
 .m-14 {
   margin: 3.5rem;
 }
@@ -2376,6 +2375,10 @@ select {
 
 .mt-10 {
   margin-top: 2.5rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
 }
 
 .mt-12 {
@@ -2726,6 +2729,11 @@ select {
   padding-bottom: 3rem;
 }
 
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
 .py-16 {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -2986,6 +2994,11 @@ select {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.hover\:shadow-2xl:hover {
+  --tw-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 * {
   --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
   --tw-ring-offset-width: 0px;
@@ -3137,11 +3150,6 @@ select {
 .text-emerald-500 {
   --tw-text-opacity: 1;
   color: rgba(16, 185, 129, var(--tw-text-opacity));
-}
-
-.text-amber-400 {
-  --tw-text-opacity: 1;
-  color: rgba(251, 191, 36, var(--tw-text-opacity));
 }
 
 .text-orange-500 {
@@ -3467,10 +3475,6 @@ select {
 
 .w-16 {
   width: 4rem;
-}
-
-.w-24 {
-  width: 6rem;
 }
 
 .w-64 {
@@ -4015,10 +4019,6 @@ select {
 
   .lg\:w-auto {
     width: auto;
-  }
-
-  .lg\:w-4\/5 {
-    width: 80%;
   }
 
   .lg\:w-3\/12 {
