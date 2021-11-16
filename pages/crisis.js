@@ -24,7 +24,7 @@ const crisis = () => {
             {/* First card */}
             <Link href="https://www.fairfaxcounty.gov/police/fairfax-county-police-department">
               <a>
-                <div v-for="card in cards" className="flex flex-col md:flex-row overflow-hidden bg-blueGray-100 rounded-lg hover:shadow-lg mt-4 w-100 mx-2">
+                <div v-for="card in cards" className="flex flex-col md:flex-row overflow-hidden bg-blueGray-100 rounded-lg shadow-lg hover:shadow-2xl ease-linear transition-all duration-150 mt-4 w-100 mx-2">
                   {/* media */}
                   <div className="h-64 w-auto md:w-1/2">
                     <img
@@ -53,7 +53,7 @@ const crisis = () => {
             {/* Second card */}
             <Link href="https://suicidepreventionlifeline.org">
               <a>
-                <div v-for="card in cards" className="flex flex-col md:flex-row overflow-hidden bg-blueGray-100 rounded-lg hover:shadow-lg mt-4 w-100 mx-2">
+                <div v-for="card in cards" className="flex flex-col md:flex-row overflow-hidden bg-blueGray-100 rounded-lg shadow-lg hover:shadow-2xl ease-linear transition-all duration-150 mt-4 w-100 mx-2">
                   {/* media */}
                   <div className="h-64 w-auto md:w-1/2">
                     <img
@@ -82,7 +82,7 @@ const crisis = () => {
             {/* Third card */}
             <Link href="https://www.crisistextline.org/">
               <a>
-                <div v-for="card in cards" className="flex flex-col md:flex-row overflow-hidden bg-blueGray-100 rounded-lg hover:shadow-lg mt-4 w-100 mx-2">
+                <div v-for="card in cards" className="flex flex-col md:flex-row overflow-hidden bg-blueGray-100 rounded-lg shadow-lg hover:shadow-2xl ease-linear transition-all duration-150 mt-4 w-100 mx-2">
                   {/* media */}
                   <div className="h-64 w-auto md:w-1/2">
                     <img
@@ -111,7 +111,7 @@ const crisis = () => {
             {/* Fourth card */}
             <Link href="https://www.rainn.org/">
               <a>
-                <div v-for="card in cards" className="flex flex-col md:flex-row overflow-hidden bg-blueGray-100 rounded-lg hover:shadow-lg mt-4 w-100 mx-2">
+                <div v-for="card in cards" className="flex flex-col md:flex-row overflow-hidden bg-blueGray-100 rounded-lg shadow-lg hover:shadow-2xl ease-linear transition-all duration-150 mt-4 w-100 mx-2">
                   {/* media */}
                   <div className="h-64 w-auto md:w-1/2">
                     <img
