@@ -114,7 +114,7 @@ export default function Index() {
             <div>
               <a href="/find-support/">
                 <div className="w-full md:w-4/12 px-4 mr-auto ml-auto inline-block">
-                  <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg hover:shadow-2xl rounded-lg bg-blueGray-700">
+                  <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg hover:shadow-2xl ease-linear transition-all duration-150 rounded-lg bg-blueGray-700">
                     <img
                       alt="..."
                       src="/img/support_index_page.png"
@@ -145,7 +145,7 @@ export default function Index() {
 
               <a href="/wellness-quiz/">
                 <div className="w-full md:w-4/12 px-4 mr-auto ml-auto inline-block">
-                  <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg hover:shadow-2xl rounded-lg bg-blueGray-700">
+                  <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg hover:shadow-2xl ease-linear transition-all duration-150 rounded-lg bg-blueGray-700">
                     <img
                       alt="..."
                       src="/img/quiz_index_page.png"
@@ -176,7 +176,7 @@ export default function Index() {
 
               <a href="/crisis">
                 <div className="w-full md:w-4/12 px-4 mr-auto ml-auto inline-block">
-                  <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg hover:shadow-2xl rounded-lg bg-blueGray-700">
+                  <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg hover:shadow-2xl ease-linear transition-all duration-150 rounded-lg bg-blueGray-700">
                     <img
                       alt="..."
                       src="/img/crisis_index_page.png"
