@@ -12,7 +12,7 @@ export default function Navbar(props) {
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <Link href="/pages/index.js">
-              <a className="text-blueGray-700 text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase hover:opacity-75">
+              <a className="text-blueGray-700 text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase hover:opacity-75 ease-linear transition-all duration-150">
                 MNTL
               </a>
             </Link>
@@ -31,30 +31,30 @@ export default function Navbar(props) {
             }
             id="example-navbar-warning"
           >
-            <ul className="flex flex-col space-x-3 lg:flex-row list-none lg:ml-auto">
-              <li className="nav-item">
-                <a href="/find-support/" className="px-2 py-2 flex items-center text-sm uppercase font-bold leading-snug text-blueGray-700 hover:opacity-75">
+            {/* NAVBAR ITEMS */}
+            <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
+              <li className="px-2 py-2 flex items-center text-sm uppercase font-bold leading-snug text-blueGray-700 hover:opacity-75 ease-linear transition-all duration-150">
+                <a href="/find-support/">
                   Find Support
                 </a>
               </li>
-              <li className="px-2 py-2 flex items-center text-sm uppercase font-bold leading-snug text-blueGray-700 hover:opacity-75">
-                <Link href="/wellness-quiz/">
-                  <a>
-                    Take the Quiz
-                  </a>
-                </Link>
+              <li className="px-2 py-2 flex items-center text-sm uppercase font-bold leading-snug text-blueGray-700 hover:opacity-75 ease-linear transition-all duration-150">
+                <a href="/wellness-quiz/">
+                  Take the Quiz
+                </a>
               </li>
-              <li className="px-2 py-2 flex items-center text-sm uppercase font-bold leading-snug text-blueGray-700 hover:opacity-75">
-                <Link href="/wellness-plan/">
-                  <a>Wellness Plan</a>
-                </Link>
+              <li className="px-2 py-2 flex items-center text-sm uppercase font-bold leading-snug text-blueGray-700 hover:opacity-75 ease-linear transition-all duration-150">
+                <a href="/wellness-plan/">
+                  Wellness Plan
+                </a>
               </li>
-              <li className="px-2 py-2 flex items-center text-sm uppercase font-bold leading-snug text-blueGray-700 hover:opacity-75">
-                <Link href="/crisis/">
-                  <a>CRISIS</a>
-                </Link>
+              <li className="px-2 py-2 flex items-center text-sm uppercase font-bold leading-snug text-blueGray-700 hover:opacity-75 ease-linear transition-all duration-150">
+                <a href="/crisis/">
+                  Crisis
+                </a>
               </li>
-            </ul>
+            </ul> {/* END NAVBAR ITEMS */}
+
           </div>
         </div>
       </nav>
