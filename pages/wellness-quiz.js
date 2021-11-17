@@ -18,7 +18,6 @@ export default function WellnessQuiz() {
             <WellnessForm />
             
 
-            {/* //TODO:Pagination */}
           </div>
         </div>
       </div>
