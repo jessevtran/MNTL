@@ -4,18 +4,16 @@ import Head from "next/head";
 import Footer from "components/Footers/Footer.js";
 
 const crisis = () => {
-  //TODO: STYLE THE CARDS
-  //Card Text Format
-  //Title of Service -- h5 from Notus.docs, black | replace font-normal -> font-bold
-  //Phone Number -- lead from Notus.docs
-  //Description -- p, text-lg or medium | replace font-light -> font-normal
-
+  // This purpose of this page is to display cards containing emergency contact numbers.
   return (
     <>
+      {/* Displays Crisis as title of the tab of web browser. */}
       <Head>
         <title>Crisis</title>
       </Head>
+      {/* Navigation bar */}
       <IndexNavbar fixed />
+      {/* The Body of the page starts here. */}
       <div className="pt-20 pb-24 bg-white">
         <div>
           {/* container for all cards*/}
@@ -41,12 +39,12 @@ const crisis = () => {
                   <h4 className="text-2xl font-bold leading-normal mt-0 mb-2 text-black">
                     What To Do During An Emergency Situation?
                   </h4>
-                  <p className="text-base font-normal leading-relaxed mt-0 mb-4 text-blueGray-800">
+                  <p className="text-base font-normal leading-relaxed mt-0 mb-3 text-blueGray-800">
                     If you or someone you know is experiencing a mental health
                     crisis or if you ever feel that you or someone else requires
                     immediate medical attention:
                   </p>
-                  <span>
+                  <span className="mb-4 border-t border-blueGray-300">
                     Please, Contact <strong>911</strong> immediately for
                     assistance.
                   </span>
@@ -72,12 +70,12 @@ const crisis = () => {
                   <h4 className="text-2xl font-bold leading-normal mt-0 mb-2 text-black">
                     Suicide Prevention Information
                   </h4>
-                  <p className="text-base font-normal leading-relaxed mt-0 mb-4 text-blueGray-800">
+                  <p className="text-base font-normal leading-relaxed mt-0 mb-3 text-blueGray-800">
                     If you are actively threatening to hurt yourself, thinking
                     about suicide, or need emotional support, help is available
                     24/7.
                   </p>
-                  <span>
+                  <span className="mb-4 border-t border-blueGray-300">
                     Please, contact <strong>800-273-8255</strong>
                   </span>
                 </div>
@@ -102,12 +100,12 @@ const crisis = () => {
                   <h4 className="text-2xl font-bold leading-normal mt-0 mb-2 text-black">
                     In A Crisis?
                   </h4>
-                  <p className="text-base font-normal leading-relaxed mt-0 mb-4 text-blueGray-800">
+                  <p className="text-base font-normal leading-relaxed mt-0 mb-3 text-blueGray-800">
                     If you ever feel like your health is worsening, If you need
                     to talk to someone, or If you want to share your feelings
                     with a qualified counselor
                   </p>
-                  <span>
+                  <span className="mb-4 border-t border-blueGray-300">
                     Please, do not hasitate and text <strong>Home</strong> to{" "}
                     <strong>741-741</strong>
                   </span>
@@ -133,12 +131,12 @@ const crisis = () => {
                   <h4 className="text-2xl font-bold leading-normal mt-0 mb-2 text-black">
                     National Sexual Assault Hotline
                   </h4>
-                  <p className="text-base font-normal leading-relaxed mt-0 mb-4 text-blueGray-800">
+                  <p className="text-base font-normal leading-relaxed mt-0 mb-3 text-blueGray-800">
                     If you or someone you know has been a victim of sexual
                     assault, if you need Information about laws related to sex
                     crimes in your state, or if you want to tell your story,
                   </p>
-                  <span>
+                  <span className="mb-4 border-t border-blueGray-300">
                     Contact <strong>800-656-4673</strong> for help and resources
                   </span>
                 </div>
@@ -148,6 +146,7 @@ const crisis = () => {
           </div>
         </div>
       </div>
+      {/* Body ends here */}
       <Footer fixed />
     </>
   );
