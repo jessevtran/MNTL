@@ -18,6 +18,19 @@ const crisis = () => {
         <div>
           {/* container for all cards*/}
           <div className="container w-100 mx-auto flex flex-col px-12 mb-12 lg:w-9/12">
+            {/* Header starts here */}
+            <div className="w-full md:w-8/12 lg:w-6/12 xl:w-6/12">
+              <div className="py-8 text-left sm:pt-0">
+                <h2 className="font-semibold text-6xl  text-blueGray-600 pt-20">
+                  Crisis
+                </h2>
+                <p className="pt-6">
+                  Click on the cards below to get immediate help during emergencies
+                </p>
+              </div>
+            </div>
+            {/* Header ends here */}
+
             {/* First card */}
             <a
               href="https://www.fairfaxcounty.gov/police/fairfax-county-police-department"
