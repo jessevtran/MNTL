@@ -21,7 +21,7 @@ const crisis = () => {
             {/* Header starts here */}
             <div className="w-full md:w-8/12 lg:w-6/12 xl:w-6/12">
               <div className="py-8 text-left sm:pt-0">
-                <h2 className="font-semibold text-6xl  text-blueGray-600 pt-20">
+                <h2 className="font-semibold text-6xl text-blueGray-600 pt-20">
                   Crisis
                 </h2>
                 <p className="pt-6">
@@ -33,13 +33,11 @@ const crisis = () => {
 
             {/* First card */}
             <a
-              href="https://www.fairfaxcounty.gov/police/fairfax-county-police-department"
-              target="_blank"
-            >
+              href="https://www.fairfaxcounty.gov/police/fairfax-county-police-department" target="_blank"
+             >
               <div
                 v-for="card in cards"
-                className="flex flex-col md:flex-row overflow-hidden bg-blueGray-100 rounded-lg hover:shadow-lg mt-4 w-100 mx-2"
-              >
+                className="flex flex-col md:flex-row overflow-hidden bg-blueGray-50 rounded-lg shadow-lg hover:shadow-2xl ease-linear transition-all duration-150 mt-4 w-100 mx-2"              >
                 {/* media */}
                 <div className="h-64 w-auto md:w-1/2">
                   <img
@@ -65,11 +63,12 @@ const crisis = () => {
               </div>
             </a>
             {/* First card Ends */}
+
             {/* Second card */}
             <a href="https://suicidepreventionlifeline.org" target="_blank">
               <div
                 v-for="card in cards"
-                className="flex flex-col md:flex-row overflow-hidden bg-blueGray-100 rounded-lg hover:shadow-lg mt-4 w-100 mx-2"
+                className="flex flex-col md:flex-row overflow-hidden bg-blueGray-50 rounded-lg shadow-lg hover:shadow-2xl ease-linear transition-all duration-150 mt-4 w-100 mx-2"
               >
                 {/* media */}
                 <div className="h-64 w-auto md:w-1/2">
@@ -95,11 +94,12 @@ const crisis = () => {
               </div>
             </a>
             {/* Second card Ends */}
+
             {/* Third card */}
             <a href="https://www.crisistextline.org/" target="_blank">
               <div
                 v-for="card in cards"
-                className="flex flex-col md:flex-row overflow-hidden bg-blueGray-100 rounded-lg hover:shadow-lg mt-4 w-100 mx-2"
+                className="flex flex-col md:flex-row overflow-hidden bg-blueGray-50 rounded-lg shadow-lg hover:shadow-2xl ease-linear transition-all duration-150 mt-4 w-100 mx-2"
               >
                 {/* media */}
                 <div className="h-64 w-auto md:w-1/2">
@@ -121,16 +121,18 @@ const crisis = () => {
                   <span className="mb-4 border-t border-blueGray-300">
                     Please, do not hasitate and text <strong>Home</strong> to{" "}
                     <strong>741-741</strong>
+                    
                   </span>
                 </div>
               </div>
             </a>
             {/* Third card Ends */}
+                      
             {/* Fourth card */}
             <a href="https://www.rainn.org/" target="_blank">
               <div
                 v-for="card in cards"
-                className="flex flex-col md:flex-row overflow-hidden bg-blueGray-100 rounded-lg hover:shadow-lg mt-4 w-100 mx-2"
+                className="flex flex-col md:flex-row overflow-hidden bg-blueGray-50 rounded-lg shadow-lg hover:shadow-2xl ease-linear transition-all duration-150 mt-4 w-100 mx-2"
               >
                 {/* media */}
                 <div className="h-64 w-auto md:w-1/2">

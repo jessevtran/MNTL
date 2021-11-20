@@ -114,7 +114,7 @@ export default function Social() {
                 {/* START CARD 1 */}
                 <a href="https://www.nih.gov/health-information/social-wellness-toolkit">
                   {/* <!-- card --> */}
-                  <div v-for="card in cards" className="flex flex-col md:flex-row overflow-hidden bg-blueGray-50 rounded-lg shadow-xl mt-4 w-100 mx-2">
+                  <div v-for="card in cards" className="flex flex-col md:flex-row overflow-hidden bg-blueGray-50 rounded-lg shadow-lg hover:shadow-2xl ease-linear transition-all duration-150 mt-4 w-100 mx-2">
                     {/* <!-- media --> */}
                     <div className="h-32 w-auto md:w-1/2">
                       {/* <div className="h-64 w-64"> */}
@@ -144,7 +144,7 @@ export default function Social() {
                 {/* START CARD 2 */}
                 <a href="https://mason360.gmu.edu/home_login">
                   {/* <!-- card --> */}
-                  <div v-for="card in cards" className="flex flex-col md:flex-row overflow-hidden bg-blueGray-50 rounded-lg shadow-xl  mt-4 w-100 mx-2">
+                  <div v-for="card in cards" className="flex flex-col md:flex-row overflow-hidden bg-blueGray-50 rounded-lg shadow-lg hover:shadow-2xl ease-linear transition-all duration-150 mt-4 w-100 mx-2">
                     {/* <!-- media --> */}
                     <div className="h-32 w-auto md:w-1/2">
                       <img
@@ -173,7 +173,7 @@ export default function Social() {
                 {/* START CARD 3 */}
                 <a href="https://www.myamericannurse.com/social-wellness-nurture-relationships/">
                   {/* <!-- card --> */}
-                  <div v-for="card in cards" className="flex flex-col md:flex-row overflow-hidden bg-blueGray-50 rounded-lg shadow-xl  mt-4 w-100 mx-2">
+                  <div v-for="card in cards" className="flex flex-col md:flex-row overflow-hidden bg-blueGray-50 rounded-lg shadow-lg hover:shadow-2xl ease-linear transition-all duration-150 mt-4 w-100 mx-2">
                     {/* <!-- media --> */}
                     <div className="h-32 w-auto md:w-1/2">
                       <img
