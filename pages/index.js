@@ -9,8 +9,12 @@ import Footer from "components/Footers/Footer.js";
 export default function Index() {
   return (
     <>
+      <head>
+        <title>MNTL</title>
+      </head>
       <IndexNavbar fixed />
       <main>
+        {/* Background image with overlay */}
         <div className="relative pt-16 pb-32 flex content-center items-center justify-center min-h-screen-75">
           <div
             className="absolute top-0 w-full h-full bg-center bg-cover"
@@ -26,6 +30,7 @@ export default function Index() {
               className="w-full h-full absolute opacity-75 bg-black"
             ></span>
           </div>
+          {/* Introductory headers of our application */}
           <div className="container relative mx-auto">
             <div className="items-center flex flex-wrap">
               <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center mt-0 mb-4">
@@ -64,7 +69,7 @@ export default function Index() {
             </svg>
           </div>
         </div>
-
+        {/* Section of cards */}
         <section className="pb-20 bg-blueGray-200 -mt-24">
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap">
@@ -74,6 +79,7 @@ export default function Index() {
                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
                       <i className="fas fa-rocket"></i>
                     </div>
+                    {/* Content for explore */}
                     <h6 className="text-xl font-semibold">Explore</h6>
                     <p className="mt-2 mb-4 text-blueGray-500">
                       Navigate through our website using our navigation bar above.
@@ -81,13 +87,13 @@ export default function Index() {
                   </div>
                 </div>
               </div>
-
               <div className="w-full md:w-4/12 px-4 text-center">
                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                   <div className="px-4 py-5 flex-auto">
                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-lightBlue-400">
                       <i className="fas fa-comment-dots"></i>
                     </div>
+                    {/* Content for about */}
                     <h6 className="text-xl font-semibold"> About </h6>
                     <p className="mt-2 mb-4 text-blueGray-500">
                       Find out who created this application by scrolling below.
@@ -102,6 +108,7 @@ export default function Index() {
                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-emerald-400">
                       <i className="fas fa-fingerprint"></i>
                     </div>
+                    {/* Content for confidentality */}
                     <h6 className="text-xl font-semibold">Confidentality</h6>
                     <p className="mt-2 mb-4 text-blueGray-500">
                       MNTL does not keep any information stored for our quiz.
@@ -110,11 +117,13 @@ export default function Index() {
                 </div>
               </div>
             </div>
-
+            {/* Linked cards to features below here */}
+            {/* Support Page */}
             <div>
               <a href="/find-support/">
                 <div className="w-full md:w-4/12 px-4 mr-auto ml-auto inline-block">
                   <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg hover:shadow-2xl ease-linear transition-all duration-150 rounded-lg bg-blueGray-700">
+                    {/* Media - Support Photo */}
                     <img
                       alt="..."
                       src="/img/support_index_page.png"
@@ -132,6 +141,7 @@ export default function Index() {
                           className="text-blueGray-700 fill-current"
                         ></polygon>
                       </svg>
+                      {/* Content for Support */}
                       <h4 className="text-xl font-bold text-white">
                         Find Support.
                       </h4>
@@ -142,10 +152,11 @@ export default function Index() {
                   </div>
                 </div>
               </a>
-
+              {/* Quiz Page */}
               <a href="/wellness-quiz/">
                 <div className="w-full md:w-4/12 px-4 mr-auto ml-auto inline-block">
                   <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg hover:shadow-2xl ease-linear transition-all duration-150 rounded-lg bg-blueGray-700">
+                    {/* Media - Quiz Photo */}
                     <img
                       alt="..."
                       src="/img/quiz_index_page.png"
@@ -163,6 +174,7 @@ export default function Index() {
                           className="text-blueGray-700 fill-current"
                         ></polygon>
                       </svg>
+                      {/* Content for Quiz */}
                       <h4 className="text-xl font-bold text-white">
                         Take Our Quiz.
                       </h4>
@@ -173,10 +185,11 @@ export default function Index() {
                   </div>
                 </div>
               </a>
-
+              {/* Crisis Page */}
               <a href="/crisis">
                 <div className="w-full md:w-4/12 px-4 mr-auto ml-auto inline-block">
                   <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg hover:shadow-2xl ease-linear transition-all duration-150 rounded-lg bg-blueGray-700">
+                    {/* Media - Crisis Photo */}
                     <img
                       alt="..."
                       src="/img/crisis_index_page.png"
@@ -194,6 +207,7 @@ export default function Index() {
                           className="text-blueGray-700 fill-current"
                         ></polygon>
                       </svg>
+                      {/* Content for Crisis */}
                       <h4 className="text-xl font-bold text-white">
                         In a CRISIS?
                       </h4>
@@ -204,11 +218,11 @@ export default function Index() {
                   </div>
                 </div>
               </a>
-
+            
             </div>
           </div>
         </section>
-
+        {/* Section for about us in Index Page */}
         <section className="relative py-20">
           <div
             className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20"
@@ -229,7 +243,7 @@ export default function Index() {
               ></polygon>
             </svg>
           </div>
-
+          {/* Media - group photo */}
           <div className="container mx-auto px-4">
             <div className="items-center flex flex-wrap">
               <div className="w-full md:w-4/12 ml-auto mr-auto px-4">
@@ -244,6 +258,7 @@ export default function Index() {
                   <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-blueGray-200">
                     <i className="fas fa-rocket text-xl"></i>
                   </div>
+                  {/* Content for about us section */}
                   <h3 className="text-3xl font-semibold">About us</h3>
                   <p className="mt-4 text-lg leading-relaxed text-blueGray-500">
                     The 4 individuals who created this application:
@@ -311,7 +326,7 @@ export default function Index() {
             </div>
           </div>
         </section>
-
+        {/* Section for MNTL's team composition */}
         <section className="pt-20 pb-48">
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap justify-center text-center mb-24">
@@ -389,7 +404,7 @@ export default function Index() {
             </div>
           </div>
         </section>
-
+        {/* TO DO: Impelement suggested articles. */}
         {/* IMPLEMENTATION FOR SUGGESTED ARTICLES */}
         {/* <section className="pb-20 relative block bg-blueGray-800">
           <div
