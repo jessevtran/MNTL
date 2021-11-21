@@ -3,10 +3,12 @@ import Link from "next/link";
 
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import Footer from "components/Footers/Footer.js";
+import Head from "next/head";
 
 export default function Academic() {
   return (
     <>
+      <Head><title>Academic Wellness</title></Head>
       <IndexNavbar fixed />
 
       {/* BACKGROUND. DRAWS THE BLOCK ON TOP OF BACKGROUND*/}
@@ -91,11 +93,11 @@ export default function Academic() {
 
                     <div className="text-base text-left font-light text-blueGray-800 pl-5">
                       <ul className="list-disc list-outside">
-                        <li>The environment where you study matters. Where do you like to study? The library? At home? Coffee Shops? <a href="https://library.gmu.edu/locations/fenwick" className="text-lightBlue-300 underline">Fenwick</a> is
+                        <li>The environment where you study matters. Where do you like to study? The library? At home? Coffee Shops? <a href="https://library.gmu.edu/locations/fenwick" className="text-lightBlue-300 underline" target="_blank">Fenwick</a> is
                           open from 8:00AM - 11:00PM and most GMU campus buildings are open from 7:30 a.m. to 11:00 p.m.</li>
                         <li>Find yourself behind on assignments? Try making a to-do list! or maintain a planner to keep track of all your assignments!</li>
                         <li>Meeting with your department advisors can be great for your four-year planning and academic concerns</li>
-                        <li>Check out the <a href="https://stearnscenter.gmu.edu/knowledge-center/knowing-mason-students/student-support-resources-on-campus/" className="text-lightBlue-300 underline">university resources</a> for help on math, writing, and career services!</li>
+                        <li>Check out the <a href="https://stearnscenter.gmu.edu/knowledge-center/knowing-mason-students/student-support-resources-on-campus/" className="text-lightBlue-300 underline" target="_blank">university resources</a> for help on math, writing, and career services!</li>
                       </ul>
                     </div>
 
@@ -112,7 +114,7 @@ export default function Academic() {
               <div className="container w-100 mx-auto flex flex-col px-auto mb-12 lg:w-9/12">
 
                 {/* START CARD 1 */}
-                <a href="https://extension.harvard.edu/blog/5-strategies-for-academic-success-using-your-strengths/">
+                <a href="https://extension.harvard.edu/blog/5-strategies-for-academic-success-using-your-strengths/" target="_blank">
                   {/* <!-- card --> */}
                   <div v-for="card in cards" className="flex flex-col md:flex-row overflow-hidden bg-blueGray-50 rounded-lg shadow-lg hover:shadow-2xl ease-linear transition-all duration-150 mt-4 w-100 mx-2">
                     {/* <!-- media --> */}
@@ -141,7 +143,7 @@ export default function Academic() {
                 </a> {/* END CARD 1 */}
 
                 {/* START CARD 2 */}
-                <a href="https://www.oxfordlearning.com/how-to-study-effectively/">
+                <a href="https://www.oxfordlearning.com/how-to-study-effectively/" target="_blank">
                   {/* <!-- card --> */}
                   <div v-for="card in cards" className="flex flex-col md:flex-row overflow-hidden bg-blueGray-50 rounded-lg shadow-lg hover:shadow-2xl ease-linear transition-all duration-150 mt-4 w-100 mx-2">
                     {/* <!-- media --> */}
@@ -170,7 +172,7 @@ export default function Academic() {
                 </a> {/* END CARD 2 */}
 
                 {/* START CARD 3 */}
-                <a href="https://www.forbes.com/sites/kevinkruse/2015/11/09/time-management-students/?sh=4e129d4c6a4c">
+                <a href="https://www.forbes.com/sites/kevinkruse/2015/11/09/time-management-students/?sh=4e129d4c6a4c" target="_blank">
                   {/* <!-- card --> */}
                   <div v-for="card in cards" className="flex flex-col md:flex-row overflow-hidden bg-blueGray-50 rounded-lg shadow-lg hover:shadow-2xl ease-linear transition-all duration-150 mt-4 w-100 mx-2">
                     {/* <!-- media --> */}
@@ -198,7 +200,7 @@ export default function Academic() {
                 </a> {/* END CARD 3 */}
 
                 {/* START CARD 4 */}
-                <a href="https://advising.gmu.edu/">
+                <a href="https://advising.gmu.edu/" target="_blank">
                   {/* <!-- card --> */}
                   <div v-for="card in cards" className="flex flex-col md:flex-row overflow-hidden bg-blueGray-50 rounded-lg shadow-lg hover:shadow-2xl ease-linear transition-all duration-150 mt-4 w-100 mx-2">
                     {/* <!-- media --> */}
@@ -226,7 +228,7 @@ export default function Academic() {
                 </a> {/* END CARD 4 */}
 
                 {/* START CARD 5 */}
-                <a href="https://stearnscenter.gmu.edu/knowledge-center/knowing-mason-students/student-support-resources-on-campus/">
+                <a href="https://stearnscenter.gmu.edu/knowledge-center/knowing-mason-students/student-support-resources-on-campus/" target="_blank">
                   {/* <!-- card --> */}
                   <div v-for="card in cards" className="flex flex-col md:flex-row overflow-hidden bg-blueGray-50 rounded-lg shadow-lg hover:shadow-2xl ease-linear transition-all duration-150 mt-4 w-100 mx-2">
                     {/* <!-- media --> */}

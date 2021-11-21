@@ -3,10 +3,12 @@ import Link from "next/link";
 
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import Footer from "components/Footers/Footer.js";
+import Head from "next/head";
 
 export default function Physical() {
   return (
     <>
+      <Head><title>Physical Wellness</title></Head>
       <IndexNavbar fixed />
 
       {/* BACKGROUND. DRAWS THE BLOCK ON TOP OF BACKGROUND*/}
@@ -73,7 +75,7 @@ export default function Physical() {
                         Not only does regular activity prevent diseases such as diabetes, heart disease,
                         and high blood pressure, it is essential for reducing stress and the affects of
                         depression and anxiety <a
-                          href="https://www.tandfonline.com/doi/full/10.1080/08039480802315640" className="text-lightBlue-300 underline">[1]
+                          href="https://www.tandfonline.com/doi/full/10.1080/08039480802315640" className="text-lightBlue-300 underline" target="_blank">[1]
                         </a>.
                       </p>
                     </div>
@@ -105,7 +107,7 @@ export default function Physical() {
               <div className="container w-100 mx-auto flex flex-col px-auto mb-12 lg:w-9/12">
 
                 {/* START CARD 1 */}
-                <a href="https://www.nih.gov/health-information/physical-wellness-toolkit">
+                <a href="https://www.nih.gov/health-information/physical-wellness-toolkit" target="_blank"> 
                   {/* <!-- card --> */}
                   <div v-for="card in cards" className="flex flex-col md:flex-row overflow-hidden bg-blueGray-50 rounded-lg shadow-lg hover:shadow-2xl ease-linear transition-all duration-150 mt-4 w-100 mx-2">
                     {/* <!-- media --> */}
@@ -134,7 +136,7 @@ export default function Physical() {
                 </a> {/* END CARD 1 */}
 
                 {/* START CARD 2 */}
-                <a href="https://shs.gmu.edu/healthed/exercise/">
+                <a href="https://shs.gmu.edu/healthed/exercise/" target="_blank">
                   {/* <!-- card --> */}
                   <div v-for="card in cards" className="flex flex-col md:flex-row overflow-hidden bg-blueGray-50 rounded-lg shadow-lg hover:shadow-2xl ease-linear transition-all duration-150 mt-4 w-100 mx-2">
                     {/* <!-- media --> */}
@@ -163,7 +165,7 @@ export default function Physical() {
                 </a> {/* END CARD 2 */}
 
                 {/* START CARD 3 */}
-                <a href="https://www.heart.org/en/healthy-living/fitness/fitness-basics/why-is-physical-activity-so-important-for-health-and-wellbeing">
+                <a href="https://www.heart.org/en/healthy-living/fitness/fitness-basics/why-is-physical-activity-so-important-for-health-and-wellbeing" target="_blank">
                   {/* <!-- card --> */}
                   <div v-for="card in cards" className="flex flex-col md:flex-row overflow-hidden bg-blueGray-50 rounded-lg shadow-lg hover:shadow-2xl ease-linear transition-all duration-150 mt-4 w-100 mx-2">
                     {/* <!-- media --> */}

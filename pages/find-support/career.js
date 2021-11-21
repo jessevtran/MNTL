@@ -3,10 +3,12 @@ import Link from "next/link";
 
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import Footer from "components/Footers/Footer.js";
+import Head from "next/head";
 
 export default function Career() {
   return (
     <>
+      <Head><title>Career Wellness</title></Head> 
       <IndexNavbar fixed />
 
       {/* BACKGROUND. DRAWS THE BLOCK ON TOP OF BACKGROUND*/}
@@ -104,7 +106,7 @@ export default function Career() {
               <div className="container w-100 mx-auto flex flex-col px-auto mb-12 lg:w-9/12">
 
                 {/* START CARD 1 */}
-                <a href="https://gmu.joinhandshake.com/login">
+                <a href="https://gmu.joinhandshake.com/login" target="_blank">
                   {/* <!-- card --> */}
                   <div v-for="card in cards" className="flex flex-col md:flex-row overflow-hidden bg-blueGray-50 rounded-lg shadow-lg hover:shadow-2xl ease-linear transition-all duration-150 mt-4 w-100 mx-2">
                     {/* <!-- media --> */}
@@ -131,7 +133,7 @@ export default function Career() {
                 </a> {/* END CARD 1 */}
 
                 {/* START CARD 2 */}
-                <a href="https://masononline.gmu.edu/university-career-services/">
+                <a href="https://masononline.gmu.edu/university-career-services/" target="_blank">
                   {/* <!-- card --> */}
                   <div v-for="card in cards" className="flex flex-col md:flex-row overflow-hidden bg-blueGray-50 rounded-lg shadow-lg hover:shadow-2xl ease-linear transition-all duration-150 mt-4 w-100 mx-2">
                     {/* <!-- media --> */}
@@ -160,7 +162,7 @@ export default function Career() {
                 </a> {/* END CARD 2 */}
 
                 {/* START CARD 3 */}
-                <a href="https://introwellness.com/health/what-is-occupational-wellness/">
+                <a href="https://introwellness.com/health/what-is-occupational-wellness/" target="_blank">
                   {/* <!-- card --> */}
                   <div v-for="card in cards" className="flex flex-col md:flex-row overflow-hidden bg-blueGray-50 rounded-lg shadow-lg hover:shadow-2xl ease-linear transition-all duration-150 mt-4 w-100 mx-2">
                     {/* <!-- media --> */}
