@@ -52,7 +52,6 @@
     "@cypress/react": "^5.10.3",
     "@cypress/webpack-dev-server": "^1.7.0",
     "autoprefixer": "10.2.5",
-    "babel-jest": "^27.3.1",
     "cypress": "^9.0.0",
     "postcss": "^8.3.11",
     "webpack-dev-server": "^4.5.0"
