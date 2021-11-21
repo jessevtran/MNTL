@@ -3,11 +3,13 @@ import Link from "next/link";
 
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import Footer from "components/Footers/Footer.js";
+import Head from "next/head";
 
 // accessible at .../find-support/
 export default function findsupport() {
   return (
     <>
+      <Head><title>Find Support</title></Head>
       <IndexNavbar fixed />
 
       <section className="header relative m-24 py-12 items-center flex">
@@ -126,11 +128,52 @@ export default function findsupport() {
                 </div>
               </div>
             </a> {/* END CARD 5 */}
+
+            {/* CARD 6 */}
+            <a href="/find-support/spiritual">
+              <div className="rounded-lg overflow-hidden bg-blueGray-50 shadow-lg hover:shadow-2xl ease-linear transition-all duration-150">
+                {/* IMAGE */}
+                <img className="inset-0 h-full w-full object-cover object-center"
+                  src="https://images.pexels.com/photos/4932184/pexels-photo-4932184.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                  style={{ height: "200px", width: "500px" }}
+                />
+                {/* CONTENT */}
+                <div className="px-6 py-4">
+                  <h5 className="text-2xl font-bold leading-normal mt-0 mb-2 text-blueGray-800">
+                    Spiritual Wellness
+                  </h5>
+                  <p className="text-gray-700 text-base">
+                    Attending to our sense of purpose and meaning in life.
+                  </p>
+                </div>
+              </div>
+            </a> {/* END CARD 6 */}
+
+            {/* CARD 7 */}
+            <a href="/find-support/environmental">
+              <div className="rounded-lg overflow-hidden bg-blueGray-50 shadow-lg hover:shadow-2xl ease-linear transition-all duration-150">
+                {/* IMAGE */}
+                <img className="inset-0 h-full w-full object-cover object-center"
+                  src="https://images.pexels.com/photos/1591373/pexels-photo-1591373.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                  style={{ height: "200px", width: "500px" }}
+                />
+                {/* CONTENT */}
+                <div className="px-6 py-4">
+                  <h5 className="text-2xl font-bold leading-normal mt-0 mb-2 text-blueGray-800">
+                    Environmental Wellness
+                  </h5>
+                  <p className="text-gray-700 text-base">
+                    Occupying pleasant, stimulating environments that support well-being.
+                  </p>
+                </div>
+              </div>
+            </a> {/* END CARD 7 */}
+
           </div> {/* END CONTAINER FOR CARDS */}
         </div>
       </section>
 
-      <div className="pb-64"></div>
+      <div className="pb-0"></div>
       <Footer />
     </>
   );
