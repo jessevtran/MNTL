@@ -113,7 +113,7 @@ export default function Emotional() {
                 {/* START CARD 1 */}
                 <a href="https://www.nih.gov/health-information/emotional-wellness-toolkit">
                   {/* <!-- card --> */}
-                  <div v-for="card in cards" className="flex flex-col md:flex-row overflow-hidden bg-blueGray-50 rounded-lg shadow-xl mt-4 w-100 mx-2">
+                  <div v-for="card in cards" className="flex flex-col md:flex-row overflow-hidden bg-blueGray-50 rounded-lg shadow-lg hover:shadow-2xl ease-linear transition-all duration-150 mt-4 w-100 mx-2">
                     {/* <!-- media --> */}
                     <div className="h-32 w-auto md:w-1/2">
                       {/* <div className="h-64 w-64"> */}
@@ -142,7 +142,7 @@ export default function Emotional() {
                 {/* START CARD 2 */}
                 <a href="https://www.mindful.org/how-to-practice-mindfulness/">
                   {/* <!-- card --> */}
-                  <div v-for="card in cards" className="flex flex-col md:flex-row overflow-hidden bg-blueGray-50 rounded-lg shadow-xl  mt-4 w-100 mx-2">
+                  <div v-for="card in cards" className="flex flex-col md:flex-row overflow-hidden bg-blueGray-50 rounded-lg shadow-lg hover:shadow-2xl ease-linear transition-all duration-150 mt-4 w-100 mx-2">
                     {/* <!-- media --> */}
                     <div className="h-32 w-auto md:w-1/2">
                       <img
@@ -171,7 +171,7 @@ export default function Emotional() {
                 {/* START CARD 3 */}
                 <a href="https://www.helpguide.org/articles/mental-health/building-better-mental-health.htm">
                   {/* <!-- card --> */}
-                  <div v-for="card in cards" className="flex flex-col md:flex-row overflow-hidden bg-blueGray-50 rounded-lg shadow-xl  mt-4 w-100 mx-2">
+                  <div v-for="card in cards" className="flex flex-col md:flex-row overflow-hidden bg-blueGray-50 rounded-lg shadow-lg hover:shadow-2xl ease-linear transition-all duration-150 mt-4 w-100 mx-2">
                     {/* <!-- media --> */}
                     <div className="h-32 w-auto md:w-1/2">
                       <img
@@ -199,7 +199,7 @@ export default function Emotional() {
                 {/* START CARD 4 */}
                 <a href="https://www.sanvello.com/">
                   {/* <!-- card --> */}
-                  <div v-for="card in cards" className="flex flex-col md:flex-row overflow-hidden bg-blueGray-50 rounded-lg shadow-xl  mt-4 w-100 mx-2">
+                  <div v-for="card in cards" className="flex flex-col md:flex-row overflow-hidden bg-blueGray-50 rounded-lg shadow-lg hover:shadow-2xl ease-linear transition-all duration-150 mt-4 w-100 mx-2">
                     {/* <!-- media --> */}
                     <div className="h-32 w-auto md:w-1/2">
                       <img
