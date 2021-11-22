@@ -75,7 +75,7 @@ export default function Career() {
                         that support well-being. It promotes interaction with nature and also creating an enjoyable
                         personal environment (both in and out of your workspace). Everyone can have a strong environmental
                         conscious simply by raising their awareness and incorporating features that help to
-                        make their setting more agreeable to them. When you become environmentally aware, you will be able 
+                        make their setting more agreeable to them. When you become environmentally aware, you will be able
                         to realize how your daily habits affect your home life as well as your work life and results
                         in a more balanced lifestyle.
                       </p>
@@ -88,9 +88,12 @@ export default function Career() {
                     <div className="text-base text-left font-light text-blueGray-800 pl-5">
                       <ul className="list-disc list-outside">
                         <li>Set up your workspace in a manner that is more efficient and comfortable.</li>
+                        <li>Make your home healthier by cleaning with non-toxic products and washing your hands often.</li>
                         <li>Become aware of Earth’s natural resources. Identify and understand the role of our natural resources and how we can conserve them.</li>
-                        <li></li>
+                        <li>Conserve energy by turning off and unplugging electronics that are not in use.</li>
+                        <li>Save water. Turn off water when brushing your teeth, shaving, or washing the dishes.</li>
                       </ul>
+
                     </div>
 
                     <h5 className="font-semibold text-2xl text-blueGray-600 pt-8">
@@ -132,52 +135,59 @@ export default function Career() {
                 </a> {/* END CARD 1 */}
 
                 {/* START CARD 2 */}
-                <a href="" target="_blank">
+                <a href="https://medium.com/change-becomes-you/6-ways-to-enhance-your-environmental-wellness-2c915a374864" target="_blank">
                   {/* <!-- card --> */}
                   <div v-for="card in cards" className="flex flex-col md:flex-row overflow-hidden bg-blueGray-50 rounded-lg shadow-lg hover:shadow-2xl ease-linear transition-all duration-150 mt-4 w-100 mx-2">
                     {/* <!-- media --> */}
                     <div className="h-32 w-auto md:w-1/2">
                       <img
                         className="inset-0 h-full w-full object-cover object-center"
-                        src=""
+                        src="https://miro.medium.com/max/1400/1*tVigoNVHg-26MpM6OnoMxQ.jpeg"
                       />
                     </div>
                     {/* <!-- content --> */}
                     <div className="w-full py-4 px-6 text-gray-800 flex flex-col justify-between">
                       <h4 className="text-2xl font-semibold leading-tight overflow-hidden">
-                        title
+                        6 Ways To Enhance Your Environmental Wellness
                       </h4>
                       <p className="font-light">
-                        desc
+                        What surrounds you each day in your home, work, or neighbourhood and the
+                        resources available to you can affect your personal wellness. You can’t
+                        always choose what’s in the environments you live, work, or play in. But
+                        taking small steps to make your environments safer and limiting your
+                        exposure to potentially harmful substances can help keep you healthier.
                       </p>
                       <p className="text-sm text-gray-700 uppercase tracking-wide font-semibold mt-2">
-                        src
+                        Medium &bull; Benjamin Mumme &bull; 04-14
                       </p>
                     </div> {/* END CONTENT */}
                   </div> {/* END TEXT */}
                 </a> {/* END CARD 2 */}
 
                 {/* START CARD 3 */}
-                <a href="" target="_blank">
+                <a href="https://www.forbes.com/sites/jamiegold/2019/11/21/health-and-wellness-surpass-conservation-in-popular-sustainability-conversations/" target="_blank">
                   {/* <!-- card --> */}
                   <div v-for="card in cards" className="flex flex-col md:flex-row overflow-hidden bg-blueGray-50 rounded-lg shadow-lg hover:shadow-2xl ease-linear transition-all duration-150 mt-4 w-100 mx-2">
                     {/* <!-- media --> */}
                     <div className="h-32 w-auto md:w-1/2">
                       <img
                         className="inset-0 h-full w-full object-cover object-center"
-                        src=""
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROa3WKLpHOW32YJY3MG4JS4WvtxJnOtRICSQ&usqp=CAU"
                       />
                     </div>
                     {/* <!-- content --> */}
                     <div className="w-full py-4 px-6 text-gray-800 flex flex-col justify-between">
                       <h4 className="text-2xl font-semibold leading-tight overflow-hidden">
-                        title
+                        When Making Your Home More Sustainable, Health And Wellness Are Also Part Of The Conversation
                       </h4>
                       <p className="font-light">
-                        desc
+                        A funny thing happened on the way to sustainability: Consumers became aware that the toxins
+                        environmental groups have been warning them about for decades are not just harmful to the
+                        planet, but to their health as well, and that having an eco-friendly home is about much
+                        more than saving money on their utilities.
                       </p>
                       <p className="text-sm text-gray-700 uppercase tracking-wide font-semibold mt-2">
-                        src &bull; prns
+                        Forbes &bull; Jamie Gold &bull; 11-21-2019
                       </p>
                     </div> {/* END CONTENT */}
                   </div> {/* END TEXT */}
