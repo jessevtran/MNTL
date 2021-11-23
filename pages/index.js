@@ -4,14 +4,15 @@ import Link from "next/link";
 
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import Footer from "components/Footers/Footer.js";
+import Head from "next/head";
 
 
 export default function Index() {
   return (
     <>
-      <head>
+      <Head>
         <title>MNTL</title>
-      </head>
+      </Head>
       <IndexNavbar fixed />
       <main>
         {/* Background image with overlay */}
