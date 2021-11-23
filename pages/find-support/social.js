@@ -3,10 +3,12 @@ import Link from "next/link";
 
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import Footer from "components/Footers/Footer.js";
+import Head from "next/head";
 
 export default function Social() {
   return (
     <>
+      <Head><title>Social Wellness</title></Head>
       <IndexNavbar fixed />
 
       {/* BACKGROUND. DRAWS THE BLOCK ON TOP OF BACKGROUND*/}
@@ -73,7 +75,7 @@ export default function Social() {
                         with romantic parters, friends, family, or professors. Research has shown that social ties influence
                         our health habits and "instill a sense of responsibility and concern for others that then lead individuals
                         to engage in behaviors that protect the health of others, as well as their own health." <a
-                          href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3150158/" className="text-lightBlue-300 underline">[1]
+                          href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3150158/" className="text-lightBlue-300 underline" target="_blank">[1]
                         </a>
                       </p>
 
@@ -112,7 +114,7 @@ export default function Social() {
               <div className="container w-100 mx-auto flex flex-col px-auto mb-12 lg:w-9/12">
 
                 {/* START CARD 1 */}
-                <a href="https://www.nih.gov/health-information/social-wellness-toolkit">
+                <a href="https://www.nih.gov/health-information/social-wellness-toolkit" target="_blank">
                   {/* <!-- card --> */}
                   <div v-for="card in cards" className="flex flex-col md:flex-row overflow-hidden bg-blueGray-50 rounded-lg shadow-lg hover:shadow-2xl ease-linear transition-all duration-150 mt-4 w-100 mx-2">
                     {/* <!-- media --> */}
@@ -142,7 +144,7 @@ export default function Social() {
                 </a> {/* END CARD 1 */}
 
                 {/* START CARD 2 */}
-                <a href="https://mason360.gmu.edu/home_login">
+                <a href="https://mason360.gmu.edu/home_login" target="_blank">
                   {/* <!-- card --> */}
                   <div v-for="card in cards" className="flex flex-col md:flex-row overflow-hidden bg-blueGray-50 rounded-lg shadow-lg hover:shadow-2xl ease-linear transition-all duration-150 mt-4 w-100 mx-2">
                     {/* <!-- media --> */}
@@ -171,7 +173,7 @@ export default function Social() {
                 </a> {/* END CARD 2 */}
 
                 {/* START CARD 3 */}
-                <a href="https://www.myamericannurse.com/social-wellness-nurture-relationships/">
+                <a href="https://www.myamericannurse.com/social-wellness-nurture-relationships/" target="_blank">
                   {/* <!-- card --> */}
                   <div v-for="card in cards" className="flex flex-col md:flex-row overflow-hidden bg-blueGray-50 rounded-lg shadow-lg hover:shadow-2xl ease-linear transition-all duration-150 mt-4 w-100 mx-2">
                     {/* <!-- media --> */}

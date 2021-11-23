@@ -3,10 +3,12 @@ import Link from "next/link";
 
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import Footer from "components/Footers/Footer.js";
+import Head from "next/head";
 
 export default function Emotional() {
   return (
     <>
+      <Head><title>Emotional Wellness</title></Head>
       <IndexNavbar fixed />
 
       {/* BACKGROUND. DRAWS THE BLOCK ON TOP OF BACKGROUND*/}
@@ -69,8 +71,8 @@ export default function Emotional() {
                     </h5>
                     <div className="text-base text-left font-light text-blueGray-800">
                       <p>
-                        Emotional Wellness is the <a className="font-medium">awareness, understanding, and acceptance</a> of your emotions as well
-                        as the ability to manage and persevere through challenges and change <a href="https://www.nationalcenterforemotionalwellness.org/" className="text-lightBlue-300 underline">
+                        Emotional Wellness is the <a className="font-medium" >awareness, understanding, and acceptance</a> of your emotions as well
+                        as the ability to manage and persevere through challenges and change <a href="https://www.nationalcenterforemotionalwellness.org/" className="text-lightBlue-300 underline" target="_blank">
                           [1]</a>. For students, many of these challenges include stress and anxiety, and often lead to feeling overwhelmed.
                         Beginning to better understand how we react and respond to these challenges is a part of emotional wellness and can help us
                         attain emotional balance.
@@ -93,8 +95,8 @@ export default function Emotional() {
                         <li>Practice self-acceptance. Give yourself more credit for your accomplishments.</li>
                         <li>Forgive yourself. Everyone makes mistakes in life, so learn from the things that went wrong, and move on.</li>
                         <li>Be patient. Adapting to change takes time, but it is inevitable and provides invaluable opportunities for growth.</li>
-                        <li><a href="https://www.mindful.org/how-to-practice-mindfulness/" className="text-lightBlue-300 underline">Practice mindfulness</a>, the act of becoming more aware of where you are and what you're doing.</li>
-                        <li>Build a strong support system. Try to get active with friends, or join a group with similar hobbies. Learn more on our page about <Link href="/find-support/social"><a className="text-lightBlue-300 underline">Social Wellness</a></Link>.</li>
+                        <li><a href="https://www.mindful.org/how-to-practice-mindfulness/" className="text-lightBlue-300 underline" target="_blank">Practice mindfulness</a>, the act of becoming more aware of where you are and what you're doing.</li>
+                        <li>Build a strong support system. Try to get active with friends, or join a group with similar hobbies. Learn more on our page about <Link href="/find-support/social"><a className="text-lightBlue-300 underline" target="_blank">Social Wellness</a></Link>.</li>
                       </ul>
                     </div>
 
@@ -111,7 +113,7 @@ export default function Emotional() {
               <div className="container w-100 mx-auto flex flex-col px-auto mb-12 lg:w-9/12">
 
                 {/* START CARD 1 */}
-                <a href="https://www.nih.gov/health-information/emotional-wellness-toolkit">
+                <a href="https://www.nih.gov/health-information/emotional-wellness-toolkit" target="_blank">
                   {/* <!-- card --> */}
                   <div v-for="card in cards" className="flex flex-col md:flex-row overflow-hidden bg-blueGray-50 rounded-lg shadow-lg hover:shadow-2xl ease-linear transition-all duration-150 mt-4 w-100 mx-2">
                     {/* <!-- media --> */}
@@ -140,7 +142,7 @@ export default function Emotional() {
                 </a> {/* END CARD 1 */}
 
                 {/* START CARD 2 */}
-                <a href="https://www.mindful.org/how-to-practice-mindfulness/">
+                <a href="https://www.mindful.org/how-to-practice-mindfulness/" target="_blank">
                   {/* <!-- card --> */}
                   <div v-for="card in cards" className="flex flex-col md:flex-row overflow-hidden bg-blueGray-50 rounded-lg shadow-lg hover:shadow-2xl ease-linear transition-all duration-150 mt-4 w-100 mx-2">
                     {/* <!-- media --> */}
@@ -169,7 +171,7 @@ export default function Emotional() {
                 </a> {/* END CARD 2 */}
 
                 {/* START CARD 3 */}
-                <a href="https://www.helpguide.org/articles/mental-health/building-better-mental-health.htm">
+                <a href="https://www.helpguide.org/articles/mental-health/building-better-mental-health.htm" target="_blank">
                   {/* <!-- card --> */}
                   <div v-for="card in cards" className="flex flex-col md:flex-row overflow-hidden bg-blueGray-50 rounded-lg shadow-lg hover:shadow-2xl ease-linear transition-all duration-150 mt-4 w-100 mx-2">
                     {/* <!-- media --> */}
@@ -197,7 +199,7 @@ export default function Emotional() {
                 </a> {/* END CARD 3 */}
 
                 {/* START CARD 4 */}
-                <a href="https://www.sanvello.com/">
+                <a href="https://www.sanvello.com/" target="_blank">
                   {/* <!-- card --> */}
                   <div v-for="card in cards" className="flex flex-col md:flex-row overflow-hidden bg-blueGray-50 rounded-lg shadow-lg hover:shadow-2xl ease-linear transition-all duration-150 mt-4 w-100 mx-2">
                     {/* <!-- media --> */}

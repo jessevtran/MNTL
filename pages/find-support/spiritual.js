@@ -5,10 +5,10 @@ import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import Footer from "components/Footers/Footer.js";
 import Head from "next/head";
 
-export default function Physical() {
+export default function Spiritual() {
   return (
     <>
-      <Head><title>Physical Wellness</title></Head>
+      <Head><title>Spiritual Wellness</title></Head>
       <IndexNavbar fixed />
 
       {/* BACKGROUND. DRAWS THE BLOCK ON TOP OF BACKGROUND*/}
@@ -17,7 +17,7 @@ export default function Physical() {
           className="absolute top-0 w-full h-full bg-center bg-cover"
           style={{
             backgroundImage:
-              "url('https://images.pexels.com/photos/2775196/pexels-photo-2775196.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+              "url('https://images.pexels.com/photos/4932184/pexels-photo-4932184.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')",
           }}
         >
           {/* Draws the overlay on top of background image. Note opacity tag */}
@@ -56,7 +56,7 @@ export default function Physical() {
               {/* TITLE */}
               <div className="text-center mt-12">
                 <h2 className="text-5xl font-semibold leading-normal mb-2 text-blueGray-700">
-                  Physical Wellness
+                  Spiritual Wellness
                 </h2>
               </div>
 
@@ -67,30 +67,29 @@ export default function Physical() {
                   <div className="w-full lg:w-9/12 px-4">
 
                     <h5 className="font-semibold text-2xl text-blueGray-600 mb-0">
-                      What is Physical Wellness?
+                      What is Spiritual Wellness?
                     </h5>
                     <div className="text-base text-left font-light text-blueGray-800">
                       <p>
-                        Physical Wellness plays an important role in your overall well-being and success.
-                        Not only does regular activity prevent diseases such as diabetes, heart disease,
-                        and high blood pressure, it is essential for reducing stress and the affects of
-                        depression and anxiety <a
-                          href="https://www.tandfonline.com/doi/full/10.1080/08039480802315640" className="text-lightBlue-300 underline" target="_blank">[1]
-                        </a>.
+                        Spiritual wellness means to find meaning and purpose in your life while also understanding the values,
+                        beliefs, and morals that guide your actions. You don't have to be a religious individual, as spiritual wellness
+                        also refers to how someone enjoys their lives. Having a stronger mind-body connection and deeper understanding
+                        of yourself strengthens self-awareness which also supports how we think and behave. Overall, when we improve our
+                        spiritual wellness, we strengthen relationships with ourselves and the people around us.
                       </p>
                     </div>
 
                     <h5 className="font-semibold text-2xl text-blueGray-600 pt-8">
-                      Tips for Improving Physical Wellness
+                      Tips for Improving Spiritual Wellness
                     </h5>
 
                     <div className="text-base text-left font-light text-blueGray-800 pl-5">
                       <ul className="list-disc list-outside">
-                        <li>Aim for at least 150 minutes of physical activity each week!</li>
-                        <li>Try to get at least eight hours of sleep per night.</li>
-                        <li>Stay hydrated! Drink plenty of water throughout the day and avoid soda or beverages high in sugar.</li>
-                        <li>You don't have to be an olympic athlete to be physically well! Do activities that you enjoy, and make them part of your daily routine.</li>
-                        <li>Track your progress. Start small and build up i.e. If you're walking, slowly increase walking time/distance.</li>
+                        <li>Asks yourself questions about your character and your meaning. For example, "What is my purpose?" "What do I value?" "What do I want to achieve?"
+                          These questions will help think in-depth about yourself.</li>
+                        <li>Try meditation. It does not need to be in a religious context; it; the process of relaxng the body, calming the mind, and being fully concentrated in the present.</li>
+                        <li>Traveling can help take the mind off stressors and distractions which can help to reflect and reset. Shenandoah National Park is a great place to explore and is only 1.5 hours away from Fairfax, VA!</li>
+                        <li>Journaling can help to express what's on our mind. Writing down your thoughts can help to reflect on events and think clearer.</li>
                       </ul>
                     </div>
 
@@ -107,7 +106,7 @@ export default function Physical() {
               <div className="container w-100 mx-auto flex flex-col px-auto mb-12 lg:w-9/12">
 
                 {/* START CARD 1 */}
-                <a href="https://www.nih.gov/health-information/physical-wellness-toolkit" target="_blank"> 
+                <a href="https://www.betterup.com/blog/what-is-spiritual-wellness-and-why-is-it-so-important" target="_blank">
                   {/* <!-- card --> */}
                   <div v-for="card in cards" className="flex flex-col md:flex-row overflow-hidden bg-blueGray-50 rounded-lg shadow-lg hover:shadow-2xl ease-linear transition-all duration-150 mt-4 w-100 mx-2">
                     {/* <!-- media --> */}
@@ -115,78 +114,73 @@ export default function Physical() {
                       {/* <div className="h-64 w-64"> */}
                       <img
                         className="inset-0 h-full w-full object-cover object-center"
-                        src="https://www.nih.gov/sites/default/files/styles/sidebar_media_breakpoint-medium/public/health-info/wellness-toolkits/illustration-healthy-foods.jpg?itok=IID7Hs8-&timestamp=1630000423"
+                        src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F700471687%2F960x0.jpg%3Ffit%3Dscale"
                       />
                     </div>
                     {/* <!-- content --> */}
                     <div className="w-full py-4 px-6 text-gray-800 flex flex-col justify-between">
                       <h4 className="text-2xl font-semibold leading-tight overflow-hidden">
-                        Physical Wellness Toolkit
+                        How spiritual wellness unlocks creativity and resourcefulness
                       </h4>
                       <p className="font-light">
-                        Watching what you put into your body, how much activity you get, and your
-                        weight are important for keeping your body working properly. Positive physical health
-                        habits can help decrease your stress, lower your risk of disease, and increase your energy.
+                        This article discusses spiritual wellness, and
+                        how to improve it to build a more balanced life.
                       </p>
                       <p className="text-sm text-gray-700 uppercase tracking-wide font-semibold mt-2">
-                        National Institutes of Health
+                        BetterUp &bull; Amal Saymeh &bull; 01-26-2021
                       </p>
                     </div> {/* END CONTENT */}
                   </div> {/* END TEXT */}
                 </a> {/* END CARD 1 */}
 
                 {/* START CARD 2 */}
-                <a href="https://shs.gmu.edu/healthed/exercise/" target="_blank">
+                <a href="https://aaep.org/wellness/spiritual-wellness" target="_blank">
                   {/* <!-- card --> */}
                   <div v-for="card in cards" className="flex flex-col md:flex-row overflow-hidden bg-blueGray-50 rounded-lg shadow-lg hover:shadow-2xl ease-linear transition-all duration-150 mt-4 w-100 mx-2">
                     {/* <!-- media --> */}
                     <div className="h-32 w-auto md:w-1/2">
                       <img
                         className="inset-0 h-full w-full object-cover object-center"
-                        src="https://d.newsweek.com/en/full/1555830/running-exercise-fitness-stock-getty.jpg?w=1600&h=1600&q=88&f=dbcf98ae7841924284885044416c5eb3"
+                        src="https://assets.aaep.org/sites/default/files/inline-images/spiritual%20wellness%20sun%20sky%20%28002%29.jpg"
                       />
                     </div>
                     {/* <!-- content --> */}
                     <div className="w-full py-4 px-6 text-gray-800 flex flex-col justify-between">
                       <h4 className="text-2xl font-semibold leading-tight overflow-hidden">
-                        Student Health Services: Exercise
+                        Spiritual Wellness
                       </h4>
                       <p className="font-light">
-                        Is “sitting” the “new smoking”? As far as the harmful effects that an inactive
-                        lifestyle carries; this question is definitely worth thinking about. The healthcare providers
-                        at Student Health Services would write many prescriptions for regular exercise if that would
-                        motivate people to discover the benefits!
+                        Spiritual awareness is an expansive process of living each day,
+                        at work and at home, in alignment with a sense of purpose and deeply held values.
                       </p>
                       <p className="text-sm text-gray-700 uppercase tracking-wide font-semibold mt-2">
-                        George Mason University
+                        AAEP
                       </p>
                     </div> {/* END CONTENT */}
                   </div> {/* END TEXT */}
                 </a> {/* END CARD 2 */}
 
                 {/* START CARD 3 */}
-                <a href="https://www.heart.org/en/healthy-living/fitness/fitness-basics/why-is-physical-activity-so-important-for-health-and-wellbeing" target="_blank">
+                <a href="https://medium.com/change-becomes-you/7-ways-to-strengthen-your-spiritual-wellness-d7ec5f2cae43" target="_blank">
                   {/* <!-- card --> */}
                   <div v-for="card in cards" className="flex flex-col md:flex-row overflow-hidden bg-blueGray-50 rounded-lg shadow-lg hover:shadow-2xl ease-linear transition-all duration-150 mt-4 w-100 mx-2">
                     {/* <!-- media --> */}
                     <div className="h-32 w-auto md:w-1/2">
                       <img
                         className="inset-0 h-full w-full object-cover object-center"
-                        src="https://www.heart.org/-/media/AHA/H4GM/Article-Images/PA-Improves-Quality-of-Life-520047182.jpg"
+                        src="https://miro.medium.com/max/630/1*dMpExppTon7rsSmvSAQK2A.jpeg"
                       />
                     </div>
                     {/* <!-- content --> */}
                     <div className="w-full py-4 px-6 text-gray-800 flex flex-col justify-between">
                       <h4 className="text-2xl font-semibold leading-tight overflow-hidden">
-                        Why is Physical Activity So Important For Health And Well-Being?
+                        7 Ways To Strengthen Your Spiritual Wellness
                       </h4>
                       <p className="font-light">
-                        We know that staying active is one of the best ways to keep our bodies healthy.
-                        But did you know it can also improve your overall well-being and quality of life?
-                        Here are just a few of the ways physical activity can help you feel better, look better and live better. Because, why not?
+                        Grow your sense of connection, find meaning, embrace values and have faith.
                       </p>
                       <p className="text-sm text-gray-700 uppercase tracking-wide font-semibold mt-2">
-                        American Heart Association &bull; 01-14-2017
+                        Medium &bull; Benjamin Mumme
                       </p>
                     </div> {/* END CONTENT */}
                   </div> {/* END TEXT */}
