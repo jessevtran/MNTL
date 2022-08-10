@@ -1,7 +1,5 @@
 # MTNL
 
-<a href="https://mntl.herokuapp.com/">![MTNL Landing](/public/img/landing.jpg)</a> https://mntl.herokuapp.com/
-
 ### WELCOME!
 Our app, MNTL, was created as part a class assignment for CS321 at GMU. Our goal is to potentially support students apart of the George Mason community who are seeking resources and help by presenting avice and suggestions based on how they are feeling and their experiences.
 
