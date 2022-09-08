@@ -1,11 +1,11 @@
 /* eslint-disable react/jsx-no-target-blank */
 import React from "react";
 import Link from "next/link";
+import WellnessForm from "components/Forms/WellnessAssessment/WellnessAssessmentForm.js";
 
+import Head from "next/head";
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import Footer from "components/Footers/Footer.js";
-import WellnessForm from "components/Forms/WellnessAssessment/WellnessAssessmentForm.js";
-import Head from "next/head";
 
 export default function WellnessQuiz() {
   return (
@@ -18,9 +18,14 @@ export default function WellnessQuiz() {
         <div className="container mx-auto justify-center flex">
           <div className="w-full px-4 my-4">
             {/* //FIXME: Formink */}
+            <div>
+              <h2 className="font-semibold text-6xl text-blueGray-600 pt-20 pl-4">
+                Wellness Quiz
+              </h2>
+            </div>
 
-            <WellnessForm />
-
+            {/* <div id="react-paginate"></div> <WellnessAssessmentForm /> */}
+            <WellnessForm/>
 
           </div>
         </div>
@@ -29,8 +34,8 @@ export default function WellnessQuiz() {
       {/* Spacing for footer */}
       <div className="py-8" />
 
-
       <Footer />
+      <script type="text/javascript" src="components/Forms/WellnessAssessment/WellnessAssessmentForm.js"></script>
     </>
   );
 }

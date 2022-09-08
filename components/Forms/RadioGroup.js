@@ -1,6 +1,5 @@
 import React from "react";
-import { Field,} from "formik";
-
+import { Field, } from "formik";
 
 /**
  * The question group for the problem at hand.
@@ -10,7 +9,7 @@ import { Field,} from "formik";
  * @param {*} question Question being asked.
  * @returns
  */
-export default function FormikRadioGroup({touched, errors, validateRadio, question, name}) {
+export default function FormikRadioGroup({ touched, errors, validateRadio, question, name }) {
 
   /**
    * Validation for the error
@@ -25,34 +24,36 @@ export default function FormikRadioGroup({touched, errors, validateRadio, questi
     return error;
   }
 
-  
+  /* TODO: Can make the radio group more efficient/readable code-wise by utilizing "question" as "name" instead of the question type */
   return (
-    
-    <div class="relative py-4 px-4 flex items-center flex-col md:flex-row  md:justify-between drop-shadow-sm rounded-md">
-      <div class="flex flex-col py-2">
-        <h6 class="text-xl font-bold text-center lg:text-left leading-normal">{question}</h6>
+
+    <div className="relative py-4 px-4 flex items-center flex-col md:flex-row md:justify-between drop-shadow-sm rounded-md">
+
+      <div>
+        <h6 className="text-xl font-bold text-center lg:text-left leading-normal">{question}</h6>
         {errors[name] && touched[name] && <p className="text-red-400">{errors[name]}</p>}
-        </div>
-      <div id='role' aria-labelledby="my-radio-group" className="relative flex flex-row px-4 space-x-4 justify-center">
-       {/**START of radio group answers */}
-        <p>Unlikely</p>   
-            <label>
-            <Field type="radio" name={name} value={'1'} validate={validateRadio}/>
-            </label>
-            <label>
-              <Field type="radio" name={name} value={'2'} validate={validateRadio}/>
-            </label>
-            <label>
-              <Field type="radio" name={name} value={'3'} validate={validateRadio} />
-            </label>
-            <label>
-              <Field type="radio" name={name} value={'4'} validate={validateRadio} />
-            </label>
-            <p>Likely</p>
-            {/**END of radio group answers */}
       </div>
-      
+
+      <div id='role' aria-labelledby="my-radio-group" className="relative flex flex-row px-4 space-x-4 justify-center">
+        {/**START of radio group answers */}
+        <p>Unlikely</p>
+        <label>
+          <Field type="radio" name={name} value={'1'} validate={validateRadio} />
+        </label>
+        <label>
+          <Field type="radio" name={name} value={'2'} validate={validateRadio} />
+        </label>
+        <label>
+          <Field type="radio" name={name} value={'3'} validate={validateRadio} />
+        </label>
+        <label>
+          <Field type="radio" name={name} value={'4'} validate={validateRadio} />
+        </label>
+        <p>Likely</p>
+        {/**END of radio group answers */}
+      </div>
+
     </div>
-    
+
   );
 }
