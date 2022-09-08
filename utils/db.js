@@ -20,7 +20,7 @@ export const questionsDB = {
         "I recognize the impact of my actions on my environment",
         "I recognize the impact of my environment on my health ",
         "I am aware of and make use of campus health, wellness, and safety resources",
-        ". I practice environmentally conscious behaviors (e.g., recycling)",
+        "I practice environmentally conscious behaviors (e.g., recycling)",
         "I seek out ways to improve the social environment at Princeton",
         "I contribute towards making my environment a safer and healthier place",
         "I surround myself with people who support me in my journey of being healthy and well",
