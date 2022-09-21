@@ -5,7 +5,7 @@ WORKDIR /mntl
 # docker optimization, each command is cached in layers in docker container so need to consider the development workflow
 # ex. need node first, then our dependency list, then our source code
 COPY package.json .
-RUN npm install
+RUN npm install --no-audit --progress=false
 
 # Copies the rest of our files over
 COPY . .
