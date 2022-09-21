@@ -1,12 +1,10 @@
-import React, { Component, useEffect, useState } from "react";
+import React, { Component } from "react";
 import ReactPaginate from 'react-paginate';
-import ReactDOM, { createRoot } from 'react-dom';
 import PropTypes from 'prop-types';
-
-import { Form, Formik } from "formik";
+import { Form, Formik, useFormikContext } from "formik";
 import FormikRadioGroup from "../RadioGroup";
 import { questionsDB } from "utils/db.js";
-
+import Router from "next/router";
 
 //TODO: DEVELOP AND TEST THE FOLLOWING COMPONENTS: Questions,...
 /**
@@ -68,6 +66,68 @@ const initialValues = {
   Spiritual6: "",
 };
 
+// const initialValues = {
+//   "Emotional0": "4",
+//   "Emotional1": "4",
+//   "Emotional2": "4",
+//   "Emotional3": "4",
+//   "Emotional4": "4",
+//   "Emotional5": "4",
+//   "Emotional6": "4",
+//   "Environmental0": "4",
+//   "Environmental1": "4",
+//   "Environmental2": "4",
+//   "Environmental3": "4",
+//   "Environmental4": "4",
+//   "Environmental5": "4",
+//   "Environmental6": "4",
+//   "Intellectual0": "4",
+//   "Intellectual1": "4",
+//   "Intellectual2": "4",
+//   "Intellectual3": "4",
+//   "Intellectual4": "4",
+//   "Intellectual5": "4",
+//   "Intellectual6": "4",
+//   "Physical0": "4",
+//   "Physical1": "4",
+//   "Physical2": "4",
+//   "Physical3": "4",
+//   "Physical4": "4",
+//   "Physical5": "4",
+//   "Physical6": "4",
+//   "Occupational0": "4",
+//   "Occupational1": "4",
+//   "Occupational2": "4",
+//   "Occupational3": "4",
+//   "Occupational4": "4",
+//   "Occupational5": "4",
+//   "Occupational6": "4",
+//   "Social0": "4",
+//   "Social1": "4",
+//   "Social2": "4",
+//   "Social3": "4",
+//   "Social4": "4",
+//   "Social5": "4",
+//   "Social6": "4",
+//   "Spiritual0": "4",
+//   "Spiritual1": "4",
+//   "Spiritual2": "4",
+//   "Spiritual3": "4",
+//   "Spiritual4": "4",
+//   "Spiritual5": "4",
+//   "Spiritual6": "4"
+// }
+
+const results = {
+  Emotional: 0,
+  Environmental: 0,
+  Intellectual: 0,
+  Physical: 0,
+  Occupational: 0,
+  Social: 0,
+  Spiritual: 0,
+};
+
 // filter out the names from initial values
 const questionNames = Object.keys(initialValues);
 
@@ -76,7 +136,8 @@ const questionList = [];
 questionsDB.sections.map((sections) =>
   sections.questions.map((question) => (
     questionList.push(question)
-  )));
+  ))
+);
 
 // RENDERING THE QUESTION
 export class Questions extends Component {
@@ -106,7 +167,7 @@ export class Questions extends Component {
     )
 
     return (
-      <div id="question-container" className="questionList relative flex flex-col divide-y divide-solid">
+      <div id="question-container" className="questionList relative flex flex-col divide-y divide-solid min-h-560px">
         {questionNodes}
       </div>
     )
@@ -127,6 +188,8 @@ export class App extends Component {
       offset: 0,
     };
   }
+
+  state = { initialValues };
 
   fetchItems() {
     let start = this.state.offset;
@@ -156,49 +219,19 @@ export class App extends Component {
         <Formik
           initialValues={initialValues}
 
-          onSubmit={async (initialValues) => {
+          onSubmit={async (values) => {
             await new Promise((r) => setTimeout(r, 500));
-
-            let results = {
-              Emotional: 0,
-              Environmental: 0,
-              Intellectual: 0,
-              Physical: 0,
-              Occupational: 0,
-              Social: 0,
-              Spiritual: 0,
-            };
-
-            // values of the radio forms
-            console.log(initialValues);
-
-            //tally up the scores
-            for (var i = 0; i < questionNames.length; i++) {
-              let value = initialValues[questionNames[i]];
-              if (value == '') { // there is a field that is not touched
-                console.log("SUBMISSION ABORTED ON QUESTION: " + i + " " + questionNames[i]);
-                this.handlePageClick({ selected: Math.floor(i / 7) });
-                // Formik.validateField(questionNames[i]);
-                document.getElementById("field-validation").click();
-                return false;
-              }
-              // remove end number on the questionName
-              let accessKey = questionNames[i].substring(0, questionNames[i].length - 1);
-              results[accessKey] += parseInt(value);
-            }
-
-            console.log(results);
-            // TODO: pass results to quiz results page component
-
           }}
         >
 
 
-          {({ values, errors, touched, validateForm, handleSubmit }) => (
+          {({ values, errors, touched, validateForm, handleSubmit, submitCount }) => (
             // cannot use handleSubmit because I have unmounted fields
-            <Form onSubmit={handleSubmit}>
+            <Form onSubmit={(event) => handleSubmit(event)}>
               <div className="form">
 
+                {submitCount <= 1 && <Logger />}
+                {/* <Logger /> */}
                 <Questions
                   data={this.state.data}
                   question_type={this.state.question_type}
@@ -207,7 +240,7 @@ export class App extends Component {
                   touched={touched}
                 />
 
-                <nav aria-label="Page navigation" className="mt-4">
+                <nav aria-label="Page navigation" className="mt-4 pt-6">
                   <ReactPaginate
                     previousLabel={<i className="fas fa-chevron-left -ml-px"></i>}
                     nextLabel={<i className="fas fa-chevron-right -mr-px"></i>}
@@ -216,20 +249,20 @@ export class App extends Component {
                     marginPagesDisplayed={0}
                     onPageChange={this.handlePageClick}
 
-                    containerClassName=     "pagination flex pl-0 rounded list-none flex-wrap"
+                    containerClassName="pagination flex pl-0 rounded list-none flex-wrap justify-center mb-2"
 
-                    activeClassName=        "active-item"
-                    activeLinkClassName=    "active-link"
+                    activeClassName="active-item"
+                    activeLinkClassName="active-link"
 
-                    pageClassName=          "page-item"
-                    pageLinkClassName=      "page-link   first:ml-0 text-xs font-semibold flex w-8 h-8 mx-1 p-0 rounded-full items-center justify-center leading-tight relative border border-solid border-blueGray-500"
+                    pageClassName="page-item"
+                    pageLinkClassName="page-link first:ml-0 text-xs font-semibold flex w-8 h-8 mx-1 p-0 rounded-full items-center justify-center leading-tight relative border border-solid border-blueGray-500"
 
-                    previousClassName=      "page-item"
-                    previousLinkClassName=  "prev-link   first:ml-0 text-xs font-semibold flex w-8 h-8 mx-1 p-0 rounded-full items-center justify-center leading-tight relative border border-solid border-blueGray-500 bg-white text-blueGray-500"
-                    disabledLinkClassName=  "disabled-link"
+                    previousClassName="page-item"
+                    previousLinkClassName="prev-link first:ml-0 text-xs font-semibold flex w-8 h-8 mx-1 p-0 rounded-full items-center justify-center leading-tight relative border border-solid border-blueGray-500 bg-white text-blueGray-500"
+                    disabledLinkClassName="disabled-link"
 
-                    nextClassName=          "page-item"
-                    nextLinkClassName=      "next-link   first:ml-0 text-xs font-semibold flex w-8 h-8 mx-1 p-0 rounded-full items-center justify-center leading-tight relative border border-solid border-blueGray-500 bg-white text-blueGray-500"
+                    nextClassName="page-item"
+                    nextLinkClassName="next-link first:ml-0 text-xs font-semibold flex w-8 h-8 mx-1 p-0 rounded-full items-center justify-center leading-tight relative border border-solid border-blueGray-500 bg-white text-blueGray-500"
 
                     eslint-disable-next-line no-unused-vars
                     hrefBuilder={(page, pageCount, selected) =>
@@ -248,9 +281,13 @@ export class App extends Component {
                   />
                 </nav>
 
-                {/* TODO: ERROR CHECKING ON FINAL SUBMISSION, DISPLAY ERROR MSG HERE? */}
+                {/* Invisible button to do validation on the currently displayed questions */}
                 <div className="flex justify-center align-center">
                   <button id="field-validation" type="button" onClick={() => { validateForm().then(() => console.log(errors, touched, values)); }}></button>
+                  <button id="submit-navigation" type="button" onClick={() => {
+                    Router.push({ pathname: "/wellness-quiz-results", query: { data: JSON.stringify(results) } })
+                  }}></button>
+
                 </div>
 
                 {/* ONLY DISPLAY SUBMIT BUTTON ON THE LAST PAGE */}
@@ -263,10 +300,10 @@ export class App extends Component {
                     >
                       Submit
                     </button>
+
+
                   </div>
                 }
-
-
               </div>
             </Form>
           )}
@@ -276,10 +313,57 @@ export class App extends Component {
   }
 }
 
-const WellnessAssessmentForm = () => {
+function Logger() {
+
+  const formik = useFormikContext();
+
+  React.useEffect(() => {
+    console.group("Formik State");
+    console.log("values", formik.values);
+    console.log("isSubmitting", formik.isSubmitting);
+    console.log("isValidating", formik.isValidating);
+    console.log("submitCount", formik.submitCount);
+    console.groupEnd();
+
+    if (formik.isSubmitting == true && formik.isValidating == false) {
+      console.log("DONE SUBMITTING, NAVIGATE NOW");
+
+      for (var i = 0; i < questionNames.length; i++) {
+        let value = formik.values[questionNames[i]];
+        if (value == '') { // there is a field that is not touched
+          console.log("SUBMISSION ABORTED ON QUESTION: " + i + " " + questionNames[i]);
+          this.handlePageClick({ selected: Math.floor(i / 7) });
+          // Formik.validateField(questionNames[i]);
+          document.getElementById("field-validation").click();
+          return false;
+        }
+        // remove end number on the questionName
+        let accessKey = questionNames[i].substring(0, questionNames[i].length - 1);
+        results[accessKey] += parseInt(value);
+
+
+      } // END FOR LOOP
+      console.log("RESULTS: ", results);
+
+      document.getElementById("submit-navigation").click();
+
+      // const router = useRouter();
+    }
+
+  }, [
+    formik.values,
+    formik.isSubmitting,
+    formik.isValidating,
+  ]);
+
+  return null;
+}
+
+function WellnessAssessmentForm() {
+  // const WellnessAssessmentForm = props => {
   return (
     <App perPage={7} />
   );
-};
+}
 
 export default WellnessAssessmentForm;
