@@ -346,8 +346,6 @@ function Logger() {
       console.log("RESULTS: ", results);
 
       document.getElementById("submit-navigation").click();
-
-      // const router = useRouter();
     }
 
   }, [
