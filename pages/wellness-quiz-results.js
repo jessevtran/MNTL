@@ -18,7 +18,7 @@ export default function WellnessQuizResults() {
   return (
     <>
       <Head>
-        Wellness-Quiz-Results
+        <title>Wellness Quiz Results</title>
       </Head>
 
       <IndexNavbar />
