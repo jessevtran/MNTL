@@ -4,7 +4,7 @@ import { amber } from "tailwindcss/colors";
 
 
 export default function CardBarChart(props) {
-  console.log("Passed into chart component:", props);
+  // console.log("Passed into chart component:", props);
   const labels = Object.keys(props.results);
   const values = Object.values(props.results);
 
