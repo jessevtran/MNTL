@@ -89,16 +89,18 @@ export default function CardBarChart(props) {
 
   return (
     <>
-      <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded">
-        <div className="rounded-t mb-0 px-4 py-3 bg-transparent">
-          <div className="flex flex-wrap items-center">
-            <div className="relative w-full max-w-full flex-grow flex-1">
-              {/* <h6 className="uppercase text-blueGray-400 mb-1 text-xs font-semibold">
-                Performance
-              </h6> */}
-              <p className="text-blueGray-700 text-x font-semibold mt-6">
-                Higher values on this graph indicate that you are doing well in that category, great job!
-              </p>
+
+      <div>
+        <h4 className="text-blueGray-700 text-x font-semibold mt-6 align-middle justify flex">
+          Higher values on this graph indicate that you are doing well in that category, great job!
+        </h4>
+
+        <div className="relative flex flex-col min-w-0 break-words bg-blueGray-100 w-full mb-6 shadow-lg rounded-lg">
+          <div className="rounded-t mb-0 px-4 py-1 bg-transparent">
+            <div className="flex flex-wrap items-center">
+              <div className="relative w-full max-w-full flex-grow flex-1">
+
+              </div>
             </div>
           </div>
         </div>
