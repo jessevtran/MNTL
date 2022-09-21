@@ -1,7 +1,6 @@
 /* eslint-disable react/jsx-no-target-blank */
 import React from "react";
 import WellnessForm from "components/Forms/WellnessAssessment/WellnessAssessmentForm.js";
-import { connect, getIn } from 'formik';
 
 import Head from "next/head";
 import IndexNavbar from "components/Navbars/IndexNavbar.js";

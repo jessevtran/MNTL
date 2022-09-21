@@ -13,7 +13,6 @@ import Router from "next/router";
  * Utilizes Formik
  */
 
-//initial values
 const initialValues = {
   Emotional0: "",
   Emotional1: "",
@@ -67,13 +66,13 @@ const initialValues = {
 };
 
 // const initialValues = {
-//   "Emotional0": "4",
-//   "Emotional1": "4",
-//   "Emotional2": "4",
-//   "Emotional3": "4",
-//   "Emotional4": "4",
-//   "Emotional5": "4",
-//   "Emotional6": "4",
+//   "Emotional0": "1",
+//   "Emotional1": "1",
+//   "Emotional2": "1",
+//   "Emotional3": "1",
+//   "Emotional4": "1",
+//   "Emotional5": "1",
+//   "Emotional6": "",
 //   "Environmental0": "4",
 //   "Environmental1": "4",
 //   "Environmental2": "4",
@@ -81,7 +80,7 @@ const initialValues = {
 //   "Environmental4": "4",
 //   "Environmental5": "4",
 //   "Environmental6": "4",
-//   "Intellectual0": "4",
+//   "Intellectual0": "",
 //   "Intellectual1": "4",
 //   "Intellectual2": "4",
 //   "Intellectual3": "4",
@@ -115,18 +114,8 @@ const initialValues = {
 //   "Spiritual3": "4",
 //   "Spiritual4": "4",
 //   "Spiritual5": "4",
-//   "Spiritual6": "4"
+//   "Spiritual6": ""
 // }
-
-const results = {
-  Emotional: 0,
-  Environmental: 0,
-  Intellectual: 0,
-  Physical: 0,
-  Occupational: 0,
-  Social: 0,
-  Spiritual: 0,
-};
 
 // filter out the names from initial values
 const questionNames = Object.keys(initialValues);
@@ -201,7 +190,6 @@ export class App extends Component {
   }
 
   handlePageClick = (event) => {
-    console.log(event);
     console.log('onPageChange', event);
 
     let newOffset = event.selected * this.props.perPage;
@@ -219,18 +207,55 @@ export class App extends Component {
         <Formik
           initialValues={initialValues}
 
-          onSubmit={async (values) => {
+          onSubmit={async (values, formik) => {
             await new Promise((r) => setTimeout(r, 500));
+
+            console.group("Formik Handler");
+
+            const results = {
+              Emotional: 0,
+              Environmental: 0,
+              Intellectual: 0,
+              Physical: 0,
+              Occupational: 0,
+              Social: 0,
+              Spiritual: 0,
+            };
+
+            for (var i = 0; i < questionNames.length; i++) {
+              // for (var i = questionNames.length-1; i >= 0; i--) {
+              let value = values[questionNames[i]];
+              if (value == '') { // there is a field that is not touched
+                console.log("SUBMISSION ABORTED ON QUESTION: " + i + " " + questionNames[i]);
+                let unfinishedPage = Math.floor(i / 7);
+                this.handlePageClick({ selected: unfinishedPage });
+                document.getElementById("validate-form").click();
+                console.groupEnd();
+                return false;
+              }
+              // remove end number on the questionName
+              let accessKey = questionNames[i].substring(0, questionNames[i].length - 1);
+              results[accessKey] += parseInt(value);
+            }
+            console.log("Results ", results);
+            console.groupEnd();
+
+            console.log("Ready to navigate");
+            Router.push({ pathname: "/wellness-quiz-results", query: { data: JSON.stringify(results) } })
           }}
         >
 
-
           {({ values, errors, touched, validateForm, handleSubmit, submitCount }) => (
-            // cannot use handleSubmit because I have unmounted fields
-            <Form onSubmit={(event) => handleSubmit(event)}>
+            <Form onSubmit={(event) => {
+              console.group("Submitting:");
+              console.log("values", values);
+              console.log("submitCount", submitCount);
+              console.groupEnd();
+              handleSubmit(event); // triggers onSubmit in formik
+            }}>
               <div className="form">
 
-                {submitCount <= 1 && <Logger />}
+                {/* {submitCount <= 1 && <Logger />} */}
                 {/* <Logger /> */}
                 <Questions
                   data={this.state.data}
@@ -283,11 +308,7 @@ export class App extends Component {
 
                 {/* Invisible button to do validation on the currently displayed questions */}
                 <div className="flex justify-center align-center">
-                  <button id="field-validation" type="button" onClick={() => { validateForm().then(() => console.log(errors, touched, values)); }}></button>
-                  <button id="submit-navigation" type="button" onClick={() => {
-                    Router.push({ pathname: "/wellness-quiz-results", query: { data: JSON.stringify(results) } })
-                  }}></button>
-
+                  <button id="validate-form" type="button" onClick={() => { validateForm().then(() => console.log(errors, touched)); }}></button>
                 </div>
 
                 {/* ONLY DISPLAY SUBMIT BUTTON ON THE LAST PAGE */}
@@ -301,7 +322,6 @@ export class App extends Component {
                       Submit
                     </button>
 
-
                   </div>
                 }
               </div>
@@ -311,50 +331,6 @@ export class App extends Component {
       </>
     );
   }
-}
-
-function Logger() {
-
-  const formik = useFormikContext();
-
-  React.useEffect(() => {
-    console.group("Formik State");
-    console.log("values", formik.values);
-    console.log("isSubmitting", formik.isSubmitting);
-    console.log("isValidating", formik.isValidating);
-    console.log("submitCount", formik.submitCount);
-    console.groupEnd();
-
-    if (formik.isSubmitting == true && formik.isValidating == false) {
-      console.log("DONE SUBMITTING, NAVIGATE NOW");
-
-      for (var i = 0; i < questionNames.length; i++) {
-        let value = formik.values[questionNames[i]];
-        if (value == '') { // there is a field that is not touched
-          console.log("SUBMISSION ABORTED ON QUESTION: " + i + " " + questionNames[i]);
-          this.handlePageClick({ selected: Math.floor(i / 7) });
-          // Formik.validateField(questionNames[i]);
-          document.getElementById("field-validation").click();
-          return false;
-        }
-        // remove end number on the questionName
-        let accessKey = questionNames[i].substring(0, questionNames[i].length - 1);
-        results[accessKey] += parseInt(value);
-
-
-      } // END FOR LOOP
-      console.log("RESULTS: ", results);
-
-      document.getElementById("submit-navigation").click();
-    }
-
-  }, [
-    formik.values,
-    formik.isSubmitting,
-    formik.isValidating,
-  ]);
-
-  return null;
 }
 
 function WellnessAssessmentForm() {
