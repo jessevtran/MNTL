@@ -43,11 +43,11 @@ export default function Navbar(props) {
                   Take the Quiz
                 </a>
               </li>
-              <li className="px-2 py-2 flex items-center text-sm uppercase font-bold leading-snug text-blueGray-700 hover:opacity-75 ease-linear transition-all duration-150">
+              {/* <li className="px-2 py-2 flex items-center text-sm uppercase font-bold leading-snug text-blueGray-700 hover:opacity-75 ease-linear transition-all duration-150">
                 <a href="/wellness-plan/">
                   Wellness Plan
                 </a>
-              </li>
+              </li> */}
               <li className="px-2 py-2 flex items-center text-sm uppercase font-bold leading-snug text-blueGray-700 hover:opacity-75 ease-linear transition-all duration-150">
                 <a href="/crisis/">
                   Crisis
