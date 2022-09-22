@@ -9,8 +9,8 @@ RUN npm install --no-audit --progress=false
 
 # Copies the rest of our files over
 COPY . .
-EXPOSE 3000
+RUN npm run build
 
-# CMD [ "npm", "build" ]
+EXPOSE 3000
 CMD ["npm", "start"]
 
