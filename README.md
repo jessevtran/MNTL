@@ -1,15 +1,19 @@
 # MTNL
 
-<a href="https://mntl.herokuapp.com/">![MTNL Landing](/public/img/landing.jpg)</a> https://mntl.herokuapp.com/
+<a href="http://167.99.10.112:8080/">![MTNL Landing](/public/img/landing.jpg)</a> http://167.99.10.112:8080/
 
 ### WELCOME!
 Our app, MNTL, was created as part a class assignment for CS321 at GMU. Our goal is to potentially support students apart of the George Mason community who are seeking resources and help by presenting avice and suggestions based on how they are feeling and their experiences.
+
+This website is hosted on a DigitalOcean Docker Droplet
 
 ### The Developers:
 - Nnamdi Ojibe
 - Sayed Fekrat
 - David Hoang
 - Jesse Tran
+
+
 
 Project template was retrieved from https://github.com/creativetimofficial/notus-nextjs
 
