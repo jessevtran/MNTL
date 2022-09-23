@@ -1,13 +1,13 @@
 version: '3'
 services:
-  mntl-app:
+  mntl-app-prod:
     # stdin_open: true
     # tty: true
     build: 
       context: .
-      dockerfile: Dockerfile.dev
+      dockerfile: Dockerfile.prod
     ports:
-      - "3000:3000"
-    volumes:
-      - ~/mntl/
+            - "8080:3000"
+              #volumes:
+              #  - /mntl/
 

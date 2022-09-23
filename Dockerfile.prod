@@ -1,19 +1,32 @@
 # https://www.youtube.com/watch?v=3xDAU5cvi5E Docker reactjs tutorial
-FROM node as build
+FROM node:16-alpine AS deps
+RUN apk add --no-cache libc6-compat
 WORKDIR /mntl
 # copies package.json to /mntl
 # docker optimization, each command is cached in layers in docker container so need to consider the development workflow
 # ex. need node first, then our dependency list, then our source code
-COPY package.json .
+COPY package.json ./
 RUN npm install --no-audit --progress=false
 
-# Copies the rest of our files over
-COPY . .
 
+
+
+FROM node:16-alpine AS build
+WORKDIR /mntl
+COPY --from=deps /mntl/node_modules ./node_modules
+# Copies the rest of our files over
+# COPY --from=deps /mntl/public ./public
+# COPY --from=deps /mntl/.next ./.next
+# COPY --from=deps /mntl/package.json ./package.json
+COPY . .
 RUN npm run build
 
-# Stage 2
-FROM nginx
+EXPOSE 3000
+CMD ["npm", "start"]
 
+
+# Stage 2
+#FROM nginx AS run
+#WORKDIR /mntl
 # need to copy output of "npm run build" command
-COPY --from=build /mntl/.next/ /usr/share/nginx/html
+#COPY --from=build /mntl/.next/ /usr/share/nginx/html
